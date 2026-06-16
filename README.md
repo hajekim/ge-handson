@@ -298,6 +298,17 @@ Gemini Enterprise는 사용자의 업무 흐름과 시스템을 통합해 주는
   ```
   <img src="./img/image21.png" width="800" alt="일정 쿼리 결과 화면">
 
+> [!TIP]
+> #### 💡 RAG-Ready: 답변 정밀도를 200% 극대화하는 엔터프라이즈 문서 작성 표준 수칙
+> Gemini의 사내 지식 기반 RAG(Retrieval-Augmented Generation) 검색 정확도는 원본 문서의 구조와 정돈 상태에 직접적인 영향을 받습니다. 사내 문서를 업로드하기 전, 아래의 **RAG-Ready 표준 수칙**을 적용하면 오답(환각)을 방지하고 정확한 출처 인용 결과를 얻을 수 있습니다.
+> 
+> 1. **시각 자료의 텍스트 병기 (OCR 상호 보완)**:
+>    - 차트, 다이어그램, 아키텍처 등 이미지 내의 핵심 데이터는 반드시 하단에 **텍스트 요약 및 표(Table)** 형태로 한 번 더 기술합니다. Gemini가 다중 모달(Multimodal) 분석을 수행하지만, 구조화된 텍스트가 병기되었을 때 임베딩 벡터 검색의 정확도가 극대화됩니다.
+> 2. **명확한 헤딩(Heading) 계층 구조화**:
+>    - 문서 작성 시 제목และ 본문의 스타일 태그(H1, H2, H3 등)를 명확히 구분하여 작성합니다. 장황하게 나열된 텍스트보다 명확한 단락 구분과 계층 구조가 적용된 문서가 청킹(Chunking) 및 시맨틱 검색 시 관련성 스코어를 훨씬 높게 받습니다.
+> 3. **버전 관리 및 최신본 동기화**:
+>    - 동일한 파일의 구버전과 신버전이 구글 드라이브나 스토리지에 중복 존재하지 않도록 관리합니다. 구버전 문서가 방치되면 LLM이 상충되는 정보 중 어떤 것이 최신인지 판단하기 어려워 구버전 정보를 인용할 위험이 있습니다. 주기적으로 아카이브 전용 폴더로 구버전 문서를 이관 처리합니다.
+
 ### 2) 엔터프라이즈 NotebookLM 실습 (개인/팀 전용 도서관)
 업로드한 다량의 특정 원본 문서군(RFP, 제품 매뉴얼, 경쟁사 보고서 등)에 소싱 소유 범위를 명확히 한정(Grounded Base Only)하여 정밀 요약, 질의응답, 그리고 인용 표시 검증을 해볼 수 있는 전용 작업장입니다.
 
@@ -922,6 +933,20 @@ graph TD
   </details>
 - **BigQuery Conversational Analytics (CAA) 연동**: BigQuery Studio에서 자연어로 사내 원천 DB에 SQL 쿼리 분석을 실행하는 CAA 기반 에이전트의 ACL(접근 권한 제어 목록)을 설정하고 이를 레지스트리에 배포하여 전사 공유합니다.
 
+  #### 💡 BigQuery CAA 성능 극대화를 위한 데이터 모델링 사전 수칙 (Prerequisites)
+  BigQuery Conversational Analytics (CAA) 에이전트가 자연어 질문을 정확한 SQL 쿼리로 변환(NL-to-SQL)하여 올바른 원천 데이터를 조회하도록 하기 위해서는, 에이전트 설계 단계에서 원천 데이터베이스에 대한 다음과 같은 데이터 모델링 사전 수칙을 준수해야 합니다.
+
+  1. **테이블 및 컬럼 설명(Description) 필드 작성**:
+     - BigQuery의 모든 테이블 및 각 컬럼 스키마 정보 내 `Description` 속성에 비즈니스 정의와 의미를 한글/영문으로 상세히 기록합니다. CAA 에이전트는 스키마 메타데이터를 학습(Few-shot context)하여 SQL을 생성하므로, 설명 필드가 채워져 있을 때 비약적인 정확도 향상을 보장합니다.
+     - *예시*: `order_status` 컬럼에 "주문 상태 (0: 접수, 1: 결제완료, 2: 배송중, 9: 취소)"와 같이 상세 코드 매핑 값을 명시합니다.
+
+  2. **비즈니스 중심의 뷰(View) 및 요약 테이블 모델링**:
+     - 복잡한 다중 조인(Multi-way Join)이나 복잡한 비즈니스 로직(예: 복합 세금 계산 공식, 다차원 누적 합산)이 필요한 원천 테이블들은 사전에 비즈니스 단위로 정규화 및 가공된 **뷰(View)** 또는 **요약 마트 테이블**로 생성하여 제공합니다.
+     - 에이전트가 직접 거대한 로우 레벨 테이블들을 실시간으로 복잡하게 조인하여 쿼리하게 만들기보다, 정제된 뷰를 참조하게 함으로써 SQL 생성 실패율을 현저히 줄이고 쿼리 실행 비용(Slot 비용)도 대폭 절감할 수 있습니다.
+
+  3. **명확하고 일관된 명명 규칙(Naming Convention)**:
+     - 테이블명과 컬럼명은 직관적이고 일관된 표준 단어를 조합하여 명명합니다 (예: `user_dt` 대신 `registration_date` 또는 `user_registered_at` 사용). 약어나 내부 시스템에서만 쓰는 불명확한 단어는 배제하며, 불가피한 경우 위 1번 규칙인 `Description`에 상세 설명을 기재합니다.
+
 ---
 
 ## 2.7. 보안 및 모니터링
@@ -941,6 +966,56 @@ graph TD
 | **기업 지식 재산 보호** | 소스코드(API Key, Private Key), 영업 비밀 문서 패턴 | **HIGH (엄격 차단)** | `AI_HAZARD_CODE_INJECTION` 및 특정 정규 표현식(`AI_SECRET_KEY`) 탐지 시 즉각적인 트랜잭션 거부 |
 | **인터넷 사이버 위협** | 피싱 URL, 악성코드 배포 도메인, IP 주소 | **HIGH (실시간 연동)** | Google Safe Browsing 데이터베이스와 연동하여 위협 인텔리전스 DB에 플래그 지정된 도메인은 무조건 차단 |
 | **혐오 발언 & 공격적 언행** | 인종/종교 비하, 사내 괴롭힘 인신공격 텍스트 | **MEDIUM-HIGH** | 언어적 뉘앙스 분석을 통해 단순 토론과 공격 목적의 혐오 표현을 가려내어 오차단(False Positive)을 최소화 |
+
+### 📊 Cloud Audit Logs & SIEM 연동을 통한 보안 감사 자동화 가이드
+
+보안 감사 요건을 충족하고 사내 AI 서비스 내에서 발생하는 위협 행위 및 정책 변경 이력을 정밀하게 모니터링하기 위해, **Cloud Logging**의 감사 로그(Audit Logs)를 **BigQuery**로 실시간 싱크(Log Sink)하고 SIEM(보안 정보 및 이벤트 관리) 관점에서 사후 추적 쿼리를 구동하는 구체적인 아키텍처 및 정책 변경 추적 SQL 쿼리 예시입니다.
+
+#### 🏗️ 감사 로그 수집 아키텍처 및 Flow
+```mermaid
+graph LR
+    User["임직원 질문 및 요구사항"] --> Gemini["Gemini Enterprise Gateway"]
+    Gemini --> ModelArmor["Model Armor <br> (보안 인라인 필터)"]
+    ModelArmor --> CloudLogging["Cloud Logging <br> (인라인 로깅 및 감사)"]
+    CloudLogging --> LogSink["Log Sink Export <br> (실시간 라우팅)"]
+    LogSink --> BigQuery["BigQuery Security Lake"]
+    BigQuery --> SQL["감사 및 SIEM 분석 (SQL)"]
+
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px;
+    classDef highlight fill:#e1f5fe,stroke:#0288d1,stroke-width:1.5px;
+    class User,Gemini,ModelArmor,CloudLogging,LogSink,BigQuery,SQL highlight;
+```
+
+#### 🔍 Model Armor 보안 정책 변경 이력 감사용 BigQuery SQL
+관리자 또는 CISO 조직에서 특정 일자에 Model Armor 위협 필터 수준(Threshold)이나 차단 정책 규칙이 무단 변경되었는지 또는 감사 예외 대상이 추가되었는지 등의 위험 정책 변경 이력을 사후 추적하고 SIEM 연동 감사를 실행할 수 있는 표준 SQL 쿼리 템플릿입니다.
+
+```sql
+-- Model Armor 보안 정책 변경 및 감사 예외 이벤트 역추적 쿼리
+SELECT
+  timestamp,
+  protoPayload.authenticationInfo.principalEmail AS admin_email,
+  protoPayload.methodName AS api_action,
+  protoPayload.requestMetadata.callerIp AS ip_address,
+  -- 변경된 자원(Resource) 식별 및 상세 정책 페이로드 추출
+  protoPayload.resourceName AS policy_resource_name,
+  JSON_EXTRACT(protoPayload.metadata, '$.policyDelta') AS configuration_changes
+FROM
+  `your-gcp-project.cloudaudit_googleapis_com_activity.cloudaudit_googleapis_com_activity_*`
+WHERE
+  _TABLE_SUFFIX = FORMAT_TIMESTAMP('%Y%m%d', CURRENT_TIMESTAMP())
+  AND protoPayload.serviceName = 'modelarmor.googleapis.com'
+  AND protoPayload.methodName IN (
+    'google.cloud.modelarmor.v1.ModelArmorService.UpdatePolicy',
+    'google.cloud.modelarmor.v1.ModelArmorService.DeletePolicy',
+    'google.cloud.modelarmor.v1.ModelArmorService.CreatePolicy'
+  )
+ORDER BY
+  timestamp DESC
+LIMIT 100;
+```
+> [!NOTE]
+> - `your-gcp-project`는 실제 감사 로그 싱크가 설정된 대상 프로젝트 ID로 대체해야 합니다.
+> - 이 쿼리를 통해 무단으로 차단 정책 강도가 변경(예: HIGH ➡️ LOW)되거나 임계값이 해제된 감사 예외 사항을 즉각 탐지하여 내부 SIEM 대시보드에 알림(Alerting)을 발송하는 경보 체계와 즉시 연동할 수 있습니다.
 
 ### 🛡️ 보안 검증 실습 테스트 세트
 Model Armor의 보안 정책이 실시간으로 어떻게 트리거되고 안전하게 제어하는지 검증하기 위한 어드민 실습 가이드입니다.
