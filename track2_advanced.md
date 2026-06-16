@@ -28,6 +28,7 @@
   내 드라이브에 있는 "복지 정책" 문서를 찾아줘
   ```
   *(OAuth 최초 팝업 발생 시 승인 선택)*
+
   <img src="./img/connect01.png" width="600" alt="커넥터 승인 넛지">
   <img src="./img/connect02.png" width="350" alt="계정 승인 선택">
   <img src="./img/searchdrive.png" width="450" alt="드라이브 스캔 진행">
@@ -39,11 +40,14 @@
   ```markdown
   현대차 앰버서더가 뭐야? 누가 참여할 수 있고 혜택이 뭐야?
   ```
+
   <img src="./img/image1.png" width="800" alt="GCS 정보 실시간 질문 결과">
   <img src="./img/image77.png" width="800" alt="답변 출처 목록 확인">
+
   ```markdown
   하이현대 토크 콘서트 언제해?
   ```
+
   <img src="./img/image21.png" width="800" alt="일정 쿼리 결과 화면">
 
 > [!TIP]
@@ -71,6 +75,7 @@
 수백 페이지 이상의 고도화된 비즈니스 보고서 및 시장 조사를 자율적으로 탐색하고 구조화하기 위해 고안된 강력한 지능형 리서치 에이전트입니다.
 
 - **실습 진입**: 화면 좌측 또는 하단 메뉴에서 **Deep Research** 아이콘을 클릭합니다.
+
   <img src="./img/34.png" width="600" alt="Deep Research 에이전트 진입">
 
 - **리서치 프롬프트 복사 및 실행**:
@@ -79,6 +84,7 @@
   현재 현대자동차의 전기차 사업 경쟁력과 미래 전망을 종합적으로 분석해 줘. 먼저 글로벌 및 국내 전기차 시장에서의 포지셔닝과 핵심 경쟁 우위를 진단해 줘. 이어서 신 차량을 포함하여 커뮤니티의 평가를 분석하고, 이를 바탕으로 향후 현대자동차 전기차 사업이 직면할 주요 기회와 위협 요인을 논리적으로 설명해 줘
   ```
   에이전트가 작동하면 수집 및 심층 검색 단계가 비주얼 대시보드로 표기되며, 최종 완료 시 목차(TOC)와 풍부한 인용 링크가 매핑된 완성도 높은 마스터 보고서 및 팟캐스트 형태의 오디오 요약본이 완성됩니다.
+
   <img src="./img/32.png" width="600" alt="Deep Research 분석 보고서 생성 결과 1">
   <img src="./img/33.png" width="600" alt="Deep Research 분석 보고서 생성 결과 2">
 
@@ -86,6 +92,7 @@
 비즈니스 난제를 해결하고 창의적이고 파격적인 마케팅/운영 서비스를 설계하는 연쇄 추론형 아이디어 브레인스토밍 에이전트입니다.
 
 - **실습 진입**: 화면 좌측 에이전트 목록에서 **Idea Generation** 에이전트를 선택합니다.
+
   <img src="./img/34.png" width="600" alt="에이전트 목록 UI">
   <img src="./img/35.png" width="600" alt="Idea Generation 에이전트 활성화">
 
@@ -94,6 +101,7 @@
   ```markdown
   제네시스의 주 타겟이 아닌 젊은 운전자의 입장에서 우리 제품의 불편한 점 5가지를 찾아내고, 이를 해결할 수 있는 파격적인 서비스 아이디어를 제안해줘. 이들에게 줄 수 있는 가장 큰 감동은 무엇일까?
   ```
+
   <img src="./img/36.png" width="600" alt="Start Session 추론 실행">
   <img src="./img/37.png" width="600" alt="추론 완료 및 아이디어 제안 확인">
 
@@ -102,6 +110,7 @@
   ```markdown
   내가 매일 수행하는 [매출 데이터 정리, 사내 게시판 모니터링, 메일 회신] 업무를 Gemini Enterprise를 활용해 자동화하거나 효율화할 수 있는 아이디어를 제시해줘. 특히 Gemini Enterprise의 **[데이터 연결 기능]**을 어떻게 활용하면 정보 검색 시간을 절반으로 줄일 수 있을지, 구체적인 프롬프트 체인(연속 질문) 구조를 설계해줘.
   ```
+
   <img src="./img/38.png" width="600" alt="업무 자동화 프롬프트 체인 설계 결과">
 
   > [!NOTE]
@@ -120,6 +129,7 @@ Gemini Enterprise는 사용자의 업무 흐름과 시스템을 통합해 주는
 - **High-Code 에이전트**: 개발자 전용 프레임워크인 ADK(Agent Development Kit)를 사용해 파이썬이나 고(Go) 언어 소스로 복잡한 백엔드 API와 레거시 시스템 트랜잭션을 연동해 구축하는 최고 수준의 지능형 에이전트.
 
 ### 2) Agent Designer 구성
+
 <img src="./img/image9.png" width="800" alt="Agent Designer 전체 UI 구조">
 
 - **Chat Pane**: 말하듯이 "이메일 알리미 만들어줘"라고 요청하면, 에이전트의 역할과 시스템 권한이 자동 생성됩니다.
@@ -134,16 +144,23 @@ Gemini Enterprise는 사용자의 업무 흐름과 시스템을 통합해 주는
    ```markdown
    뉴스 링크를 입력 받아서 Social Media 포스팅할 게시물 문구를 생성하는 에이전트를 만들어줘 포스팅할 문구는 간략한 한줄 문장과 bullet point 5개를 생성하고 Hashtag도 추천
    ```
+
    <img src="./img/image53.png" width="700" alt="에이전트 디자이너 프롬프트 입력">
+
 3. 시스템이 자동으로 뼈대를 잡으면, 우측 상세 Flow를 최종 검토한 뒤 상단의 **Create(생성)** 또는 **Publish** 버튼을 클릭하여 적용합니다.
+
    <img src="./img/image78.png" width="800" alt="디자이너 Flow 및 상세 설정">
+
    4. 프리뷰 테스트 창에 아래 뉴스 기사 링크를 복사해 붙여넣어 에이전트의 결과물이 의도대로 요약 포스팅을 잘 도출하는지 테스트합니다.
       ```markdown
       이 뉴스 링크로 소셜 미디어 게시물을 만들어줘: https://news.hyundai.com/global-sales2026/
       ```
+
    <img src="./img/image14.png" width="800" alt="에이전트 프리뷰 뉴스 테스트">
    <img src="./img/image70.png" width="800" alt="테스트 성공 출력화면">
+
 5. 에이전트가 완성되었다면 사내 **Agent Gallery**에 발행하여 전사 공유합니다. 우측 상단의 `Share` 클릭 후, `Add People` 지정 대신 `Done`을 누르면 사내 공용 채널인 'Low Code Agents'에 갤러리 형태로 자동으로 등록됩니다.
+
 <img src="./img/image23.png" width="800" alt="에이전트 공유 시작">
 
 ---
