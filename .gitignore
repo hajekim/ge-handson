@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# Except these files
+!.gitignore
+!gemini_enterprise_hands_on.md
+!img/
+!img/**
+
+# Exclude heavy Veo GIFs due to GitHub 100MB limit
+img/25.gif
+img/27.gif
+img/29.gif
+img/31.gif
