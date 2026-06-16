@@ -3,7 +3,7 @@
 
 # Except these files
 !.gitignore
-!gemini_enterprise_hands_on.md
+!README.md
 !img/
 !img/**
 
