@@ -14,6 +14,12 @@
 | 🔵 **Track 2. Advanced** <br> (커넥터 연동 및 심화 에이전트) | • 비즈니스 파워 유저 <br> • IT 기획 및 혁신 리더 <br> • Citizen Developer (시민 개발자) | • Google Drive & Workspace 연동 및 RAG <br> • 사내 Moma 검색 연동 지식 질문 <br> • 엔터프라이즈 NotebookLM 팀 도서관 구축 <br> • Deep Research 자율 보고서 & 아이디어 연쇄 생성 <br> • 노코드 커스텀 에이전트 빌더 <br> • 하이코드 ADK/CAA 통합 에이전트 개발 | [👉 교육 시작](./track2_advanced.md) |
 | 🛡️ **Part 3. Admin Guide** <br> (전사 인프라 및 보안 감사) | • 구글 클라우드 인프라 관리팀 <br> • CISO / 사내 보안 관제 조직 <br> • C-Level 구매 의사결정권자 | • GCP 프로젝트 설정 및 2중화 아키텍처 <br> • Cloud Identity 및 WIF 연동 <br> • 전사 환경 제어판 및 에이전트 레지스트리 관리 <br> • Model Armor 튜닝 가이드 (Tuning Map) <br> • **Cloud Audit Logs SIEM 연동 & BigQuery 감사 SQL** <br> • 투자 대비 가치 입증 ROI 재무 분석 시뮬레이션 | [👉 교육 시작](./admin_guide.md) |
 
+> [!TIP]
+> **🚀 C.R.A.F.T 프롬프트 공학 마스터 가이드 완비!**
+> 구글 제미나이의 엔터프라이즈 공식 프롬프트 프레임워크인 **C.R.A.F.T(Context, Role, Action, Format, Target)**를 구조화한 범용 비즈니스 작성 표준 템플릿과, 이를 활용한 4대 실무 시나리오(제안 기획, CS 클레임 극복, 보도자료 SWOT, IT 장애 보고서)를 전용 가이드에서 심도 있게 다룹니다.
+>
+> • [👉 C.R.A.F.T 프롬프트 마스터 가이드 바로가기](./prompt_guide.md)
+
 ---
 
 ## 🏢 글로벌 모빌리티 비즈니스 대표 실습 시나리오
