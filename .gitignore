@@ -9,6 +9,9 @@
 !admin_guide.md
 !img/
 !img/**
+!samples/
+!samples/**
+
 
 # Exclude heavy Veo GIFs due to GitHub 100MB limit
 img/25.gif

@@ -131,7 +131,7 @@ Gemini Enterprise의 지능형 비서를 활용해 실제 비즈니스 가치를
 
 - **시나리오 B: 손그림 스케치를 클라우드 정밀 아키텍처 다이어그램으로 변환 (Image-to-Image)**:
   손으로 그린 임시 구상도를 업로드하여, 프로페셔널한 기업용 아키텍처 다이어그램으로 일관성 있게 재구성하는 실무 지향적 기법입니다.
-  1. 실습용 손그림 샘플 파일(`Handwrite_arch.png`)을 첨부창에 업로드합니다.
+  1. 실습용 손그림 샘플 파일([handwrite_arch.png](./samples/handwrite_arch.png))을 첨부창에 업로드합니다.
   2. 이미지 생성 도구(Create images)를 선택한 뒤 아래 지시어를 실행합니다.
      ```markdown
      첨부한 아키텍처를 Google Cloud Architecture 스타일로 전문적이고 세련되게 다시 그려줘.
@@ -196,7 +196,7 @@ Gemini Enterprise의 지능형 비서를 활용해 실제 비즈니스 가치를
 대용량 매출 데이터를 로컬에서 브라우저로 직접 던져 넣어 수십 개의 조건부 통계와 트렌드 예측 분석을 코드 한 줄 없이 대화로 완벽하게 도출해 봅니다.
 기존의 수동 데이터 전처리나 코딩 없이, 비즈니스 질문만으로 실시간 데이터를 통계 및 시각적 파이 차트로 변환하는 고난도 기능입니다.
 
-- **실습 파일**: `coffee orders.xlsx` (내 구글 드라이브나 실습 폴더 GE_실습에서 선택)
+- **실습 파일**: [coffee orders.xlsx](./samples/coffee%20orders.xlsx) (링크를 클릭해 다운로드하거나 내 구글 드라이브/실습 폴더 GE_실습에서 선택)
 
 > [!IMPORTANT]
 > **현장 꿀팁 (Field Pro Tip) - Excel 분석 헤더 구조화 팁**
@@ -257,7 +257,7 @@ Gemini Enterprise의 지능형 비서를 활용해 실제 비즈니스 가치를
 대화 창에 PPTX 파일을 직접 끌어다 놓아 수십 장의 핵심 GA/Preview 신규 기능 슬라이드를 실시간 요약 분석하고 비즈니스 테이블로 분류해 봅니다.
 텍스트 정보와 슬라이드 레이아웃이 복합적으로 구성된 PowerPoint 문서를 백그라운드 구조 스캐닝 엔진을 통해 정밀하게 파싱하고 요약/표 분석 결과를 도출해내는 고난도 실습입니다.
 
-- **실습 파일**: `202603-BigQuery New Feature Update.pptx` (내 구글 드라이브나 실습 폴더 GE_실습에서 선택)
+- **실습 파일**: [202603-BigQuery New Feature Update.pptx](./samples/202603-BigQuery%20New%20Feature%20Update.pptx) (링크를 클릭해 다운로드하거나 내 구글 드라이브/실습 폴더 GE_실습에서 선택)
 
 > [!TIP]
 > **💡 현업 적용 범용 매개변수형 프롬프트 템플릿**
