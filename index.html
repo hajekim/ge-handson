@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Gemini Enterprise 통합 교육 포털</title>
+  <meta name="description" content="Google Gemini Enterprise 수준별 맞춤형 실무 교육 핸즈온 포털">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <style>
+    :root {
+      --theme-color: #1a73e8;
+      --sidebar-width: 280px;
+      --sidebar-background: #f8f9fa;
+      --sidebar-border-right: 1px solid #e8eaed;
+      --base-font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --base-font-size: 16px;
+      --base-line-height: 1.9;
+      --base-background-color: #ffffff;
+      --code-font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      --code-theme-background: #f6f8fa;
+      --code-theme-text: #24292e;
+      --heading-color: #202124;
+      --blockquote-border-color: #1a73e8;
+      --link-color: #1a73e8;
+      --link-color--hover: #1558b0;
+      --content-max-width: 740px;
+      --sidebar-nav-link-color: #5f6368;
+      --sidebar-nav-link-color--active: #1a73e8;
+      --sidebar-nav-link-background-color--active: #e8f0fe;
+      --sidebar-nav-link-font-weight--active: 600;
+    }
+
+    body {
+      font-family: var(--base-font-family);
+      letter-spacing: -0.01em;
+      word-break: keep-all;
+    }
+
+    .markdown-section p {
+      margin-bottom: 1.1em;
+    }
+
+    .markdown-section li {
+      margin-bottom: 0.3em;
+    }
+
+    /* 사이드바 스타일 */
+    .sidebar {
+      background: var(--sidebar-background);
+      padding-top: 0;
+    }
+
+    .sidebar .sidebar-nav {
+      padding: 0 12px 24px;
+    }
+
+    .sidebar .sidebar-nav ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar .sidebar-nav li {
+      margin: 2px 0;
+    }
+
+    .sidebar .sidebar-nav > ul > li > a {
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+      padding: 8px 12px;
+      border-radius: 6px;
+      display: block;
+      color: #202124;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    .sidebar .sidebar-nav > ul > li > ul > li > a {
+      font-size: 13px;
+      padding: 5px 12px 5px 24px;
+      border-radius: 6px;
+      display: block;
+      color: #5f6368;
+      text-decoration: none;
+    }
+
+    .sidebar .sidebar-nav a:hover {
+      background: #e8eaed;
+      color: #202124;
+    }
+
+    .sidebar .sidebar-nav .active > a {
+      background: #e8f0fe;
+      color: #1a73e8;
+      font-weight: 600;
+    }
+
+    /* 사이드바 로고 */
+    .sidebar-logo {
+      padding: 20px 16px 12px;
+      border-bottom: 1px solid #e8eaed;
+      margin-bottom: 8px;
+    }
+
+    .sidebar-logo h2 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1a73e8;
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .sidebar-logo p {
+      font-size: 11px;
+      color: #80868b;
+      margin: 4px 0 0;
+    }
+
+    /* 알림 박스 (flexible-alerts 스타일 보강) */
+    .alert {
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 14px;
+      border-left: 4px solid;
+    }
+
+    .alert.tip {
+      background: #e6f4ea;
+      border-left-color: #34a853;
+      color: #1e7e34;
+    }
+
+    .alert.note {
+      background: #e8f0fe;
+      border-left-color: #1a73e8;
+      color: #1558b0;
+    }
+
+    .alert.warning {
+      background: #fef7e0;
+      border-left-color: #fbbc04;
+      color: #7a5a00;
+    }
+
+    .alert.danger, .alert.caution {
+      background: #fce8e6;
+      border-left-color: #ea4335;
+      color: #c5221f;
+    }
+
+    .alert .alert-title {
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ── 헤딩 ── */
+    .markdown-section h1 {
+      font-size: 1.9em;
+      font-weight: 700;
+      color: #202124;
+      border-bottom: 2px solid #e8eaed;
+      padding-bottom: 16px;
+      margin-bottom: 1.5em;
+    }
+
+    /* H2: 섹션 구분 카드 */
+    .markdown-section h2 {
+      font-size: 1.25em;
+      font-weight: 700;
+      margin-top: 3em;
+      margin-bottom: 1.2em;
+      padding: 14px 20px;
+      background: linear-gradient(to right, #e8f0fe, #f8f9ff);
+      border-left: 5px solid #1a73e8;
+      border-bottom: none;
+      border-radius: 0 10px 10px 0;
+      color: #1558b0;
+    }
+
+    /* H3: 소제목 액센트 */
+    .markdown-section h3 {
+      font-size: 1.05em;
+      font-weight: 600;
+      color: #3c4043;
+      margin-top: 1.8em;
+      padding-left: 12px;
+      border-left: 3px solid #c5d5f8;
+    }
+
+    .markdown-section h4 {
+      font-size: 1em;
+      font-weight: 600;
+      color: #5f6368;
+    }
+
+    /* ── 코드 블록 ── */
+    pre {
+      border-radius: 8px;
+      font-size: 13.5px;
+    }
+
+    pre code {
+      background: transparent !important;
+    }
+
+    /* 실습 프롬프트 블록: ```markdown 코드 펜스 전용 */
+    pre[data-lang="markdown"] {
+      background: #f0f6ff !important;
+      border: 1px solid #c5d8f8 !important;
+      border-left: 4px solid #1a73e8 !important;
+      border-radius: 0 8px 8px 0 !important;
+      padding-top: 42px !important;
+      position: relative;
+    }
+
+    pre[data-lang="markdown"]::before {
+      content: "📋  실습 프롬프트";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #1a73e8;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      font-family: var(--base-font-family);
+      letter-spacing: 0.06em;
+      padding: 7px 14px;
+      border-radius: 0 6px 0 0;
+    }
+
+    pre[data-lang="markdown"] code {
+      color: #0d47a1;
+    }
+
+    /* 인라인 코드 */
+    code:not([class]) {
+      background: #f1f3f4;
+      color: #d93025;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    /* ── 표 ── */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    table th {
+      background: #f1f3f4;
+      font-weight: 600;
+      color: #202124;
+    }
+
+    table th, table td {
+      border: 1px solid #e0e0e0;
+      padding: 10px 14px;
+    }
+
+    table tr:hover {
+      background: #f8f9fa;
+    }
+
+    /* ── 이미지: lightbox 커서 ── */
+    .markdown-section img {
+      border-radius: 6px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.14);
+      max-width: 100%;
+      cursor: zoom-in;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .markdown-section img:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+    }
+
+    /* medium-zoom 오버레이 */
+    .medium-zoom-overlay {
+      z-index: 9998;
+    }
+
+    .medium-zoom-image--opened {
+      z-index: 9999;
+      border-radius: 4px !important;
+    }
+
+    /* ── details/summary ── */
+    details {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 12px 0;
+      background: #fafafa;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #1a73e8;
+      user-select: none;
+    }
+
+    summary:hover {
+      color: #1558b0;
+    }
+
+    details[open] summary {
+      margin-bottom: 12px;
+    }
+
+    /* 상단 헤더 */
+    .app-name {
+      font-weight: 700 !important;
+      font-size: 15px !important;
+    }
+
+    /* 검색창 */
+    .search input {
+      border-radius: 20px;
+      border: 1px solid #dadce0;
+      font-family: var(--base-font-family);
+    }
+
+    /* 반응형 */
+    @media screen and (max-width: 768px) {
+      :root {
+        --sidebar-width: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">로딩 중...</div>
+  <script>
+    window.$docsify = {
+      name: '🌐 Gemini Enterprise<br><small style="font-size:11px;color:#80868b;font-weight:400;">통합 교육 포털</small>',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      homepage: 'README.md',
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '🔍 검색어를 입력하세요...',
+        noData: '검색 결과가 없습니다.',
+        depth: 4,
+        hideOtherSidebarContent: false,
+      },
+      copyCode: {
+        buttonText: '복사',
+        errorText: '오류',
+        successText: '복사됨!'
+      },
+      plugins: [
+        function(hook) {
+          var zoom = null;
+          hook.doneEach(function() {
+            if (zoom) zoom.detach();
+            zoom = mediumZoom('.markdown-section img', {
+              margin: 24,
+              background: 'rgba(0,0,0,0.82)'
+            });
+          });
+        }
+      ],
+      'flexible-alerts': {
+        style: 'flat',
+        note: {
+          label: '📝 참고',
+          icon: '',
+          className: 'note'
+        },
+        tip: {
+          label: '💡 현장 꿀팁',
+          icon: '',
+          className: 'tip'
+        },
+        warning: {
+          label: '⚠️ 주의',
+          icon: '',
+          className: 'warning'
+        },
+        danger: {
+          label: '🚫 위험',
+          icon: '',
+          className: 'danger'
+        },
+        attention: {
+          label: '❗ 중요',
+          icon: '',
+          className: 'warning'
+        },
+        caution: {
+          label: '⛔ 경고',
+          icon: '',
+          className: 'danger'
+        },
+        important: {
+          label: '❗ 중요',
+          icon: '',
+          className: 'warning'
+        }
+      }
+    };
+  </script>
+  <!-- Lightbox -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <!-- Docsify 코어 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <!-- 테마 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <!-- 플러그인: 검색 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <!-- 플러그인: 코드 복사 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <!-- 플러그인: GitHub 스타일 알림 박스 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts@1/dist/docsify-plugin-flexible-alerts.min.js"></script>
+  <!-- 코드 하이라이팅 -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+</body>
+</html>

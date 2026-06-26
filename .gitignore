@@ -3,6 +3,9 @@
 
 # Except these files
 !.gitignore
+!.nojekyll
+!index.html
+!_sidebar.md
 !README.md
 !track1_day1_value.md
 !track2_advanced.md
