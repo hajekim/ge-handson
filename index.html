@@ -367,6 +367,12 @@
         function(hook) {
           var zoom = null;
           hook.doneEach(function() {
+            var h1 = document.querySelector('.markdown-section h1');
+            var pageTitle = h1 ? h1.innerText.replace(/^[\s\S]*?([A-Za-z가-힣].*)/, '$1').trim() : '';
+            document.title = pageTitle
+              ? pageTitle + ' — Gemini Enterprise 교육 포털'
+              : 'Gemini Enterprise 교육 포털';
+
             if (zoom) zoom.detach();
             zoom = mediumZoom('.markdown-section img', {
               margin: 24,
