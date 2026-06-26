@@ -1,21 +1,3 @@
-# Ignore everything
-*
-
-# Except these files
-!.gitignore
-!.nojekyll
-!index.html
-!_sidebar.md
-!README.md
-!track1_day1_value.md
-!track2_advanced.md
-!admin_guide.md
-!img/
-!img/**
-!samples/
-!samples/**
-
-
 # Exclude heavy Veo GIFs due to GitHub 100MB limit
 img/25.gif
 img/27.gif
