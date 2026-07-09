@@ -890,42 +890,47 @@
               '3.6. ROI 시뮬레이션 및 비용 최적화': 'FinOps 과금 지표 분석 및 사내 생성형 AI 투자 대비 효과(ROI) 시뮬레이션 실습을 완료하였습니다.'
             };
 
-            var h2List = Array.from(document.querySelectorAll('.markdown-section h2'));
-            h2List.forEach(function(h2, idx) {
-              var text = h2.innerText.trim();
-              if (text && !h2.getAttribute('data-has-verify-card')) {
-                h2.setAttribute('data-has-verify-card', '1');
-                var stepId = 'sec-verify-' + encodeURIComponent(window.location.hash.split('?')[0] + '-' + text);
-                var descText = customVerifyTexts[text] || (text + ' 실습을 완료하였습니다.');
-                
-                var card = document.createElement('div');
-                card.className = 'verify-card';
-                card.setAttribute('data-verify-id', stepId);
-                card.innerHTML = `
-                  <div class="verify-checkbox"></div>
-                  <span><strong>[${text}]</strong> ${descText}</span>
-                `;
+            var currentHash = window.location.hash || '';
+            var isHomePage = currentHash === '' || currentHash === '#' || currentHash === '#/' || currentHash.indexOf('README') !== -1 || currentHash.indexOf('gemini_enterprise_hands_on') !== -1;
+            
+            if (!isHomePage) {
+              var h2List = Array.from(document.querySelectorAll('.markdown-section h2'));
+              h2List.forEach(function(h2, idx) {
+                var text = h2.innerText.trim();
+                if (text && !h2.getAttribute('data-has-verify-card')) {
+                  h2.setAttribute('data-has-verify-card', '1');
+                  var stepId = 'sec-verify-' + encodeURIComponent(window.location.hash.split('?')[0] + '-' + text);
+                  var descText = customVerifyTexts[text] || (text + ' 실습을 완료하였습니다.');
+                  
+                  var card = document.createElement('div');
+                  card.className = 'verify-card';
+                  card.setAttribute('data-verify-id', stepId);
+                  card.innerHTML = `
+                    <div class="verify-checkbox"></div>
+                    <span><strong>[${text}]</strong> ${descText}</span>
+                  `;
 
-                // 다음 h2 또는 마크다운 섹션 끝 직전에 삽입
-                var nextH2 = h2List[idx + 1];
-                if (nextH2) {
-                  var insertBeforeEl = nextH2;
-                  if (nextH2.previousElementSibling && nextH2.previousElementSibling.tagName.toLowerCase() === 'hr') {
-                    insertBeforeEl = nextH2.previousElementSibling;
+                  // 다음 h2 또는 마크다운 섹션 끝 직전에 삽입
+                  var nextH2 = h2List[idx + 1];
+                  if (nextH2) {
+                    var insertBeforeEl = nextH2;
+                    if (nextH2.previousElementSibling && nextH2.previousElementSibling.tagName.toLowerCase() === 'hr') {
+                      insertBeforeEl = nextH2.previousElementSibling;
+                    }
+                    h2.parentNode.insertBefore(card, insertBeforeEl);
+                  } else {
+                    var mdSec = document.querySelector('.markdown-section');
+                    if (mdSec) mdSec.appendChild(card);
                   }
-                  h2.parentNode.insertBefore(card, insertBeforeEl);
-                } else {
-                  var mdSec = document.querySelector('.markdown-section');
-                  if (mdSec) mdSec.appendChild(card);
-                }
 
-                if (localStorage.getItem('verify-card-' + stepId) === '1') {
-                  card.classList.add('checked');
-                  var cb = card.querySelector('.verify-checkbox');
-                  if (cb) cb.innerHTML = '✓';
+                  if (localStorage.getItem('verify-card-' + stepId) === '1') {
+                    card.classList.add('checked');
+                    var cb = card.querySelector('.verify-checkbox');
+                    if (cb) cb.innerHTML = '✓';
+                  }
                 }
-              }
-            });
+              });
+            }
             updateSidebarProgress();
           });
         }
