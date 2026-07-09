@@ -1,8 +1,4 @@
-- <a href="slide.html" target="_blank" style="font-weight: 600; color: #1a73e8;">🎯 오프닝 키노트 ↗</a>
 - [🏠 홈](/)
-- [1️⃣ Track 1. Day 1 Value](track1_day1_value.md)
-  - <a href="slide_track1.html" target="_blank" style="font-size: 13px; color: #1a73e8; margin-left: 12px;">📽️ Track 1 슬라이드 ↗</a>
-- [2️⃣ Track 2. Advanced](track2_advanced.md)
-  - <a href="slide_track2.html" target="_blank" style="font-size: 13px; color: #34a853; margin-left: 12px;">📽️ Track 2 슬라이드 ↗</a>
-- [3️⃣ Part 3. Admin Guide](admin_guide.md)
-  - <a href="slide_admin.html" target="_blank" style="font-size: 13px; color: #ea4335; margin-left: 12px;">📽️ Part 3 슬라이드 ↗</a>
+- [🟢 Track 1. Day 1 Value](track1_day1_value.md)
+- [🔵 Track 2. Advanced](track2_advanced.md)
+- [🔴 Track 3. Admin Guide](admin_guide.md)

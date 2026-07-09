@@ -1,6 +1,9 @@
 # 🔵 Track 2. Advanced
 
-<div style="text-align: center; margin: 1.2rem 0;"><a href="slide_track2.html" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #34a853, #1e7e34); color: #fff; font-weight: 700; font-size: 14px; padding: 10px 22px; border-radius: 25px; text-decoration: none; box-shadow: 0 4px 12px rgba(52, 168, 83, 0.3);">📽️ Track 2 슬라이드 모드로 강의 시작 ↗</a></div>
+<div class="track-slide-bar" style="border-color: var(--google-blue);">
+  <span class="track-slide-label">📋 실습 교육 가이드</span>
+  <a href="slide_track2.html" target="_blank" class="track-slide-btn" style="color: var(--google-blue);">📽️ 슬라이드로 강의 시작 →</a>
+</div>
 
 사내 데이터(Google Drive & Workspace)와의 RAG 연동, NotebookLM 팀 도서관 구축, Deep Research 자율 보고서, 그리고 에이전트 빌더를 활용한 맞춤형 AI 업무 파이프라인 구성 실습입니다.
 
@@ -70,7 +73,19 @@
 
 - **실습 예시 2 (GCS 사설 데이터베이스 RAG 검색)**:
   구글 클라우드 스토리지(GCS) 버킷에 사내 특수 마케팅 캠페인 및 일정 데이터를 보관해 둔 상황을 전제하여 쿼리해 봅니다.
-  *(참고: GCS 버킷 및 Vertex AI Search 연동 RAG는 고객사 클라우드 인프라 관리자의 사전 설정과 권한 매핑이 필요한 고급 기능입니다. 해당 환경이 준비되어 있지 않은 경우, 본 실습용 GCS RAG 샘플 파일([마케팅_캠페인]...)을 구글 드라이브에 업로드하여 Workspace RAG 형식으로 동일하게 질문을 테스트할 수 있습니다.)*
+
+  > [!IMPORTANT]
+  > **🛠️ 관리자 사전 설정 체크리스트 (GCS RAG 실습 전 필수)**
+  >
+  > 아래 항목은 고객사 **클라우드 인프라 관리자**가 사전에 완료해야 합니다. 미완료 시 해당 실습은 건너뛰고 대안(아래 참고)을 활용하세요.
+  >
+  > - [ ] GCP 프로젝트에 GCS 버킷 생성 및 실습용 샘플 파일 적재 완료
+  > - [ ] Vertex AI Search 데이터스토어(Data Store) 생성 및 GCS 버킷 연결 완료
+  > - [ ] Gemini Enterprise 어드민 콘솔 → 커넥터 설정에서 GCS 커넥터 활성화 완료
+  > - [ ] Service Account에 `roles/discoveryengine.viewer` 권한 부여 완료
+  > - [ ] 실습 참가자 계정에 해당 데이터스토어 접근 IAM 권한 부여 완료
+  >
+  > **⚡ GCS 환경이 준비되지 않은 경우 대안**: 본 실습용 샘플 파일을 Google Drive에 업로드한 뒤 Workspace RAG 방식으로 동일하게 질문을 테스트할 수 있습니다.
   ```markdown
   넥스트 테크놀로지스의 사내 브랜드 앰버서더 참여 요건과 전용 VIP 혜택이 무엇인지 요약해줘
   ```
@@ -134,7 +149,7 @@
   ```markdown
   현재 글로벌 스마트 오피스 IoT 및 디지털트윈 솔루션 시장의 기술 트렌드와 주요 경쟁사 동향을 종합적으로 분석해 줘. 넥스트 테크놀로지스가 속한 오피스 테크 산업의 핵심 경쟁 우위 요소를 도출하고 향후 직면할 기회와 위협 요인을 논리적으로 설명해 줘
   ```
-  에이전트가 작동하면 수집 및 심층 검색 단계가 비주얼 대시보드로 표기되며, 최종 완료 시 목차(TOC)와 풍부한 인용 링크가 매핑된 완성도 높은 마스터 보고서 및 팟캐스트 형태의 오디오 요약본이 완성됩니다.
+  에이전트가 작동하면 수집 및 심층 검색 단계가 비주얼 대시보드로 표기되며, 최종 완료 시 목차(TOC)와 풍부한 인용 링크가 매핑된 완성도 높은 마스터 보고서 및 팟캐스트 형태의 오디오 요약본이 완성됩니다. 완성까지 일반적으로 **3~5분**이 소요됩니다.
 
   <img src="./img/32.png" width="600" alt="Deep Research 분석 보고서 생성 결과 1">
   <img src="./img/33.png" width="600" alt="Deep Research 분석 보고서 생성 결과 2">
@@ -159,14 +174,14 @@
 - **두 번째 아이디어 세션 생성 (업무 자동화 아이디어)**:
   다른 실무 주제로도 창의적인 아이디어를 유도해 봅니다.
   ```markdown
-  내가 매일 수행하는 [매출 데이터 정리, 사내 게시판 모니터링, 메일 회신] 업무를 Gemini Enterprise를 활용해 자동화하거나 효율화할 수 있는 아이디어를 제시해줘. 특히 Gemini Enterprise의 <b>데이터 연결 기능</b>을 어떻게 활용하면 정보 검색 시간을 절반으로 줄일 수 있을지, 구체적인 프롬프트 체인(연속 질문) 구조를 설계해줘.
+  내가 매일 수행하는 [매출 데이터 정리, 사내 게시판 모니터링, 메일 회신] 업무를 Gemini Enterprise를 활용해 자동화하거나 효율화할 수 있는 아이디어를 제시해줘. 특히 Gemini Enterprise의 **데이터 연결 기능**을 어떻게 활용하면 정보 검색 시간을 절반으로 줄일 수 있을지, 구체적인 프롬프트 체인(연속 질문) 구조를 설계해줘.
   ```
 
   <img src="./img/38.png" width="600" alt="업무 자동화 프롬프트 체인 설계 결과">
 
   > [!NOTE]
   > **실습 안내 및 팁**
-  > Idea Generation 에이전트는 깊이 있는 다중 단계 분석과 사내외 소스 검색을 자율적으로 수행하므로 완료되는 데 수 분의 시간이 소요될 수 있습니다. 세션 창을 그대로 유지하고 다음 실습 단계를 먼저 수행하고 돌아와 결과를 확인하셔도 좋습니다.
+  > Idea Generation 에이전트는 깊이 있는 다중 단계 분석과 사내외 소스 검색을 자율적으로 수행하므로 완료까지 일반적으로 **5~10분**이 소요됩니다. 세션 창을 그대로 유지하고 다음 실습 단계를 먼저 수행하고 돌아와 결과를 확인하셔도 좋습니다.
 
 ## 2.5. 노코드/로우코드 커스텀 에이전트 빌더 실습
 
@@ -259,6 +274,30 @@ graph TD
     
     style E fill:#e8f0fe,stroke:#1a73e8,stroke-width:2px
 ```
+
+#### 🛠️ 워크플로우 에이전트 빌더 실습 체크리스트
+
+다이어그램을 보며 아래 순서대로 Gemini Enterprise **Agent Designer**에서 워크플로우를 직접 조립해봅니다.
+
+- [ ] **① 워크플로우 에이전트 생성**: Agent Designer 진입 → **New Agent** → 유형을 **Workflow** 로 선택 → 이름: `Price & Margin Optimizer`
+- [ ] **② 트리거 설정**: 좌측 노드 패널에서 **Schedule Trigger** 드래그 → 실행 주기 `Every 1 hour` 설정
+- [ ] **③ Gmail 검색 노드 추가**: Connector 패널 → **Gmail** 검색 노드 추가 → 검색 조건: `subject:"Competitor Price Alert"` 입력
+- [ ] **④ 조건 분기 추가**: Flow Control → **Rules-based Branch** 노드 추가
+  - `이메일 없음` 경로 → **Stop Workflow** 연결
+  - `이메일 발견` 경로 → 다음 단계 연결
+- [ ] **⑤ Drive 커넥터 추가**: Connector → **Google Drive** 노드 추가 → 파일 ID 또는 공유 폴더 경로 지정 (재고·원가 마진 스프레드시트)
+- [ ] **⑥ 마진 판단 에이전트 노드 추가**: Gemini Agent 노드 추가 → 프롬프트 입력:
+  ```
+  제공된 재고 및 원가 마진 데이터를 분석하여, 마진이 10% 이상이고 재고가 충분한지 판단하라. JSON으로 {"approve": true/false, "margin_pct": 숫자, "stock_ok": true/false} 형태로만 응답하라.
+  ```
+  → **Structured Output** 활성화
+- [ ] **⑦ 두 번째 조건 분기**: `approve: false` → PDF 보고서 생성 → Gmail 발송 노드 연결 (`store-managers@`)
+- [ ] **⑧ 승인 경로 노드 추가**: `approve: true` 경로에 Gemini Agent 노드 → 재고 보충 계획 및 마케팅 이메일 초안 생성
+- [ ] **⑨ 최종 PDF 보고서 생성 및 발송**: 보고서 생성 노드 → Gmail 발송 노드 (`store-managers@`) 연결
+- [ ] **⑩ 테스트 실행**: 상단 **Test Run** 클릭 → 각 노드 실행 결과 로그 확인 → 정상 동작 여부 검토
+
+> [!TIP]
+> **HITL(Human-in-the-Loop) 적용 팁**: ⑧ 단계의 마케팅 초안 발송 전에 **Approval** 노드를 삽입하면, 담당자가 내용을 검토·수정한 뒤 최종 발송하는 안전한 워크플로우를 구성할 수 있습니다.
 
 ### 3) 🌐 글로벌 비즈니스 확장 시나리오
 1. **공급망 리스크 선제 대응**:
