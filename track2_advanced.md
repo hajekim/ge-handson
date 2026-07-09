@@ -1,6 +1,28 @@
 # 🔵 Track 2. Advanced
 
-Google Drive, 사내 데이터와 Gemini를 연결하고, 나만의 AI 에이전트를 직접 만들어보는 심화 실습입니다.
+<div style="text-align: center; margin: 1.2rem 0;"><a href="slide_track2.html" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #34a853, #1e7e34); color: #fff; font-weight: 700; font-size: 14px; padding: 10px 22px; border-radius: 25px; text-decoration: none; box-shadow: 0 4px 12px rgba(52, 168, 83, 0.3);">📽️ Track 2 슬라이드 모드로 강의 시작 ↗</a></div>
+
+사내 데이터(Google Drive & Workspace)와의 RAG 연동, NotebookLM 팀 도서관 구축, Deep Research 자율 보고서, 그리고 에이전트 빌더를 활용한 맞춤형 AI 업무 파이프라인 구성 실습입니다.
+
+<div class="download-card">
+  <div class="download-card-left">
+    <div class="download-icon-box" style="background: #e8f0fe; color: #1a73e8;">📦</div>
+    <div class="download-text">
+      <h4>Track 2 심화 RAG & NotebookLM 실습 파일 다운로드</h4>
+      <p>사내 드라이브 RAG 검색 및 NotebookLM 도서관 구축 실습에 활용할 내규·마케팅 가이드라인 PDF 2종 및 RFP·제안서 초안 PDF 2종(총 4종)을 다운로드합니다.</p>
+    </div>
+  </div>
+  <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <a href="samples/[공통_내규]_넥스트_테크놀로지스_임직원_복리후생_가이드라인.pdf" download class="download-btn" style="background: #1a73e8; padding: 10px 16px; font-size: 0.9rem;">📕 공통 내규 PDF</a>
+    <a href="samples/[마케팅_캠페인]_넥스트_테크놀로지스_사내_브랜드_앰버서더_프로그램_가이드라인.pdf" download class="download-btn" style="background: #1a73e8; padding: 10px 16px; font-size: 0.9rem;">📕 마케팅 내규 PDF</a>
+    <a href="samples/[고객사_RFP]_넥스트_테크놀로지스_차세대_스마트_오피스_IoT_통합_관제_시스템_도입_RFP.pdf" download class="download-btn" style="background: #34a853; padding: 10px 16px; font-size: 0.9rem;">📕 고객사 RFP PDF</a>
+    <a href="samples/[제안서_초안]_에이아이_솔루션즈_차세대_스마트_오피스_IoT_통합_관제_시스템_제안서_초안.pdf" download class="download-btn" style="background: #34a853; padding: 10px 16px; font-size: 0.9rem;">📕 제안서 초안 PDF</a>
+  </div>
+</div>
+<div class="verify-card" data-verify-id="track2-data">
+  <div class="verify-checkbox"></div>
+  <span>RAG 및 NotebookLM 실습에 활용할 사내 가이드라인 및 RFP·제안서 PDF 파일(총 4종)을 내 컴퓨터에 다운로드하였습니다.</span>
+</div>
 
 ---
 
@@ -150,10 +172,17 @@ Google Drive, 사내 데이터와 Gemini를 연결하고, 나만의 AI 에이전
 
 코드 없이 클릭 몇 번으로, 내 업무에 특화된 AI 에이전트를 직접 만들고 팀원들과 공유해봅니다.
 
-### 1) 에이전트 분류
+### 1) 에이전트 분류 및 5대 활용 아키타입 (Archetypes)
 - **No-Code 에이전트**: Agent Designer에서 말하듯 대화하며 자연어로 규칙과 대상을 설계하는 임직원용 간편 에이전트.
 - **Low-Code 에이전트**: 시각적인 노드 기반 흐름 빌더(Flow Builder)와 트리거, 승인 단계 레이아웃을 통해 제작하는 업무 에이전트.
 - **High-Code 에이전트**: 개발자 전용 프레임워크인 ADK(Agent Development Kit)를 사용해 파이썬이나 고(Go) 언어 소스로 복잡한 백엔드 API와 레거시 시스템 트랜잭션을 연동해 구축하는 최고 수준의 지능형 에이전트.
+
+#### 💡 에이전트 실무 활용 5대 아키타입 (Archetypes)
+1. **비즈니스 프로세스/SOP 자동화**: AI의 판단력과 사내 업무 규칙을 결합하여 송장 처리 및 비용 정산 등 반복적인 기업의 업무 과정을 자동화.
+2. **복잡한 작업 산출물 생성**: 사용자와 연속적으로 대화하며 PRD(제품 요구사항 정의서), RFP(제안요청서) 등 특정 지식 작업 인도물을 반복적으로 초안 작성 및 수정.
+3. **기존 프로세스용 채팅 인터페이스**: IT 헬프데스크 에이전트처럼 사용자의 IT 문제를 해결하거나 시스템에 SOP 요청을 직접 등록.
+4. **데이터 및 문서 기반 질의**: 기업 전략 문서, 복리후생 내규, 재무 데이터 등 특정 구조화/비구조화 사내 자산에 대한 RAG 질의응답.
+5. **개인 생산성 ("비서실장" 역할)**: 수신함, 캘린더를 모니터링하여 회의 시작 전 참가자와의 지난 대화 및 안건 요약 등 선제적으로 업무를 지원.
 
 ### 2) Agent Designer 구성
 
@@ -164,6 +193,14 @@ Google Drive, 사내 데이터와 Gemini를 연결하고, 나만의 AI 에이전
   - `Flow`: 시각화된 대화 노드와 실행 경로 파악.
   - `Schedule`: 특정 요일이나 주기적 트리거 감지 구성.
   - `Preview`: 오른쪽 간이 챗봇 창을 통해 실시간 프롬프트 응답 디버깅.
+
+> [!TIP]
+> **💡 에이전트 디자이너 지시문(Instructions) 작성 베스트 프랙티스**
+> * **명확한 목표 정의**: 모호한 요청 대신 충분한 배경 컨텍스트와 기대 동작을 명확히 제시하세요.
+>   - ❌ *Not Recommended*: "영업 이메일용 에이전트를 만들어줘."
+>   - ⭕ *Recommended*: "내 CRM의 새로운 영업 리드에게 보낼 후속 이메일 초안을 작성하는 에이전트를 만들어줘. 연락처의 회사를 검색하고, 비즈니스를 요약하며, 우리 제품이 그들에게 어떻게 도움이 될 수 있는지 제안해야 해."
+> * **출력 경계 및 제한 설정**: 에이전트가 해야 할 일과 절대 하지 말아야 할 일(분량, 어조, 포함/배제 요소 등 경계)을 명확히 정의하세요.
+> * **Gemini가 역질문하도록 유도**: 누락된 세부 정보를 수집할 수 있도록, 작업 실행 전 사용자에게 확인 질문을 던지도록 규칙에 포함하세요.
 
 ### 3) 💻 실전 실습: 뉴스 링크 기반 SNS 마케팅 포스팅 자동 빌더 에이전트 구축
 1. **에이전트 목록** 메뉴에서 <b>새 에이전트 생성(New Agent)</b>을 클릭합니다.
@@ -194,13 +231,36 @@ Google Drive, 사내 데이터와 Gemini를 연결하고, 나만의 AI 에이전
 
 ## 2.6. 하이코드 워크플로우 및 ADK/CAA 통합 에이전트 개발
 
-ADK로 사내 레거시 시스템에 에이전트를 연결하고, BigQuery 연동 CAA 아키텍처를 설계해보는 하이코드 심화 실습입니다.
+정밀한 비즈니스 로직과 단계별 순차 작동 방식을 구현하여 엄격한 업무 규칙을 자동화하는 **워크플로우 에이전트(Workflow Agent)** 및 ADK/CAA 심화 아키텍처 실습입니다.
 
-- **이벤트/일정 트리거**: 시스템에서 대기하고 있다가 매주 특정 요일, 혹은 외부 이슈 메일 감지 시 자동 기동됩니다.
-- **하이브리드 디시전 트리**: 정적 규칙(Rule-based)과 AI 판단(Non-deterministic)을 조합하여 분기를 결정합니다.
-- **Human-in-the-loop**: 자산 손실이나 대형 실수 위험을 원천 방어하기 위해, 중요 메일 발송 전이나 시스템 결제 실행 직전 반드시 지정된 휴먼(Human) 관리자의 결재와 메일 승인 액션을 기다리도록 지능적인 승인 블록을 장착할 수 있습니다.
+### 1) 워크플로우 에이전트 핵심 구성 요소
+- **트리거 (Trigger)**: 지정된 일정(Schedule Event)이나 이메일 수신 등 특정 이벤트 발생 시 기동되는 시작 조건.
+- **Gemini 에이전트 노드**: 유연한 판단 및 대화 수행. Structured Outputs, 프롬프트 내 변수 참조, 도구/지식 소스 연동 지원.
+- **커넥터 (Connector)**: Google Workspace(Gmail, Calendar, Drive), Office 365, ServiceNow, Confluence, Jira 등 실시간 연동.
+- **플로우 컨트롤 (Flow Control)**: 조건 분기(Rules-based), 목록 내 항목 일괄 반복 처리(For 루프), 데이터 필터 등 규칙 기반 제어 노드.
+- **Human-in-the-Loop (HITL)**: 자산 손실이나 오작동 위험을 통제하기 위해, 사람의 추가 정보 입력, 최종 승인, 답변 초안 검토/수정 단계를 중간 블록에 장착.
+- **통합 및 연동**: 기존 사내 IT 시스템 및 BYO-MCP(Model Context Protocol) 노드 연동.
 
-### 🏭 글로벌 비즈니스 시나리오 예시
+### 2) 🏭 실무 활용 대표 예시: Price & Margin Optimization Agent
+경쟁사 가격 변동에 대응하여 자동으로 마진을 분석하고 가격 정책 및 후속 마케팅 작업을 수행하는 워크플로우 아키텍처입니다.
+
+```mermaid
+graph TD
+    A["매시간 실행 트리거"] --> B{"Gmail 검색: Competitor Price Alert"}
+    B -- "이메일 없음" --> C["워크플로우 즉시 중지"]
+    B -- "이메일 발견" --> D["Drive 커넥터: 재고 및 원가 마진 조회"]
+    D --> E{"마진 >= 10% & 재고 충분?"}
+    E -- "No 거절" --> F["매칭 불가 PDF 보고서 생성"]
+    F --> G["store-managers@ 이메일 발송"]
+    E -- "Yes 승인" --> H["판매 20% 증가 가정 재고 보충 계획 수립"]
+    H --> I["소셜 미디어 & 마케팅 이메일 초안 작성"]
+    I --> J["가격 분석/재고/마케팅 요약 PDF 보고서 생성"]
+    J --> K["store-managers@ 최종 결정 및 PDF 이메일 발송"]
+    
+    style E fill:#e8f0fe,stroke:#1a73e8,stroke-width:2px
+```
+
+### 3) 🌐 글로벌 비즈니스 확장 시나리오
 1. **공급망 리스크 선제 대응**:
    글로벌 공급망(SCM) 뉴스 및 컨테이너 선적 상태 실시간 웹 검색 ➡️ 항만 파업 감지 시 리스크 수준(High/Medium) AI 판단 ➡️ 대체 운송 루트 제안서 자동 생성 ➡️ SCM 파트장 결재 및 메일 발송 승인 대기 (**Human-in-the-loop**) ➡️ 긴급 대체 노선 예약 메일 발송.
 2. **글로벌 고객 VoC 피드백 개선 루프**:
