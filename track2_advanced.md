@@ -343,8 +343,9 @@ pptx 파일로 다운로드하였습니다.
 <img src="./img/notebooklm_019.png" width="600" alt="슬라이드 받을까 말까">
 
 결과물은 직접 보실 수 있습니다.
-samples/Cinematic Sanctuary.pptx
-samples/Cinematic Sanctuary.pdf
+
+- [📊 Cinematic Sanctuary.pptx](./samples/Cinematic%20Sanctuary.pptx)
+- [📄 Cinematic Sanctuary.pdf](./samples/Cinematic%20Sanctuary.pdf)
 
 
 > [!TIP]
