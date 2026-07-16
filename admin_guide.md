@@ -15,7 +15,7 @@ IT 관리자와 CISO를 위한 기술 실습 가이드입니다. GCP 설정, 권
       <p>Cloud IAM 권한 매트릭스, Model Armor 보안 체크리스트 및 SIEM 관제 로그 분석 실습에 활용할 감사 체크리스트 시트(CSV)를 다운로드합니다.</p>
     </div>
   </div>
-  <a href="sample_data/admin_iam_checklist.csv" download="admin_iam_checklist.csv" class="download-btn" style="background: #ea4335; box-shadow: 0 2px 8px rgba(234,67,53,0.25);">📥 감사 체크리스트 받기 (CSV)</a>
+  <a href="samples/admin_iam_checklist.csv" download="admin_iam_checklist.csv" class="download-btn" style="background: #ea4335; box-shadow: 0 2px 8px rgba(234,67,53,0.25);">📥 감사 체크리스트 받기 (CSV)</a>
 </div>
 <div class="verify-card" data-verify-id="admin-data">
   <div class="verify-checkbox"></div>
