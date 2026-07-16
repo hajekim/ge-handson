@@ -143,7 +143,7 @@
     <!-- 5 -->
     <section class="slide">
       <h2>엔터프라이즈 NotebookLM 도서관 구성</h2>
-      <p class="subtitle">프로젝트 및 부서 단위로 참고 문서를 모아 <b>팀 도서관(Team Library)</b>을 구성하는 실습입니다.<br>`차세대 스마트 오피스 IoT 통합 관제 시스템` RFP 및 제안서 초안 문서를 소스로 로드합니다.</p>
+      <p class="subtitle">프로젝트 및 부서 단위로 참고 문서를 모아 <b>팀 도서관(Team Library)</b>을 구성하는 실습입니다.<br>LG AI 서비스 기획 초안 3종(안심 · 루미케어 · 센티넬 컴패니언)을 소스로 로드합니다.</p>
       <div class="grid" style="grid-template-columns: 1fr 1fr;">
         <div class="card">
           <h3>📚 NotebookLM 문서 그라운딩</h3>
@@ -161,13 +161,15 @@
 
     <!-- 6 -->
     <section class="slide">
-      <h2>실습: 문서 인용 대조 & 오디오 요약</h2>
-      <p class="subtitle">업로드된 소스 문서(RFP 및 제안서 초안) 간의 <b>차이점을 분석하고 음성 개요(Audio Overview)를 생성</b>합니다.</p>
+      <h2>🎨 실습: AI 인포그래픽 3종 스타일 변환</h2>
+      <p class="subtitle">LG AI 서비스 기획 초안 3종을 소스로 등록하고, <b>동일 소스에서 3가지 스타일의 인포그래픽</b>을 생성합니다.</p>
       <div class="card" style="max-width: 1100px; width: 100%;">
-        <h3>📋 대조 분석 질의 및 오디오 도출</h3>
-        <div class="code-box">고객사의 RFP 요구사항과 당사의 제안서 초안을 비교 분석하여, 현재 제안서 초안에서 누락되었거나 추가 보완이 필요한 핵심 기술 요건(예: 보안 인증, 장애 복구 시간 등)을 3줄로 지적해 줘.</div>
+        <h3>📋 인포그래픽 생성 프롬프트 3종</h3>
+        <div class="code-box">LG '루미케어' 공감하는 세탁 도우미 서비스의 핵심 가치와 노인 사용자 기대 효과를 한눈에 보여주는 인포그래픽을 생성해줘</div>
+        <div class="code-box" style="margin-top: 0.8rem;">LG '안심' 홈 가디언 에코시스템의 주요 구성 요소와 시니어 케어 작동 시나리오를 스케치노트(sketch-note) 스타일로 시각화해줘</div>
+        <div class="code-box" style="margin-top: 0.8rem;">LG '센티넬 컴패니언' AI 기반 노인 비상 지원 서비스 출시 소식을 신문 1면 기사 인포그래픽 스타일로 만들어줘</div>
         <ul style="margin-top: 1rem;">
-          <li><b>Audio Overview 생성</b>: 우측 상단의 'Audio Overview (오디오 요약)' 기능을 호출하면, 두 문서의 핵심 쟁점을 영어 오디오 대담 형식으로 합성하여 제공합니다.</li>
+          <li><b>Audio Overview 생성</b>: 인포그래픽 완성 후 우측 Studio 패널에서 'Audio Overview (오디오 요약)' 기능을 호출하면, 소스 내용을 영어 팟캐스트 대담 형식으로 합성하여 제공합니다.</li>
         </ul>
       </div>
     </section>
@@ -230,6 +232,7 @@
         <div class="card green">
           <h3>📖 설명서 만들기</h3>
           <ul>
+            <li><b>소스 구성</b>: data_agent.zip 압축 해제 후 이미지 10개를 새 노트북에 업로드</li>
             <li><b>스터디 가이드</b>: 소스 핵심 개념을 학습 순서대로 자동 정리</li>
             <li><b>FAQ 생성</b>: 문서에서 주요 질문·답변 목록 자동 추출</li>
             <li><b>브리핑 문서</b>: 경영진 보고용 1페이지 요약본 즉시 도출</li>
