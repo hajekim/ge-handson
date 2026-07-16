@@ -56,7 +56,7 @@
    - **PDF 버전 (추천)**: <a href="./samples/%5B마케팅_캠페인%5D_넥스트_테크놀로지스_사내_브랜드_앰버서더_프로그램_가이드라인.pdf" target="_blank">📕 [마케팅_캠페인] 넥스트 테크놀로지스 사내 브랜드 앰버서더 프로그램 가이드라인.pdf</a>
    - **Markdown 버전**: <a href="./samples/%5B마케팅_캠페인%5D_넥스트_테크놀로지스_사내_브랜드_앰버서더_프로그램_가이드라인.md" target="_blank">📄 [마케팅_캠페인] 넥스트 테크놀로지스 사내 브랜드 앰버서더 프로그램 가이드라인.md</a>
 3. **추가 Drive RAG 실습용 샘플** — AI 윤리 및 보안 규정 문서:
-   - <a href="./sample_data/track2_rag_policy.md" target="_blank">📄 사내 AI 윤리 및 클라우드 데이터 보안 규정.md</a> — 다운로드 후 Google Drive에 업로드하여 RAG 질의에 활용합니다.
+   - <a href="./samples/track2_rag_policy.md" target="_blank">📄 사내 AI 윤리 및 클라우드 데이터 보안 규정.md</a> — 다운로드 후 Google Drive에 업로드하여 RAG 질의에 활용합니다.
 
 ---
 
