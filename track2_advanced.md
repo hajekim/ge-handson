@@ -12,7 +12,7 @@
     <div class="download-icon-box" style="background: #e8f0fe; color: #1a73e8;">📦</div>
     <div class="download-text">
       <h4>Track 2 심화 RAG & NotebookLM 실습 파일 다운로드</h4>
-      <p>사내 드라이브 RAG 검색 및 NotebookLM 도서관 구축 실습에 활용할 내규·마케팅 가이드라인 PDF 2종 및 RFP·제안서 초안 PDF 2종(총 4종)을 다운로드합니다.</p>
+      <p>RAG 실습용 내규·가이드라인 PDF 2종, NotebookLM 설명서 실습용 RFP·제안서 초안 PDF 2종, 시네마틱 슬라이드 실습용 이미지 패키지 1종, Canvas 동영상 실습용 파일 2종 — 총 7종을 미리 다운로드합니다.</p>
     </div>
   </div>
   <div style="display: flex; gap: 8px; flex-wrap: wrap;">
@@ -20,11 +20,14 @@
     <a href="samples/[마케팅_캠페인]_넥스트_테크놀로지스_사내_브랜드_앰버서더_프로그램_가이드라인.pdf" download class="download-btn" style="background: #1a73e8; padding: 10px 16px; font-size: 0.9rem;">📕 마케팅 내규 PDF</a>
     <a href="samples/[고객사_RFP]_넥스트_테크놀로지스_차세대_스마트_오피스_IoT_통합_관제_시스템_도입_RFP.pdf" download class="download-btn" style="background: #34a853; padding: 10px 16px; font-size: 0.9rem;">📕 고객사 RFP PDF</a>
     <a href="samples/[제안서_초안]_에이아이_솔루션즈_차세대_스마트_오피스_IoT_통합_관제_시스템_제안서_초안.pdf" download class="download-btn" style="background: #34a853; padding: 10px 16px; font-size: 0.9rem;">📕 제안서 초안 PDF</a>
+    <a href="samples/homestyle.zip" download class="download-btn" style="background: #e8710a; padding: 10px 16px; font-size: 0.9rem;">📦 homestyle.zip</a>
+    <a href="samples/canvas.pdf" download class="download-btn" style="background: #9334e6; padding: 10px 16px; font-size: 0.9rem;">📄 canvas.pdf</a>
+    <a href="samples/canvas.zip" download class="download-btn" style="background: #9334e6; padding: 10px 16px; font-size: 0.9rem;">📦 canvas.zip</a>
   </div>
 </div>
 <div class="verify-card" data-verify-id="track2-data">
   <div class="verify-checkbox"></div>
-  <span>RAG 및 NotebookLM 실습에 활용할 사내 가이드라인 및 RFP·제안서 PDF 파일(총 4종)을 내 컴퓨터에 다운로드하였습니다.</span>
+  <span>Track 2 전체 실습에 활용할 샘플 파일 7종(내규·가이드라인 PDF 2종, RFP·제안서 초안 PDF 2종, homestyle.zip, canvas.pdf, canvas.zip)을 내 컴퓨터에 다운로드하였습니다.</span>
 </div>
 
 ---
