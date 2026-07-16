@@ -94,11 +94,12 @@
     <button class="nav-dot" onclick="scrollToSlide(15)" title="16. Deep Research 원리"></button>
     <button class="nav-dot" onclick="scrollToSlide(16)" title="17. 아이디어 연쇄 확장"></button>
     <button class="nav-dot" onclick="scrollToSlide(17)" title="18. 5대 아키타입 1-3"></button>
-    <button class="nav-dot" onclick="scrollToSlide(18)" title="19. 5대 아키타입 4-5"></button>
-    <button class="nav-dot" onclick="scrollToSlide(19)" title="20. 워크플로우 에이전트"></button>
-    <button class="nav-dot" onclick="scrollToSlide(20)" title="21. Price & Margin 시나리오"></button>
-    <button class="nav-dot" onclick="scrollToSlide(21)" title="22. 하이코드 ADK / CAA"></button>
-    <button class="nav-dot" onclick="scrollToSlide(22)" title="23. 실습 시작 CTA"></button>
+    <button class="nav-dot" onclick="scrollToSlide(18)" title="19. Agent Designer"></button>
+    <button class="nav-dot" onclick="scrollToSlide(19)" title="20. CRAFT 에이전트 실습"></button>
+    <button class="nav-dot" onclick="scrollToSlide(20)" title="21. Workflow Agent"></button>
+    <button class="nav-dot" onclick="scrollToSlide(21)" title="22. 시장 분석 에이전트 실습"></button>
+    <button class="nav-dot" onclick="scrollToSlide(22)" title="23. 하이코드 ADK / CAA"></button>
+    <button class="nav-dot" onclick="scrollToSlide(23)" title="24. 실습 시작 CTA"></button>
   </div>
 
   <div class="slide-container" id="container">
@@ -470,45 +471,105 @@
 
     <!-- 19 -->
     <section class="slide">
-      <h2>에이전트 실무 5대 아키타입 (4-5) & 빌더</h2>
-      <p class="subtitle"><b>Agent Designer</b>를 활용하여 프롬프트 명령어와 소스 데이터 연동만으로 업무용 커스텀 에이전트를 조립합니다.</p>
+      <h2>🤖 Agent Designer</h2>
+      <p class="subtitle">코드 없이 자연어로 에이전트를 만들고 조직에 배포하는 <b>노코드/로우코드 에이전트 빌더</b>입니다.</p>
       <div class="grid" style="grid-template-columns: 1fr 1fr; max-width: 1200px;">
-        <div class="card yellow">
-          <h3>4️⃣ 업무 자동화 (Workflow)</h3>
-          <p><b>주요 기능</b>: 조건부 분기 판단, API Action 쓰기 호출<br><b>적용 예시</b>: 영업 마진 조건 심사, 티켓 발행 봇</p>
+        <div class="card">
+          <h3>📋 에이전트 유형</h3>
+          <ul>
+            <li><b>Custom agent</b>: 자연어 프롬프트 하나로 즉시 생성하는 단일 목적 에이전트</li>
+            <li><b>Workflow agent</b>: Flow Builder로 서브에이전트를 단계별 조율하는 멀티 에이전트</li>
+          </ul>
         </div>
-        <div class="card red">
-          <h3>5️⃣ 복합 조율 (Orchestrator)</h3>
-          <p><b>주요 기능</b>: 하위 특화 에이전트들을 통합 지휘하여 파이프라인 처리<br><b>적용 예시</b>: 프로젝트 타당성 종합 검토 마스터</p>
+        <div class="card blue">
+          <h3>⚙️ 편집 도구</h3>
+          <ul>
+            <li><b>Chat Pane</b>: 자연어로 에이전트를 생성·수정하는 노코드 대화창</li>
+            <li><b>Flow Builder</b>: 노드와 서브에이전트를 시각적으로 구성하는 로우코드 캔버스</li>
+            <li><b>Preview</b>: 배포 전 실시간 동작 테스트</li>
+            <li><b>Create</b>: 조직 전체 또는 특정 사용자에게 배포</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- 20 -->
     <section class="slide">
-      <h2>워크플로우 에이전트: 견적 승인 프로세스</h2>
-      <p class="subtitle">B2B 영업 견적의 할인율 심사 및 결재 승인 단계를 자동화하는 워크플로우 파이프라인 실습입니다.</p>
-      <div class="card" style="max-width: 1100px; width: 100%;">
-        <h3>⚡ 단계별 분기 처리 구조</h3>
-        <ul>
-          <li><b>Step 1 (조건 대조)</b>: 영업 견적서의 할인율(예: 25%)이 회사 마진율 허용 범위 내에 있는지 1차 대조</li>
-          <li><b>Step 2 (내규 참조)</b>: 기준 초과 시, 사내 단가 매뉴얼(RAG)을 조회하여 계약 기간별 예외 허용 조건 검토</li>
-          <li><b>Step 3 (결재 분기)</b>: 조건 충족 시 승인 메일 도출, 기준 초과 시 재무 관리자에게 승인 사유서와 함께 결재 이관</li>
-        </ul>
+      <h2>🤖 실습: CRAFT 프롬프트 에이전트</h2>
+      <p class="subtitle">CRAFT 프레임워크를 내장한 <b>프롬프트 최적화 에이전트</b>를 Agent Designer로 직접 만들어봅니다.</p>
+      <div class="grid" style="grid-template-columns: 1fr 1fr; max-width: 1200px;">
+        <div class="card yellow">
+          <h3>📥 실습 절차</h3>
+          <ul>
+            <li>Agents 메뉴 → <b>New Agent</b> 클릭</li>
+            <li>Chat Pane에 CRAFT 설계 요구 명세 입력</li>
+            <li><b>Flow Builder</b>에서 세부 설정 검토</li>
+            <li><b>Preview</b>로 에이전트 동작 테스트</li>
+            <li><b>Create</b>로 배포 → Your Agents 확인</li>
+          </ul>
+        </div>
+        <div class="card blue">
+          <h3>📋 CRAFT 프레임워크</h3>
+          <ul>
+            <li><b>C</b>ontext: 배경지식·목적·환경 제공</li>
+            <li><b>R</b>ole: 직업·연차·페르소나 부여</li>
+            <li><b>A</b>ction: 핵심 작업을 명확한 동사로 지시</li>
+            <li><b>F</b>ormat: 보고서·표·불릿포인트 등 출력 형식 지정</li>
+            <li><b>T</b>one/Target: 어조와 최종 독자 정의</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- 21 -->
     <section class="slide">
-      <h2>견적 마진 최적화 실습 시나리오</h2>
-      <p class="subtitle">조건부 할인 요청 건에 대해 내규 문서를 대조하고 분기 결과를 출력하는 워크플로우 테스트 프롬프트입니다.</p>
-      <div class="card" style="max-width: 1100px; width: 100%;">
-        <h3>📋 실습 지시 프롬프트</h3>
-        <div class="code-box">너는 B2B 영업 마진 심사 워크플로우 에이전트야. 이번 거래는 '대기업 A사 3년 계약' 건으로 영업사원이 28%의 특별 할인을 요청했어. 사내 판가 내규 문서(RAG)를 조회하여 3년 장기 계약 시 허용되는 최대 할인율(25%)과 비교하고, 초과분(3%)에 대한 예외 승인 사유서 초안과 함께 재무팀 결재 요청 파이프라인을 시뮬레이션해 줘.</div>
+      <h2>⚙️ Workflow Agent</h2>
+      <p class="subtitle">복잡한 업무를 <b>순차적 단계(Step)</b>로 분해하고, 각 단계를 전담 서브에이전트가 실행하는 <b>멀티 에이전트 오케스트레이션</b> 방식입니다.</p>
+      <div class="grid" style="grid-template-columns: 1fr 1fr 1fr; max-width: 1200px;">
+        <div class="card green">
+          <h3>🔄 순차 실행 구조</h3>
+          <p>각 노드가 독립적인 Instruction·Knowledge·Tools·Model 설정을 가지며 정해진 순서대로 실행됩니다.</p>
+        </div>
+        <div class="card blue">
+          <h3>⏰ 스케줄러 트리거</h3>
+          <p>정해진 시간이나 이벤트에 Workflow Agent를 자동 실행합니다. 사람 개입 없이 주기적 업무를 자동화합니다.</p>
+        </div>
+        <div class="card yellow">
+          <h3>👤 Human-in-the-loop</h3>
+          <p>중간 단계에 사람의 검토·승인·입력을 삽입하여 중요한 의사결정을 사람이 제어합니다.</p>
+        </div>
       </div>
     </section>
 
     <!-- 22 -->
+    <section class="slide">
+      <h2>⚙️ 실습: 시장 조사·경쟁 분석 Workflow Agent</h2>
+      <p class="subtitle">Web Grounding으로 최신 동향을 수집하고, 단계별 분석을 거쳐 <b>경영진 보고서를 자동 작성</b>하는 Workflow Agent를 구축합니다.</p>
+      <div class="grid" style="grid-template-columns: 1fr 1fr; max-width: 1200px;">
+        <div class="card">
+          <h3>📥 실습 절차</h3>
+          <ul>
+            <li>Agents → <b>New Agent &gt; Workflow Agent</b> 클릭</li>
+            <li>Chat Pane에 시장 분석 에이전트 프롬프트 입력</li>
+            <li>생성된 노드 구조·세부 설정 확인</li>
+            <li><b>Preview → Start manually</b>로 실행</li>
+            <li>Human-in-the-loop 단계에서 분석 대상 입력</li>
+            <li>단계별 실행 흐름 확인 후 결과 검토</li>
+          </ul>
+        </div>
+        <div class="card green">
+          <h3>🔄 4단계 분석 파이프라인</h3>
+          <ul>
+            <li><b>Step 1</b> 정보 수집: Web Grounding으로 최신 동향 검색</li>
+            <li><b>Step 2</b> 전략 분석: 시장 동인·경쟁사·SWOT·전망</li>
+            <li><b>Step 3</b> 보고서 작성: Executive Summary·비교표·액션 플랜</li>
+            <li><b>Step 4</b> 후속 제안: 심층 후속 질문 3개 추천</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 23 -->
     <section class="slide">
       <h2>하이코드 개발: ADK & CAA 아키텍처</h2>
       <p class="subtitle">노코드 환경을 넘어, 프로그래밍 방식으로 대규모 에이전트 시스템을 구축하는 공식 개발 도구 및 아키텍처입니다.</p>
@@ -524,7 +585,7 @@
       </div>
     </section>
 
-    <!-- 23 -->
+    <!-- 24 -->
     <section class="slide">
       <h2>Track 2 슬라이드 완료</h2>
       <p class="subtitle">Track 2 심화 안내를 마쳤습니다. 다음 단계인 Part 3 (Admin Guide) 슬라이드로 이동하여 인프라 거버넌스 및 보안 체계를 확인합니다.</p>
