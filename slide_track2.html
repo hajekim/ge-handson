@@ -291,8 +291,8 @@
     <section class="slide">
       <h2>🎬 Video Overview</h2>
       <p class="subtitle">소스 문서의 내용을 <b>AI가 자동으로 영상 튜토리얼로 변환</b>합니다. Customize 버튼으로 주제와 스타일을 지정할 수 있습니다.</p>
-      <div class="grid" style="grid-template-columns: 1fr; max-width: 640px;">
-        <div class="card">
+      <div style="display: flex; gap: 2rem; align-items: flex-start; justify-content: center; margin-top: 0.5rem;">
+        <div class="card" style="flex: 1; max-width: 420px;">
           <h3>⚙️ 생성 방법</h3>
           <ul>
             <li>소스 문서(PDF · 이미지) 업로드</li>
@@ -301,15 +301,15 @@
             <li>프롬프트 입력 후 생성 — MP4로 다운로드 가능</li>
           </ul>
         </div>
-      </div>
-      <div style="display: flex; flex-direction: column; align-items: center; margin-top: 1rem; gap: 0.35rem;">
-        <a href="https://www.youtube.com/watch?v=4-5qeh4IXVY" target="_blank" style="display: inline-block; position: relative; text-decoration: none;">
-          <img src="https://img.youtube.com/vi/4-5qeh4IXVY/hqdefault.jpg" alt="Video Overview 생성 예시" class="youtube-thumb" style="height: 150px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 44px; height: 44px; background: rgba(220,38,38,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; pointer-events: none;">
-            <span style="color: #fff; font-size: 1.2rem; margin-left: 3px;">▶</span>
-          </div>
-        </a>
-        <p style="font-size: 0.76rem; color: #9ca3af;">클릭하면 YouTube에서 재생됩니다</p>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.35rem; flex: 1; max-width: 420px;">
+          <a href="https://www.youtube.com/watch?v=4-5qeh4IXVY" target="_blank" style="display: inline-block; position: relative; text-decoration: none; width: 100%;">
+            <img src="https://img.youtube.com/vi/4-5qeh4IXVY/hqdefault.jpg" alt="Video Overview 생성 예시" class="youtube-thumb" style="width: 100%; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 52px; height: 52px; background: rgba(220,38,38,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; pointer-events: none;">
+              <span style="color: #fff; font-size: 1.4rem; margin-left: 4px;">▶</span>
+            </div>
+          </a>
+          <p style="font-size: 0.76rem; color: #9ca3af;">클릭하면 YouTube에서 재생됩니다</p>
+        </div>
       </div>
     </section>
 
@@ -411,14 +411,45 @@
     <section class="slide">
       <h2>Deep Research 다단계 리서치 메커니즘</h2>
       <p class="subtitle">입력된 연구 주제에 대해 <b>하위 탐색 질문을 자동 생성하고 웹 및 연결 문서를 다단계로 탐색</b>하여 종합 문서를 도출합니다.</p>
+      <div style="display:flex; gap:0.4rem; align-items:stretch; justify-content:center; max-width:1150px; margin:0.6rem auto 1rem;">
+        <div style="flex:1; background:#1e3a5f; border-radius:8px; padding:0.75rem 0.55rem; text-align:center;">
+          <div style="font-size:1.1rem;">🔎</div>
+          <div style="font-size:0.68rem; font-weight:700; color:#93c5fd; margin:0.2rem 0;">① 질의 분해</div>
+          <div style="font-size:0.6rem; color:#cbd5e1; line-height:1.5;">복잡한 질문을<br>하위 질문으로 분해</div>
+        </div>
+        <div style="font-size:1.1rem; color:#60a5fa; align-self:center; flex-shrink:0; padding:0 0.1rem;">→</div>
+        <div style="flex:1; background:#1a3a2a; border-radius:8px; padding:0.75rem 0.55rem; text-align:center;">
+          <div style="font-size:1.1rem;">📋</div>
+          <div style="font-size:0.68rem; font-weight:700; color:#86efac; margin:0.2rem 0;">② 플랜 생성</div>
+          <div style="font-size:0.6rem; color:#cbd5e1; line-height:1.5;">리서치 단계 계획<br>사용자 검토·수정 가능</div>
+        </div>
+        <div style="font-size:1.1rem; color:#4ade80; align-self:center; flex-shrink:0; padding:0 0.1rem;">→</div>
+        <div style="flex:1; background:#2d2a1a; border-radius:8px; padding:0.75rem 0.55rem; text-align:center;">
+          <div style="font-size:1.1rem;">🌐</div>
+          <div style="font-size:0.68rem; font-weight:700; color:#fde68a; margin:0.2rem 0;">③ 자율 탐색</div>
+          <div style="font-size:0.6rem; color:#cbd5e1; line-height:1.5;">웹·내부 문서<br>병렬·순차 검색</div>
+        </div>
+        <div style="font-size:1.1rem; color:#facc15; align-self:center; flex-shrink:0; padding:0 0.1rem;">→</div>
+        <div style="flex:1; background:#2d1a1a; border-radius:8px; padding:0.75rem 0.55rem; text-align:center;">
+          <div style="font-size:1.1rem;">🔄</div>
+          <div style="font-size:0.68rem; font-weight:700; color:#fca5a5; margin:0.2rem 0;">④ 반복 추론</div>
+          <div style="font-size:0.6rem; color:#cbd5e1; line-height:1.5;">지식 공백 파악 후<br>재검색·자기 비판</div>
+        </div>
+        <div style="font-size:1.1rem; color:#f87171; align-self:center; flex-shrink:0; padding:0 0.1rem;">→</div>
+        <div style="flex:1; background:#2a1a3a; border-radius:8px; padding:0.75rem 0.55rem; text-align:center;">
+          <div style="font-size:1.1rem;">📄</div>
+          <div style="font-size:0.68rem; font-weight:700; color:#c4b5fd; margin:0.2rem 0;">⑤ 보고서 생성</div>
+          <div style="font-size:0.6rem; color:#cbd5e1; line-height:1.5;">목차·인용·오디오<br>구조화 문서 완성</div>
+        </div>
+      </div>
       <div class="grid">
         <div class="card">
           <h3>🔍 다단계 추론 (Multi-step Reasoning)</h3>
-          <p>초기 탐색 결과에서 얻은 정보를 바탕으로 후속 검색 키워드를 파생시켜 심층 정보를 자동 탐색합니다.</p>
+          <p>초기 탐색 결과에서 얻은 정보를 바탕으로 후속 검색 키워드를 파생시켜 심층 정보를 자동 탐색합니다. 표준 모드 약 <b>80회</b>, Deep Research Max 최대 <b>160회</b> 검색·추론을 수행하며 소요 시간은 <b>3–8분</b>입니다.</p>
         </div>
         <div class="card green">
           <h3>📑 종합 문서 구조화</h3>
-          <p>목차, 핵심 요약, 상세 분석, 인용 문헌 목록이 체계적으로 구성된 문서 포맷을 도출합니다.</p>
+          <p>목차·핵심 요약·상세 분석·인용 문헌이 체계적으로 구성된 보고서와 <b>1–2분 오디오 요약</b>을 자동 생성합니다. 웹뿐 아니라 기업 내부 앱 데이터·Drive·Gmail 문서도 소스로 활용합니다.</p>
         </div>
       </div>
     </section>
