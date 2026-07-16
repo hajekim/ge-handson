@@ -761,9 +761,74 @@ graph TD
 
 ### 5) 커스텀 에이전트
 
-에이전트를 만들어서 Cloud Run 또는 Agent Runtime에 배포하여 Gemini Enterprise 에이전트로 등록할 수 있습니다.
+에이전트를 코드로 개발하여 Cloud Run 또는 Agent Runtime에 배포한 뒤, A2A(Agent-to-Agent) 프로토콜을 통해 Gemini Enterprise 에이전트로 등록할 수 있습니다.
 
-이 교육 과정에서는 코드 개발을 다루지 않으므로 개발한 에이전트를 Cloud Run에 배포했다고 가정합니다.
+<div style="display: flex; align-items: stretch; gap: 8px; margin: 1.5rem 0; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 130px; background: #e8f0fe; border: 1px solid #1a73e8; border-radius: 10px; padding: 0.8rem 0.6rem; text-align: center;">
+    <div style="font-size: 1.4rem; margin-bottom: 4px;">🛠️</div>
+    <div style="font-weight: 700; color: #1a73e8; font-size: 0.88rem;">① ADK로 개발</div>
+    <div style="font-size: 0.73rem; color: #5f6368; margin-top: 3px;">Python / TypeScript / Go</div>
+  </div>
+  <div style="display: flex; align-items: center; color: #9aa0a6; font-size: 1.1rem; flex-shrink: 0; padding: 0 2px;">→</div>
+  <div style="flex: 1; min-width: 130px; background: #e6f4ea; border: 1px solid #34a853; border-radius: 10px; padding: 0.8rem 0.6rem; text-align: center;">
+    <div style="font-size: 1.4rem; margin-bottom: 4px;">🔗</div>
+    <div style="font-weight: 700; color: #137333; font-size: 0.88rem;">② to_a2a() 래핑</div>
+    <div style="font-size: 0.73rem; color: #5f6368; margin-top: 3px;">A2A 변환 · Agent Card 자동 생성</div>
+  </div>
+  <div style="display: flex; align-items: center; color: #9aa0a6; font-size: 1.1rem; flex-shrink: 0; padding: 0 2px;">→</div>
+  <div style="flex: 1; min-width: 130px; background: #fef7e0; border: 1px solid #f9ab00; border-radius: 10px; padding: 0.8rem 0.6rem; text-align: center;">
+    <div style="font-size: 1.4rem; margin-bottom: 4px;">☁️</div>
+    <div style="font-weight: 700; color: #e37400; font-size: 0.88rem;">③ Cloud Run 배포</div>
+    <div style="font-size: 0.73rem; color: #5f6368; margin-top: 3px;">adk deploy cloud_run</div>
+  </div>
+  <div style="display: flex; align-items: center; color: #9aa0a6; font-size: 1.1rem; flex-shrink: 0; padding: 0 2px;">→</div>
+  <div style="flex: 1; min-width: 130px; background: #fce8e6; border: 1px solid #ea4335; border-radius: 10px; padding: 0.8rem 0.6rem; text-align: center;">
+    <div style="font-size: 1.4rem; margin-bottom: 4px;">🏢</div>
+    <div style="font-weight: 700; color: #c5221f; font-size: 0.88rem;">④ Gemini Enterprise 등록</div>
+    <div style="font-size: 0.73rem; color: #5f6368; margin-top: 3px;">어드민 콘솔 → Custom agent via A2A</div>
+  </div>
+</div>
+
+#### 개발 파이프라인
+
+**① + ② ADK 에이전트 작성 & to_a2a() 래핑**
+
+[ADK(Agent Development Kit)](https://adk.dev/)로 Python 에이전트를 작성하고, `to_a2a()` 함수 한 줄로 A2A 프로토콜 호환 서버로 변환합니다. `to_a2a()`는 에이전트의 이름·설명·스킬 정보를 자동으로 읽어 **Agent Card JSON을 생성**하므로 별도 설정이 필요 없습니다.
+
+```python
+from google.adk.agents import Agent
+from google.adk.a2a.utils import to_a2a
+
+def my_tool(query: str) -> str:
+    # 비즈니스 로직 구현
+    return result
+
+root_agent = Agent(
+    model='gemini-2.5-flash',
+    name='my_agent',
+    description='업무 자동화 에이전트',
+    tools=[my_tool],
+)
+
+# A2A 서버 변환 + Agent Card 자동 생성
+app = to_a2a(root_agent)
+```
+
+**③ Cloud Run 배포**
+
+```bash
+adk deploy cloud_run \
+  --service_name=my-agent \
+  --project $PROJECT \
+  --region $REGION \
+  --a2a my_agent/
+```
+
+배포가 완료되면 Agent Card가 `<Cloud Run URL>/a2a/.well-known/agent-card.json` 경로에 자동 게시됩니다.
+
+**④ Gemini Enterprise 등록 (어드민)**
+
+이 교육 과정에서는 코드 개발을 직접 다루지 않으므로, 에이전트가 이미 Cloud Run에 배포된 상황을 가정하고 아래에서 어드민 콘솔 등록 절차를 실습합니다.
 
 Gemini Enterprise의 관리자는 Google Cloud 콘솔에서 Agents > Add agent를 클릭합니다.
 
