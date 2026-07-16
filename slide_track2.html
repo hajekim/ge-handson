@@ -98,7 +98,8 @@
     <button class="nav-dot" onclick="scrollToSlide(19)" title="20. Workflow Agent"></button>
     <button class="nav-dot" onclick="scrollToSlide(20)" title="21. 시장 분석 에이전트 실습"></button>
     <button class="nav-dot" onclick="scrollToSlide(21)" title="22. 하이코드 ADK / CAA"></button>
-    <button class="nav-dot" onclick="scrollToSlide(22)" title="23. 실습 시작 CTA"></button>
+    <button class="nav-dot" onclick="scrollToSlide(22)" title="23. 커스텀 에이전트 개발 파이프라인"></button>
+    <button class="nav-dot" onclick="scrollToSlide(23)" title="24. 실습 시작 CTA"></button>
   </div>
 
   <div class="slide-container" id="container">
@@ -580,6 +581,75 @@
     </section>
 
     <!-- 23 -->
+    <section class="slide">
+      <h2>🧑‍💻 커스텀 에이전트: 개발 → 배포 → 등록</h2>
+      <p class="subtitle">ADK로 Python 에이전트를 작성하고, <b>to_a2a()</b> 래퍼로 A2A 서버를 구성한 뒤, Cloud Run에 배포하고 Gemini Enterprise 어드민 콘솔에서 등록합니다.</p>
+
+      <!-- 4-step pipeline -->
+      <div style="display: flex; align-items: stretch; gap: 0.5rem; margin-bottom: 1rem; max-width: 1150px;">
+        <div style="flex: 1; background: rgba(26,115,232,0.15); border: 1px solid rgba(26,115,232,0.5); border-radius: 10px; padding: 0.65rem 0.8rem; text-align: center;">
+          <div style="font-size: 1.2rem; margin-bottom: 0.15rem;">🛠️</div>
+          <div style="font-weight: 700; color: #93c5fd; font-size: 0.9rem;">① ADK 에이전트 작성</div>
+          <div style="font-size: 0.75rem; color: var(--text-sub); margin-top: 0.1rem;">Python / TypeScript / Go</div>
+        </div>
+        <div style="display: flex; align-items: center; font-size: 1.2rem; color: #4b5563; flex-shrink: 0;">→</div>
+        <div style="flex: 1; background: rgba(52,168,83,0.12); border: 1px solid rgba(52,168,83,0.45); border-radius: 10px; padding: 0.65rem 0.8rem; text-align: center;">
+          <div style="font-size: 1.2rem; margin-bottom: 0.15rem;">🔗</div>
+          <div style="font-weight: 700; color: #86efac; font-size: 0.9rem;">② to_a2a() 래핑</div>
+          <div style="font-size: 0.75rem; color: var(--text-sub); margin-top: 0.1rem;">A2A 변환 · Agent Card 자동 생성</div>
+        </div>
+        <div style="display: flex; align-items: center; font-size: 1.2rem; color: #4b5563; flex-shrink: 0;">→</div>
+        <div style="flex: 1; background: rgba(234,179,8,0.12); border: 1px solid rgba(234,179,8,0.4); border-radius: 10px; padding: 0.65rem 0.8rem; text-align: center;">
+          <div style="font-size: 1.2rem; margin-bottom: 0.15rem;">☁️</div>
+          <div style="font-weight: 700; color: #fde68a; font-size: 0.9rem;">③ Cloud Run 배포</div>
+          <div style="font-size: 0.75rem; color: var(--text-sub); margin-top: 0.1rem;">adk deploy cloud_run 한 줄</div>
+        </div>
+        <div style="display: flex; align-items: center; font-size: 1.2rem; color: #4b5563; flex-shrink: 0;">→</div>
+        <div style="flex: 1; background: rgba(249,115,22,0.12); border: 1px solid rgba(249,115,22,0.4); border-radius: 10px; padding: 0.65rem 0.8rem; text-align: center;">
+          <div style="font-size: 1.2rem; margin-bottom: 0.15rem;">🏢</div>
+          <div style="font-weight: 700; color: #fdba74; font-size: 0.9rem;">④ Gemini Enterprise 등록</div>
+          <div style="font-size: 0.75rem; color: var(--text-sub); margin-top: 0.1rem;">어드민 콘솔 → Custom agent via A2A</div>
+        </div>
+      </div>
+
+      <!-- Code + Steps grid -->
+      <div class="grid" style="grid-template-columns: 1fr 1fr; max-width: 1200px; align-items: start;">
+        <div class="card blue" style="padding: 1rem 1.1rem;">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1rem;">① + ② Python 코드 예시</h3>
+          <pre style="background: rgba(0,0,0,0.35); border-radius: 8px; padding: 0.75rem 1rem; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; line-height: 1.65; color: #85e89d; overflow-x: auto; margin: 0; white-space: pre;">from google.adk.agents import Agent
+from google.adk.a2a.utils import to_a2a
+
+def my_tool(query: str) -> str:
+    # 비즈니스 로직 구현
+    return result
+
+root_agent = Agent(
+    model='gemini-2.5-flash',
+    name='my_agent',
+    description='업무 자동화 에이전트',
+    tools=[my_tool],
+)
+
+# A2A 서버 변환 + Agent Card 자동 생성
+app = to_a2a(root_agent)</pre>
+        </div>
+        <div class="card green" style="padding: 1rem 1.1rem;">
+          <h3 style="margin-bottom: 0.4rem; font-size: 1rem;">③ Cloud Run 배포</h3>
+          <div class="code-box" style="font-size: 0.8rem; padding: 0.55rem 0.9rem; margin: 0 0 0.9rem; line-height: 1.7;">adk deploy cloud_run \<br>&nbsp;&nbsp;--service_name=my-agent \<br>&nbsp;&nbsp;--project $PROJECT \<br>&nbsp;&nbsp;--region $REGION \<br>&nbsp;&nbsp;--a2a my_agent/</div>
+          <h3 style="margin-bottom: 0.4rem; font-size: 1rem;">④ Gemini Enterprise 어드민 등록</h3>
+          <ul style="font-size: 0.85rem; padding-left: 1.1rem; margin: 0; line-height: 1.9;">
+            <li>GCP 콘솔 → Gemini Enterprise → <b>Agents → Add Agents</b></li>
+            <li><b>Custom agent via A2A</b> 선택</li>
+            <li>Cloud Run 서비스 URL의 <b>Agent Card JSON</b> 붙여넣기</li>
+            <li>서비스 계정에 <b>Cloud Run Invoker</b> IAM 권한 부여</li>
+            <li>Preview → Next → <b>Finish</b></li>
+          </ul>
+          <p style="font-size: 0.78rem; color: #86efac; margin-top: 0.7rem; margin-bottom: 0;">💡 Agent Card 경로: <code style="font-size: 0.76rem;">&lt;Cloud Run URL&gt;/a2a/.well-known/agent-card.json</code></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 24 -->
     <section class="slide">
       <h2>Track 2 슬라이드 완료</h2>
       <p class="subtitle">Track 2 심화 안내를 마쳤습니다. 다음 단계인 Part 3 (Admin Guide) 슬라이드로 이동하여 인프라 거버넌스 및 보안 체계를 확인합니다.</p>
