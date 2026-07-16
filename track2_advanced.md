@@ -786,7 +786,7 @@ Custom Image Agent가 등록되었습니다. 프롬프트를 입력하여 이미
 실행된 결과가 보여집니다.
 
 <img src="./img/customagent-005.png" width="600" alt="Custom Image Agent 이미지 생성 결과 화면">
-<img src="./img/customagent-006.png" width="600" alt="Custom Image Agent 이미지 생성 결과 화면">
+<img src="./img/customagent-006.png" width="600" alt="Custom Image Agent가 생성한 바나나 비행기 이미지">
 
 
 ---
