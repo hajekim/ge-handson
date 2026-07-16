@@ -1,8 +1,0 @@
-Campaign_ID,Campaign_Name,Channel,Budget_USD,Revenue_USD,Conversion_Rate_Pct,Customer_Sentiment_Score,Region
-CMP-101,Global EV Launch 2026,Social Media,50000,250000,4.5,88,North America
-CMP-102,Summer Mobility Promo,Search Ads,30000,120000,3.2,76,Europe
-CMP-103,AI Assistant Webinar,Email,10000,85000,6.8,92,Asia-Pacific
-CMP-104,Eco Driving Challenge,Video Ads,75000,310000,5.1,85,Global
-CMP-105,Enterprise B2B Lead Gen,LinkedIn,40000,290000,7.4,94,North America
-CMP-106,Winter Safety Awareness,Display Ads,25000,90000,2.8,81,Europe
-CMP-107,Tech Leader Summit Sponsorship,Event,100000,450000,8.2,96,Asia-Pacific
