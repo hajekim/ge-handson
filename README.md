@@ -37,7 +37,7 @@
     <p style="font-size: 13.5px; color: var(--text-secondary); margin-bottom: 12px;"><b>주 교육 대상:</b> 비즈니스 파워 유저, IT 기획/혁신 리더, 시민 개발자</p>
     <ul style="padding-left: 1.2rem; margin: 1rem 0; font-size: 14px; line-height: 1.6;">
       <li>Google Drive & Workspace 연동 및 RAG</li>
-      <li><b>엔터프라이즈 NotebookLM</b>: 슬라이드 · 인포그래픽 · 🎬 시네마틱 슬라이드 · 설명서 자동 생성</li>
+      <li><b>엔터프라이즈 NotebookLM</b>: 인포그래픽 · 🎬 시네마틱 슬라이드 · 설명서 자동 생성</li>
       <li><b>동영상 만들기</b>: canvas.pdf + 이미지 → NotebookLM Canvas 튜토리얼 영상 자동 생성</li>
       <li>Deep Research 자율 보고서 & 아이디어 연쇄 생성</li>
       <li><b>에이전트 실무 5대 아키타입</b> 및 노코드 에이전트 빌더</li>
