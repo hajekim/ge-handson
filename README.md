@@ -23,10 +23,11 @@
     <h3>🟢 Track 1. Day 1 Value</h3>
     <p style="font-size: 13.5px; color: var(--text-secondary); margin-bottom: 12px;"><b>주 교육 대상:</b> 전사 임직원 및 입문자, 영업/마케팅/기획 실무진</p>
     <ul style="padding-left: 1.2rem; margin: 1rem 0; font-size: 14px; line-height: 1.6;">
-      <li><b>pContext(개인화 컨텍스트)</b> 설정, @멘션 및 38개 언어 번역/이메일</li>
-      <li>실시간 웹 검색 그라운딩 & <b>웹페이지 URL 바인딩 질의</b></li>
-      <li>Nano Banana 및 Veo 비디오 생성</li>
-      <li><b>로컬 엑셀 매출 분석 & PPTX 장표 요약</b></li>
+      <li><b>AI 어시스턴트 기본 활용</b> & 세션 공유</li>
+      <li><b>실시간 웹 검색 그라운딩</b> (SWOT 분석, 영문 피치덱)</li>
+      <li><b>미디어 생성</b>: Nano Banana 이미지 & Veo 비디오 생성</li>
+      <li><b>로컬 파일 업로드</b>: Excel 시계열/다차원 매출 분석 & PPTX 파싱</li>
+      <li><b>Gemini Canvas</b>: 구글 슬라이드 자동 생성, 스타일 지정 & PPTX 내보내기</li>
       <li><b>APE / CRAFT / CO-STAR</b> 프롬프트 작성법</li>
     </ul>
     <p style="text-align: right; margin-top: 1.5rem;"><a href="#/track1_day1_value" class="btn-start" style="color: var(--google-green);">👉 교육 시작 →</a></p>
@@ -37,7 +38,7 @@
     <p style="font-size: 13.5px; color: var(--text-secondary); margin-bottom: 12px;"><b>주 교육 대상:</b> 비즈니스 파워 유저, IT 기획/혁신 리더, 시민 개발자</p>
     <ul style="padding-left: 1.2rem; margin: 1rem 0; font-size: 14px; line-height: 1.6;">
       <li>Google Drive & Workspace 연동 및 RAG</li>
-      <li><b>엔터프라이즈 NotebookLM</b>: 인포그래픽 · 🎬 시네마틱 슬라이드 · 설명서 자동 생성</li>
+      <li><b>엔터프라이즈 NotebookLM Studio</b>: 인포그래픽 · 🎬 시네마틱 슬라이드 · 설명서 자동 생성</li>
       <li><b>동영상 만들기</b>: canvas.pdf + 이미지 → NotebookLM Canvas 튜토리얼 영상 자동 생성</li>
       <li>Deep Research 자율 보고서 & 아이디어 연쇄 생성</li>
       <li><b>에이전트 실무 5대 아키타입</b> 및 노코드 에이전트 빌더</li>
@@ -65,10 +66,10 @@
 </div>
 
 <div class="highlight-box">
-  <p>🚀 프롬프트 프레임워크 (APE / CRAFT / CO-STAR) 마스터 가이드 완비!</p>
+  <p>🚀 프롬프트 프레임워크 (APE / CRAFT / CO-STAR) 가이드</p>
   <div style="font-size: 14px; color: #3c4043; margin-top: 8px; font-weight: 400;">
-    Google Gemini의 엔터프라이즈 공식 프롬프트 프레임워크인 <b>C.R.A.F.T(Context, Role, Action, Format, Target)</b>를 구조화한 범용 비즈니스 작성 표준 템플릿과, 이를 활용한 4대 실무 시나리오(제안 기획, CS 클레임 극복, 보도자료 SWOT, IT 장애 보고서), 그리고 상황에 맞춰 골라 쓰는 <b>APE vs CRAFT vs CO-STAR 비교표</b>가 <b>Track 1 가이드</b> 내에 단독 섹션으로 깊이 있게 내재되었습니다.<br><br>
-    <a href="#/track1_day1_value?id=17-프롬프트-작성법" style="font-weight: 700; color: var(--google-blue); text-decoration: none;">👉 프롬프트 작성법 가이드 바로가기 &rarr;</a>
+    Google Gemini의 엔터프라이즈 프롬프트 프레임워크인 <b>C.R.A.F.T(Context, Role, Action, Format, Target)</b> 기반 표준 템플릿과 4대 실무 시나리오(제안 기획, CS 클레임 대응, 보도자료 SWOT, IT 장애 보고서), 그리고 <b>APE vs CRAFT vs CO-STAR 비교표</b>가 <b>Track 1 가이드</b>에 정리되어 있습니다.<br><br>
+    <a href="#/track1_day1_value?id=18-프롬프트-작성법" style="font-weight: 700; color: var(--google-blue); text-decoration: none;">👉 프롬프트 작성법 가이드 바로가기 &rarr;</a>
   </div>
 </div>
 

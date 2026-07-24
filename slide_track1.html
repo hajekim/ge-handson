@@ -362,6 +362,33 @@
 
     <!-- 18 -->
     <section class="slide">
+      <h2>Canvas: Google Slides & PPTX</h2>
+      <p class="subtitle">대화 내용으로 <b>GCP 아키텍처 구글 슬라이드를 자동 생성</b>하고, 원하는 스타일을 적용하여 <b>Google Slides 및 PPTX 파일</b>로 내보냅니다.</p>
+      <div class="grid" style="grid-template-columns: 1fr 1.1fr; max-width: 1200px; align-items: center;">
+        <div class="card green">
+          <h3>📊 Canvas 구글 슬라이드 요약 프롬프트</h3>
+          <div class="code-box" style="font-size: 0.95rem; line-height: 1.5;">새로운 모바일 앱을 위한 백엔드 아키텍처를 GCP에서 설계하려고 해. 트래픽 급증 시 자동 확장(Auto-scaling)과 실시간 로그 분석 파이프라인이 중요해. 완전 관리형 서버리스 서비스를 위주로 설계하고 이유를 설명해줘.<br><br><b>그리고 구글 슬라이드로 요약해줘.</b><br><b>슬라이드는 하얀색 바탕의 깔끔하고 모던한 IT 기술 문서 스타일로 작성해줘.</b></div>
+        </div>
+        <div class="card blue">
+          <h3>✨ 핵심 기능 & 내보내기 (Export)</h3>
+          <ul>
+            <li><b>Canvas 실시간 장표 구성</b>: 대화 내용을 바탕으로 다면 프레젠테이션 슬라이드가 Canvas 창에 시각화됨</li>
+            <li><b>디자인 스타일 지정</b>: "모던한 IT 기술 문서 스타일", "15장 기업 템플릿" 등 톤앤매너 지정 지원</li>
+            <li><b>Export & Download</b>: Google Slides 직접 내보내기 및 PowerPoint(.pptx) 다운로드 지원</li>
+            <li><small style="color: #9ca3af;">* Gemini Enterprise Slide 직접 편집 기능은 Private Preview 제공 중입니다.</small></li>
+          </ul>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; margin-top: 0.8rem;">
+        <figure style="text-align: center; margin: 0;">
+          <img src="./img/image128.png" alt="Canvas IT 기술 문서 스타일 슬라이드 생성 결과" class="zoomable" style="height: 145px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 4px 16px rgba(0,0,0,0.4); cursor: pointer;">
+          <figcaption style="font-size: 0.76rem; color: #9ca3af; margin-top: 0.35rem;">Canvas IT 기술 문서 스타일 슬라이드 생성 결과 (image128.png) 🔍 클릭 시 확대</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 19 -->
+    <section class="slide">
       <h2>프롬프트 프레임워크 (1): APE</h2>
       <p class="subtitle">복잡성이 요구되지 않는 <b>단순하고 빠른 정보 요약 및 단문 검색</b>에 최적화된 직관적인 3단계 구조입니다.</p>
       <div class="grid" style="grid-template-columns: 1fr 1.1fr; max-width: 1200px; align-items: center;">
@@ -505,7 +532,7 @@
     
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
-    document.querySelectorAll('.img-showcase img, .card img').forEach(img => {
+    document.querySelectorAll('.img-showcase img, .card img, figure img, .zoomable').forEach(img => {
       img.addEventListener('click', (e) => {
         e.stopPropagation();
         lightboxImg.src = img.src;
