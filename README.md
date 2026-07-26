@@ -18,51 +18,41 @@
 
 ## 🧭 수준별 실습 교육 트랙
 
-<div class="card-grid">
-  <div class="card" style="border-top: 5px solid var(--google-green);">
-    <h3>🟢 Track 1. Day 1 Value</h3>
-    <p style="font-size: 13.5px; color: var(--text-secondary); margin-bottom: 12px;"><b>주 교육 대상:</b> 전사 임직원 및 입문자, 영업/마케팅/기획 실무진</p>
-    <ul style="padding-left: 1.2rem; margin: 1rem 0; font-size: 14px; line-height: 1.6;">
-      <li><b>AI 어시스턴트 기본 활용</b> & 세션 공유</li>
-      <li><b>실시간 웹 검색 그라운딩</b> (SWOT 분석, 영문 피치덱)</li>
-      <li><b>미디어 생성</b>: Nano Banana 이미지 & Veo 비디오 생성</li>
-      <li><b>로컬 파일 업로드</b>: Excel 시계열/다차원 매출 분석 & PPTX 파싱</li>
-      <li><b>Gemini Canvas</b>: 구글 슬라이드 자동 생성, 스타일 지정 & PPTX 내보내기</li>
-      <li><b>APE / CRAFT / CO-STAR</b> 프롬프트 작성법</li>
-    </ul>
-    <p style="text-align: right; margin-top: 1.5rem;"><a href="#/track1_day1_value" class="btn-start" style="color: var(--google-green);">👉 교육 시작 →</a></p>
+<div style="display: flex; flex-direction: column; gap: 1rem; margin: 2rem 0;">
+
+  <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1.2rem 1.8rem; background: #f8f9fa; border-radius: 16px; border-left: 6px solid var(--google-green);">
+    <div style="min-width: 210px;">
+      <div style="font-size: 1.05rem; font-weight: 700; color: var(--google-green);">🟢 Track 1. Day 1 Value</div>
+      <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">전사 임직원 · 입문자 · 영업/마케팅/기획 실무진</div>
+    </div>
+    <div style="flex: 1; font-size: 13.5px; color: #3c4043;">
+      AI 어시스턴트 · 실시간 웹 검색 그라운딩 · Nano Banana 이미지 & Veo 영상 · 파일 분석 · Gemini Canvas · 프롬프트 프레임워크
+    </div>
+    <a href="#/track1_day1_value" class="btn-start" style="color: var(--google-green); white-space: nowrap;">👉 교육 시작 →</a>
   </div>
 
-  <div class="card" style="border-top: 5px solid var(--google-blue);">
-    <h3>🔵 Track 2. Advanced</h3>
-    <p style="font-size: 13.5px; color: var(--text-secondary); margin-bottom: 12px;"><b>주 교육 대상:</b> 비즈니스 파워 유저, IT 기획/혁신 리더, 시민 개발자</p>
-    <ul style="padding-left: 1.2rem; margin: 1rem 0; font-size: 14px; line-height: 1.6;">
-      <li>Google Drive & Workspace 연동 및 RAG</li>
-      <li><b>엔터프라이즈 Gemini Notebook</b>: 인포그래픽 · 🎬 시네마틱 슬라이드 · 설명서 자동 생성</li>
-      <li><b>동영상 만들기</b>: canvas.pdf + 이미지 → Gemini Notebook Canvas 튜토리얼 영상 자동 생성</li>
-      <li>Deep Research 자율 보고서 & 아이디어 연쇄 생성</li>
-      <li><b>에이전트 실무 5대 아키타입</b> 및 노코드 에이전트 빌더</li>
-      <li><b>워크플로우 에이전트 (Price & Margin 최적화)</b></li>
-      <li>하이코드 ADK/CAA 통합 에이전트 개발</li>
-    </ul>
-    <p style="text-align: right; margin-top: 1.5rem;"><a href="#/track2_advanced" class="btn-start" style="color: var(--google-blue);">👉 교육 시작 →</a></p>
+  <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1.2rem 1.8rem; background: #f8f9fa; border-radius: 16px; border-left: 6px solid var(--google-blue);">
+    <div style="min-width: 210px;">
+      <div style="font-size: 1.05rem; font-weight: 700; color: var(--google-blue);">🔵 Track 2. Advanced</div>
+      <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">비즈니스 파워 유저 · IT 기획/혁신 리더 · 시민 개발자</div>
+    </div>
+    <div style="flex: 1; font-size: 13.5px; color: #3c4043;">
+      Drive/Workspace RAG · Gemini Notebook · Deep Research · Idea Generation · 에이전트 빌더 · Workflow Agent · ADK/CAA
+    </div>
+    <a href="#/track2_advanced" class="btn-start" style="color: var(--google-blue); white-space: nowrap;">👉 교육 시작 →</a>
   </div>
 
-  <div class="card" style="border-top: 5px solid var(--google-red);">
-    <h3>🔴 Track 3. Admin Guide</h3>
-    <p style="font-size: 13.5px; color: var(--text-secondary); margin-bottom: 12px;"><b>주 교육 대상:</b> 구글 클라우드 인프라 관리팀, CISO/보안 조직, 구매 의사결정권자</p>
-    <ul style="padding-left: 1.2rem; margin: 1rem 0; font-size: 14px; line-height: 1.6;">
-      <li>GCP 프로젝트 설정 및 2중화 아키텍처</li>
-      <li>Cloud Identity 및 WIF 연동</li>
-      <li><b>Microsoft 365/ServiceNow 커넥터 & Actions(쓰기 권한)</b></li>
-      <li>전사 환경 제어판 및 에이전트 레지스트리 관리 (강제 정지/ACL)</li>
-      <li>Model Armor 튜닝 가이드 (3대 감사 지표)</li>
-      <li><b>RESTful API 그룹웨어 통합</b> & Gemini Notebook Enterprise 거버넌스</li>
-      <li><b>Cloud Audit Logs SIEM 연동 & BigQuery 감사 SQL</b></li>
-      <li>투자 대비 가치 입증 ROI 재무 분석 시뮬레이션</li>
-    </ul>
-    <p style="text-align: right; margin-top: 1.5rem;"><a href="#/admin_guide" class="btn-start" style="color: var(--google-red);">👉 교육 시작 →</a></p>
+  <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1.2rem 1.8rem; background: #f8f9fa; border-radius: 16px; border-left: 6px solid var(--google-red);">
+    <div style="min-width: 210px;">
+      <div style="font-size: 1.05rem; font-weight: 700; color: var(--google-red);">🔴 Track 3. Admin Guide</div>
+      <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">클라우드 인프라 관리팀 · CISO/보안 조직 · 구매 의사결정권자</div>
+    </div>
+    <div style="flex: 1; font-size: 13.5px; color: #3c4043;">
+      GCP 설정 · Cloud Identity · Workspace 커넥터 & Actions · Model Armor · Audit Logs SIEM · ROI 분석
+    </div>
+    <a href="#/admin_guide" class="btn-start" style="color: var(--google-red); white-space: nowrap;">👉 교육 시작 →</a>
   </div>
+
 </div>
 
 <div class="highlight-box">
