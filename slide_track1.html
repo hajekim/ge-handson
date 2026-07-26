@@ -105,14 +105,14 @@
     <!-- 1 -->
     <section class="slide">
       <h1>🟢 Track 1: Day 1 Value<br>기본 기능 및 멀티모달 실습 가이드</h1>
-      <p class="subtitle">본 트랙은 별도의 사전 설정이나 API 연동 없이, 엔드유저 계정에서 즉시 활용할 수 있는 기능들을 다룹니다.<br>AI Assistant의 개인화 설정부터 웹 그라운딩, 미디어 생성, 로컬 파일 분석 실습을 단계별로 진행합니다.</p>
+      <p class="subtitle">이 트랙은 별도의 사전 설정이나 API 연동 없이, 엔드유저 계정에서 즉시 활용할 수 있는 기능들을 다룹니다.<br>AI Assistant의 개인화 설정부터 웹 그라운딩, 미디어 생성, 로컬 파일 분석 실습을 단계별로 진행합니다.</p>
       <div class="hint">⬇️ 방향키(↓) 또는 마우스 스크롤로 다음 슬라이드로 이동</div>
     </section>
 
     <!-- 2 -->
     <section class="slide">
       <h2>시작하기 (1): 개인화 컨텍스트 (pContext) 개요</h2>
-      <p class="subtitle">Gemini Enterprise는 사용자의 업무 환경을 반영하기 위해 <b>'개인화 컨텍스트(pContext)'</b> 기능을 제공합니다.<br>최근 30일 내외의 사내 4대 정보를 참조하여 직무와 역할에 적합한 맥락 기반의 답변을 도출합니다.</p>
+      <p class="subtitle">Gemini Enterprise는 사용자의 업무 환경을 반영하기 위해 <b>'개인화 컨텍스트(pContext)'</b> 기능을 제공합니다.<br>최근 30일 내외의 사내 4대 정보를 참조하여 직무와 역할에 맞는 답변을 뽑아냅니다.</p>
       <div class="grid">
         <div class="card">
           <h3>📌 pContext 4대 참조 소스</h3>
@@ -185,9 +185,9 @@
       <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center;">
         <div class="card green">
           <h3>🔍 출처 표시 및 본문 질의</h3>
-          <p>답변을 구성하는 데 사용된 보고서 및 기사 링크를 확인할 수 있으며, 본문의 특정 단락을 드래그하여 후속 질의를 수행합니다.</p>
+          <p>답변을 구성하는 데 사용된 보고서 및 기사 링크를 확인할 수 있으며, 본문의 특정 단락을 드래그하여 후속 질의를 이어갑니다.</p>
           <ul>
-            <li><b>@멘션 호출</b>: `@Deep Research` 또는 사내 연결 도구를 호출하여 전문 검색 기능을 수행합니다.</li>
+            <li><b>@멘션 호출</b>: `@Deep Research` 또는 사내 연결 도구를 호출하여 전문 검색을 합니다.</li>
           </ul>
         </div>
         <div class="img-showcase">
@@ -203,11 +203,11 @@
       <div class="grid">
         <div class="card blue">
           <h3>📧 Gmail 초안 작성 연계</h3>
-          <p>출력 결과 상단의 '내보내기' 기능을 사용하면 Gmail 발송 창에 해당 서식과 텍스트가 자동 삽입된 메일 초안이 생성됩니다.</p>
+          <p>출력 결과 상단의 '내보내기' 기능을 사용하면 Gmail 발송 창에 해당 서식과 텍스트가 자동 채워진 메일 초안이 열립니다.</p>
         </div>
         <div class="card">
           <h3>📊 표 데이터 내보내기</h3>
-          <p>도출된 비교 분석 표를 엑셀(.xlsx) 또는 CSV 파일로 다운로드하거나, 스프레드시트에 직접 붙여넣을 수 있습니다.</p>
+          <p>비교 분석 표를 엑셀(.xlsx) 또는 CSV 파일로 다운로드하거나, 스프레드시트에 직접 붙여넣을 수 있습니다.</p>
         </div>
       </div>
     </section>
@@ -231,11 +231,11 @@
     <!-- 9 -->
     <section class="slide">
       <h2>웹 검색 그라운딩 (1): EU 전기차 정책 분석</h2>
-      <p class="subtitle">구글 검색 인덱스와 연동하여 <b>EU EV 보조금 변화 및 CBAM 탄소 규제</b>를 검색하고 SWOT 분석 표를 도출합니다.</p>
+      <p class="subtitle">구글 검색 인덱스와 연동하여 <b>EU EV 보조금 변화 및 CBAM 탄소 규제</b>를 검색하고 SWOT 분석 표를 만듭니다.</p>
       <div class="card" style="max-width: 1100px; width: 100%;">
         <h3>📋 실습 프롬프트 실행</h3>
         <div class="code-box">2026년 현재 유럽연합(EU)의 전기차(EV) 보조금 정책 변화와 탄소국경조정제도(CBAM) 관련 최신 글로벌 뉴스를 검색해 줘. 이러한 정책 변화가 한국자동차의 유럽 시장 진출에 미칠 영향을 SWOT(강점, 약점, 기회, 위협) 분석 매트릭스 형태로 시각화해서 정리해 줘.</div>
-        <p style="margin-top: 0.8rem; color: #85e89d;">💡 <b>결과</b>: 실시간 검색된 뉴스 출처가 맵핑된 4분면 비교 표가 화면에 도출됩니다.</p>
+        <p style="margin-top: 0.8rem; color: #85e89d;">💡 <b>결과</b>: 실시간 검색된 뉴스 출처가 맵핑된 4분면 비교 표가 화면에 나타납니다.</p>
       </div>
     </section>
 
@@ -332,7 +332,7 @@
     <!-- 16 -->
     <section class="slide">
       <h2>Excel 로컬 파일 업로드 및 데이터 시각화</h2>
-      <p class="subtitle">`coffee orders.xlsx` 파일을 첨부하고 <b>월별/일별 시계열 매출 추이 선 차트 및 상품 기여도 파이 차트</b>를 도출합니다.</p>
+      <p class="subtitle">`coffee orders.xlsx` 파일을 첨부하고 <b>월별·일별 매출 추이 선 차트 및 상품 기여도 파이 차트</b>를 그립니다.</p>
       <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center;">
         <div class="card">
           <h3>📌 스프레드시트 분석 가이드</h3>
@@ -397,7 +397,7 @@
           <ul>
             <li><b>Action (행동)</b>: 모델이 수행할 작업이나 미션 지정</li>
             <li><b>Purpose (목적)</b>: 이 요청을 하는 배경이나 비즈니스 이유</li>
-            <li><b>Expectation (기대)</b>: 도출되기를 원하는 결과물의 포맷</li>
+            <li><b>Expectation (기대)</b>: 원하는 결과물의 형식</li>
           </ul>
         </div>
         <div class="card blue">
@@ -412,7 +412,7 @@
     <!-- 19 -->
     <section class="slide">
       <h2>프롬프트 프레임워크 (2): CRAFT</h2>
-      <p class="subtitle">프롬프트를 5가지 영역으로 나누어 <b>특정 페르소나를 부여하고 정형화된 비즈니스 보고서</b>를 도출하는 표준 프레임워크입니다.</p>
+      <p class="subtitle">프롬프트를 5가지 영역으로 나누어 <b>특정 페르소나를 부여하고 정형화된 비즈니스 보고서</b>를 만드는 표준 프레임워크입니다.</p>
       <div class="grid" style="grid-template-columns: 1fr 1.1fr; max-width: 1200px; align-items: center;">
         <div class="card yellow">
           <h3>🏆 CRAFT 5대 핵심 요소</h3>
@@ -510,7 +510,7 @@
     <!-- 23 -->
     <section class="slide">
       <h2>Track 1 슬라이드 완료</h2>
-      <p class="subtitle">Track 1 안내를 마쳤습니다. 다음 단계인 Track 2 (Advanced) 슬라이드로 이동하여 사내 데이터 RAG 및 에이전트 실습을 확인합니다.</p>
+      <p class="subtitle">Track 1 안내를 마쳤습니다. 다음 단계인 Track 2 (Advanced) 슬라이드로 이동하여 사내 데이터 RAG 및 에이전트 실습을 살펴보세요.</p>
       <a href="slide_track2.html" class="cta-btn">📺 Track 2 심화 슬라이드로 이동 &rarr;</a>
     </section>
   </div>
