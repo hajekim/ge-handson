@@ -5,13 +5,13 @@
   <a href="slide_track2.html" target="_blank" class="track-slide-btn" style="color: var(--google-blue);">📽️ 슬라이드로 강의 시작 →</a>
 </div>
 
-사내 데이터(Google Drive & Workspace)와의 RAG 연동, NotebookLM 팀 도서관 구축, Deep Research 자율 보고서, 그리고 에이전트 빌더를 활용한 맞춤형 AI 업무 파이프라인 구성 실습입니다.
+사내 데이터(Google Drive & Workspace)와의 RAG 연동, Gemini Notebook 팀 도서관 구축, Deep Research 자율 보고서, 그리고 에이전트 빌더를 활용한 맞춤형 AI 업무 파이프라인 구성 실습입니다.
 
 <div class="download-card">
   <div class="download-card-left">
     <div class="download-icon-box" style="background: #e8f0fe; color: #1a73e8;">📦</div>
     <div class="download-text">
-      <h4>Track 2 심화 RAG & NotebookLM 실습 파일 다운로드</h4>
+      <h4>Track 2 심화 RAG & Gemini Notebook 실습 파일 다운로드</h4>
       <p>RAG 실습용 내규·가이드라인 PDF 2종, 설명서 실습용 이미지 패키지 1종, 시네마틱 슬라이드 실습용 이미지 패키지 1종, Canvas 동영상 실습용 파일 2종 — 총 6종을 미리 다운로드합니다.</p>
     </div>
   </div>
@@ -113,11 +113,11 @@
 > 3. **버전 관리 및 최신본 동기화**:
 >    - 동일한 파일의 구버전과 신버전이 구글 드라이브나 스토리지에 중복 존재하지 않도록 관리합니다. 구버전 문서가 방치되면 LLM이 상충되는 정보 중 어떤 것이 최신인지 판단하기 어려워 구버전 정보를 인용할 위험이 있습니다. 주기적으로 아카이브 전용 폴더로 구버전 문서를 이관 처리합니다.
 
-## 2.3. 엔터프라이즈 NotebookLM 협업 실습 (NotebookLM Studio)
+## 2.3. 엔터프라이즈 Gemini Notebook 협업 실습
 
-업로드한 문서(PDF, 텍스트, 이미지) 범위 내에서 질의응답을 진행하고, NotebookLM Studio로 슬라이드, 인포그래픽, 튜토리얼 동영상을 자동 생성하는 실습입니다. 다음 5가지 과제를 순서대로 진행합니다.
+업로드한 문서(PDF, 텍스트, 이미지) 범위 내에서 질의응답을 진행하고, Gemini Notebook으로 슬라이드, 인포그래픽, 튜토리얼 동영상을 자동 생성하는 실습입니다. 다음 5가지 과제를 순서대로 진행합니다.
 
-| 실습 | NotebookLM 기능 | 내용 |
+| 실습 | Gemini Notebook 기능 | 내용 |
 |------|------|------|
 | **실습 1** | **Infographic** | AI 인포그래픽 3종 스타일 변환 |
 | **실습 2** | **Audio Overview** | AI 팟캐스트 자동 생성 |
@@ -131,7 +131,7 @@
 
 #### 노트북 준비
 
-1. **새 노트북 생성**: [NotebookLM 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭합니다.
+1. **새 노트북 생성**: [Gemini Notebook 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭합니다.
 2. **소스 타입 선택**: 소스 추가 패널에서 **텍스트 붙여넣기**를 선택합니다.
 
    <img src="./img/41.png" width="600" alt="텍스트 붙여넣기 소스 추가">
@@ -193,7 +193,7 @@
 
    <img src="./img/notebooklm_003.png" width="600" alt="총 세 개의 텍스트 소스">
 
-   NotebookLM은 입력한 소스를 기반으로 질문하고 답변을 받을 수 있습니다.
+   Gemini Notebook은 입력한 소스를 기반으로 질문하고 답변을 받을 수 있습니다.
    <img src="./img/notebooklm_001.png" width="600" alt="기본 프롬프트">
 
 1. **기본 인포그래픽**: 우측에 Infograpgic 버튼의 점 세 개 메뉴를 클릭합니다.
@@ -229,7 +229,7 @@
 
 ### 🎙️ 실습 2: Audio Overview — AI 팟캐스트 자동 생성
 
-NotebookLM의 킬러 기능 중 하나입니다. 동일 노트북 우측 **오디오 개요** 패널에서 **생성하기**를 클릭하면, AI 진행자 2인이 소스 문서 전체를 요약해 **5~8분 분량의 팟캐스트 오디오**를 자동 완성합니다.
+Gemini Notebook의 킬러 기능 중 하나입니다. 동일 노트북 우측 **오디오 개요** 패널에서 **생성하기**를 클릭하면, AI 진행자 2인이 소스 문서 전체를 요약해 **5~8분 분량의 팟캐스트 오디오**를 자동 완성합니다.
 
 <img src="./img/notebooklm_008.png" width="600" alt="Audio Overview">
 
@@ -248,7 +248,7 @@ NotebookLM의 킬러 기능 중 하나입니다. 동일 노트북 우측 **오�
 
 ### 🎬 실습 3: Slide Deck — 시네마틱 슬라이드 생성
 
-텍스트 없이 **제품 이미지만으로** NotebookLM이 영화 같은 시네마틱 슬라이드를 자동 생성합니다. 라이프스타일 브랜드 '홈스타일'의 신제품 이미지를 소스로 업로드하고, 짧은 브랜드 스토리를 붙여 시네마틱 슬라이드를 만들어봅니다.
+텍스트 없이 **제품 이미지만으로** Gemini Notebook이 영화 같은 시네마틱 슬라이드를 자동 생성합니다. 라이프스타일 브랜드 '홈스타일'의 신제품 이미지를 소스로 업로드하고, 짧은 브랜드 스토리를 붙여 시네마틱 슬라이드를 만들어봅니다.
 
 #### 1단계: 실습 파일 다운로드 및 압축 해제
 
@@ -262,16 +262,16 @@ NotebookLM의 킬러 기능 중 하나입니다. 동일 노트북 우측 **오�
 
 #### 2단계: 새 노트북 생성 및 이미지 소스 추가
 
-1. [NotebookLM 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭해 새 노트북을 엽니다.
+1. [Gemini Notebook 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭해 새 노트북을 엽니다.
 2. **소스 추가** → **파일 업로드**를 선택하고 압축 해제된 이미지 4장(`sofa.png`, `cushion.png`, `lighting.png`, `diffuser.png`)을 **한꺼번에** 선택해 업로드합니다.
 
-   <img src="./img/notebooklm_011.png" width="600" alt="NotebookLM 이미지 소스 4장 업로드 완료">
+   <img src="./img/notebooklm_011.png" width="600" alt="Gemini Notebook 이미지 소스 4장 업로드 완료">
 
 #### 3단계: 브랜드 스토리 텍스트 추가
 
 **소스 추가** → **텍스트 붙여넣기**를 선택하고, 아래 텍스트를 복사해 붙여넣기한 뒤 소스 이름을 **story** 로 저장합니다.
 
-<img src="./img/notebooklm_012.png" width="600" alt="NotebookLM 텍스트 소스 입력">
+<img src="./img/notebooklm_012.png" width="600" alt="Gemini Notebook 텍스트 소스 입력">
 
 ```markdown
 ### **스토리**
@@ -313,9 +313,9 @@ NotebookLM의 킬러 기능 중 하나입니다. 동일 노트북 우측 **오�
 * **스토리:** 잘 정돈된 아름다운 공간 속에서 오감으로 완성된 나만의 안식처를 보여주며 상쾌하게 마무리됩니다.
 ```
 
-<img src="./img/notebooklm_012.png" width="600" alt="NotebookLM 텍스트 소스 붙여넣기">
+<img src="./img/notebooklm_012.png" width="600" alt="Gemini Notebook 텍스트 소스 붙여넣기">
 
-<img src="./img/notebooklm_013.png" width="600" alt="NotebookLM 소스는 총 다섯개">
+<img src="./img/notebooklm_013.png" width="600" alt="Gemini Notebook 소스는 총 다섯개">
 
 #### 4단계: 시네마틱 슬라이드 생성
 
@@ -364,7 +364,7 @@ pptx 파일로 다운로드하였습니다.
 
 **생성 방법:**
 
-1. [NotebookLM 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭합니다. **소스 추가** → **파일 업로드**를 선택한 뒤, 상단에서 다운로드한 `data_agent.zip`의 압축을 해제하고 이미지 10개를 소스에 추가합니다.
+1. [Gemini Notebook 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭합니다. **소스 추가** → **파일 업로드**를 선택한 뒤, 상단에서 다운로드한 `data_agent.zip`의 압축을 해제하고 이미지 10개를 소스에 추가합니다.
 
    <img src="./img/notebooklm_020.png" width="600" alt="10개의 파일을 업로드 완료">
 
@@ -403,7 +403,7 @@ pptx 파일로 다운로드하였습니다.
 
 ### 🎬 실습 5: Video Overview — 동영상 만들기
 
-**Gemini Enterprise Canvas** 기능 사용법을 설명하는 튜토리얼 동영상을 NotebookLM이 자동 생성합니다. PDF 문서와 스크린샷 이미지를 소스로 제공하면, 별도 편집 도구 없이 단계별 설명 영상이 완성됩니다.
+**Gemini Enterprise Canvas** 기능 사용법을 설명하는 튜토리얼 동영상을 Gemini Notebook이 자동 생성합니다. PDF 문서와 스크린샷 이미지를 소스로 제공하면, 별도 편집 도구 없이 단계별 설명 영상이 완성됩니다.
 
 #### 1단계: 실습 파일 준비
 
@@ -417,7 +417,7 @@ pptx 파일로 다운로드하였습니다.
 
 #### 2단계: 새 노트북 생성 및 소스 추가
 
-1. [NotebookLM 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭합니다.
+1. [Gemini Notebook 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭합니다.
 2. **소스 추가** → **파일 업로드**에서 `canvas.pdf`를 추가합니다.
 3. `canvas.zip` 압축을 해제한 뒤, 이미지 파일 전체를 한꺼번에 소스로 업로드합니다.
 
@@ -443,7 +443,7 @@ Gemini Enterprise에서 Canvas를 사용하는 방법을 초보자도 따라가�
 
 > [!NOTE]
 > 참고 영상: [YouTube — Gemini Enterprise Canvas 데모](https://www.youtube.com/watch?v=4-5qeh4IXVY)
-> 동영상 생성 기능은 NotebookLM의 소스 내용을 기반으로 하므로, 소스 품질이 높을수록 더 정확한 튜토리얼 영상이 만들어집니다.
+> 동영상 생성 기능은 Gemini Notebook의 소스 내용을 기반으로 하므로, 소스 품질이 높을수록 더 정확한 튜토리얼 영상이 만들어집니다.
 
 ## 2.4. Deep Research Agent & Idea Generation Agent
 
@@ -476,7 +476,7 @@ Google이 직접 만들고 유지 관리하는 **"Made by Google" 에이전트**
 
 ### 💡 Idea Generation Agent 실습
 
-비즈니스 난제를 해결하고 창의적인 마케팅·운영·제품 아이디어를 설계하는 **토너먼트형 브레인스토밍 에이전트**입니다. 과학적 방법론에서 영감을 받은 **경쟁 평가 구조**로 다수의 후보 아이디어를 자율 생성한 뒤 비교·평가하여 최적 아이디어를 선별합니다. 마케팅·제품 개발·엔지니어링 등 다양한 도메인에서 활용할 수 있으며, 도출된 아이디어는 **NotebookLM Enterprise로 내보내기**하여 60일 이후에도 보존할 수 있습니다.
+비즈니스 난제를 해결하고 창의적인 마케팅·운영·제품 아이디어를 설계하는 **토너먼트형 브레인스토밍 에이전트**입니다. 과학적 방법론에서 영감을 받은 **경쟁 평가 구조**로 다수의 후보 아이디어를 자율 생성한 뒤 비교·평가하여 최적 아이디어를 선별합니다. 마케팅·제품 개발·엔지니어링 등 다양한 도메인에서 활용할 수 있으며, 도출된 아이디어는 **Gemini Notebook Enterprise로 내보내기**하여 60일 이후에도 보존할 수 있습니다.
 
 - **실습 진입**: 화면 좌측 에이전트 목록에서 **Idea Generation** 에이전트를 선택합니다.
 

@@ -168,7 +168,7 @@ Google 검색과 연결된 실시간 그라운딩으로, 최신 뉴스와 정책
   # Gemini Enterprise 핵심 기능
   - AI Assistant & Web Search: 최신 LLM을 통해 콘텐츠 생성, 코드 작성, 단위 테스트 생성이 가능하며 Google 검색을 실시간 소스로 활용
   - Deep Research: 복잡한 주제에 대해 수백 개의 소스를 스스로 검색 및 분석하여 상세 보고서와 오디오 요약 생성
-  - NotebookLM: 업로드한 드라이브 파일, 문서만을 기반으로 요약과 출처 검증이 가능한 리서치 어시스턴트
+  - Gemini Notebook: 업로드한 드라이브 파일, 문서만을 기반으로 요약과 출처 검증이 가능한 리서치 어시스턴트
   - Agent Designer: 코딩 없이 프롬프트와 데이터 설정만으로 맞춤형 AI 에이전트 직접 제작
   - Enterprise Connectors: Gmail, Drive뿐만 아니라 Jira, Confluence 등 외부 시스템 데이터를 완벽 연동
   - Media Generation: 텍스트 프롬프트로 기업용 고해상도 이미지 및 시네마틱 동영상 즉각 생성

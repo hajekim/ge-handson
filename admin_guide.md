@@ -435,9 +435,9 @@ Gemini Enterprise Plus 월 구독료 약 <b>42,000원 ($30)</b> 기준, **중립
 > **💡 C-Level 보고 의사결정 넛지**
 > 본 시뮬레이션은 단순 문서 요약과 메일 초안 작성 시간만을 산출한 지표입니다. High-Code 에이전트(ADK)를 통한 사내 기간계 ERP 자동화 및 BigQuery Conversational Analytics 연동을 통한 데이터 분석 시간 단축까지 결합하는 경우, 실제 가치 창출 규모는 위 산식보다 <b>3~5배 이상</b> 커질 수 있습니다.
 
-### 4) NotebookLM Enterprise 설정 및 거버넌스
-* **전사 보안 규칙 배포**: 엔터프라이즈 NotebookLM 환경에 대한 문서 접근 제어 및 데이터 주권 보안 규칙을 배포합니다.
-* **통합 Identity 및 Access 매핑**: 사용자 인증 및 권한 관리 설정을 일원화하여, Gemini Enterprise 애플리케이션 내부뿐만 아니라 웹 상의 독립된 NotebookLM 단독 접속 포털(notebooklm.google)에서도 사내 계정 및 부서별 보안 토글이 유기적으로 계승되도록 제어합니다.
+### 4) Gemini Notebook Enterprise 설정 및 거버넌스
+* **전사 보안 규칙 배포**: 엔터프라이즈 Gemini Notebook 환경에 대한 문서 접근 제어 및 데이터 주권 보안 규칙을 배포합니다.
+* **통합 Identity 및 Access 매핑**: 사용자 인증 및 권한 관리 설정을 일원화하여, Gemini Enterprise 애플리케이션 내부뿐만 아니라 웹 상의 독립된 Gemini Notebook 단독 접속 포털(notebooklm.google)에서도 사내 계정 및 부서별 보안 토글이 유기적으로 계승되도록 제어합니다.
 
 ---
 **축하합니다!** Gemini Enterprise의 End User 기본 실무 실습부터 Admin 코어 설정과 위협 분석까지의 성공적인 전체 핸즈온 교육 마스터 과정을 완료하셨습니다.
