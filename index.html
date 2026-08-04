@@ -837,6 +837,18 @@
   <div id="reading-progress"></div>
   <button id="back-to-top" title="맨 위로 가기">↑</button>
   <div id="app">로딩 중...</div>
+  <!-- Track 3 재활성화: 아래 script 블록 전체 제거 -->
+  <script>
+    (function() {
+      function blockAdminGuide() {
+        if (location.hash === '#/admin_guide' || location.hash.startsWith('#/admin_guide?') || location.hash.startsWith('#/admin_guide/')) {
+          location.replace(location.pathname + '#/');
+        }
+      }
+      blockAdminGuide();
+      window.addEventListener('hashchange', blockAdminGuide);
+    })();
+  </script>
   <script>
     window.$docsify = {
       name: '🌐 Gemini Enterprise Workshop',
@@ -865,14 +877,6 @@
         successText: '복사됨!'
       },
       plugins: [
-        function(hook, vm) {
-          hook.beforeEach(function(content) {
-            if (vm.route.path === '/admin_guide') {
-              window.location.hash = '#/';
-            }
-            return content;
-          });
-        },
         function(hook) {
           var zoom = null;
           hook.mounted(function() {
