@@ -103,6 +103,7 @@ graph TD
 
 > [!TIP]
 > **💡 세션 타임아웃 & 인증 만료 관리**
+>
 > - 구글 RAG 커넥터 및 3P 시스템(Jira, Confluence) 연동 시, 기본 보안 토큰의 수명 주기가 만료되면 임직원들의 RAG 검색 결과가 일시적으로 지연되거나 다시 로그인하라는 넛지가 반복될 수 있습니다.
 > - 이 경우, GCP 콘솔의 OAuth 동의 화면에서 <b>세션 제어 정책(Session Control Policy)</b>을 <b>'앱 승인 유지'</b>로 설정하거나 토큰 갱신 주기를 최대로 연장하면 임직원들의 로그인 피로도를 대폭 낮출 수 있습니다.
 
@@ -115,6 +116,7 @@ graph TD
 
 > [!NOTE]
 > **3P Enterprise Connectors (Jira/Confluence) 보안 거버넌스 및 VPC-SC 적용**
+>
 > Jira, Confluence, Salesforce 등 사내 3P 시스템과 연동하는 경우, 데이터 유출 방지를 위해 **VPC Service Controls (VPC-SC)** 보안 경계를 수립할 것을 적극 권장합니다. VPC-SC 경계를 통해 외부 RAG API 호출 및 아웃바운드 트래픽을 엄격히 통제하고, 승인된 구글 테넌트 및 사내 프라이빗 네트워크 대역에서만 트랜잭션과 인덱싱이 안전하게 일어나도록 강제할 수 있습니다.
 
 - **지원되는 엔터프라이즈 커넥터 및 Actions 활성화 (쓰기 권한 허가)**:
@@ -434,6 +436,7 @@ Gemini Enterprise Plus 월 구독료 약 <b>42,000원 ($30)</b> 기준, **중립
 
 > [!TIP]
 > **💡 C-Level 보고 의사결정 넛지**
+>
 > 이 시뮬레이션은 단순 문서 요약과 메일 초안 작성 시간만을 기준으로 산출한 수치입니다. High-Code 에이전트(ADK)를 통한 사내 기간계 ERP 자동화 및 BigQuery Conversational Analytics 연동을 통한 데이터 분석 시간 단축까지 결합하는 경우, 실제 가치 창출 규모는 위 산식보다 <b>3~5배 이상</b> 커질 수 있습니다.
 
 ### 4) Gemini Notebook Enterprise 설정 및 거버넌스

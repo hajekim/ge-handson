@@ -50,7 +50,7 @@
     <div style="flex: 1; font-size: 13.5px; color: #3c4043;">
       GCP 설정 · Cloud Identity · Workspace 커넥터 & Actions · Model Armor · Audit Logs SIEM · ROI 분석
     </div>
-    <a href="#/admin_guide" class="btn-start" style="color: var(--google-red); white-space: nowrap;">👉 교육 시작 →</a>
+    <span style="font-size: 12px; color: #9aa0a6; padding: 6px 14px; border: 1px solid #dadce0; border-radius: 8px;">준비 중</span>
   </div>
 
 </div>

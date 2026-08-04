@@ -865,6 +865,14 @@
         successText: '복사됨!'
       },
       plugins: [
+        function(hook, vm) {
+          hook.beforeEach(function(content) {
+            if (vm.route.path === '/admin_guide') {
+              window.location.hash = '#/';
+            }
+            return content;
+          });
+        },
         function(hook) {
           var zoom = null;
           hook.mounted(function() {
