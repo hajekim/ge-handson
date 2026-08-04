@@ -62,11 +62,15 @@
 
 ### 2) UI 개인화 메뉴 옵션 추가
 
-1. 메인 화면 하단 또는 좌측에 있는 추가 메뉴 활성화 옵션을 모두 체크(클릭)해 줍니다.
+1. 화면 좌측 하단의 **Settings & help > Appearance** 탭을 열고 **Homepage elements** 항목에서 홈 화면에 표시할 메뉴를 모두 체크합니다.
 
-   <img src="./img/04.png" width="400" alt="메뉴 옵션 추가 선택">
+   <img src="./img/04.png" width="400" alt="Homepage elements 설정 화면">
 
-2. 메인 대화창 옆에 업무 효율을 올려 줄 **Prompts, Shortcuts, For you, Notebooks** 퀵 메뉴가 정상적으로 나타났는지 확인합니다.
+2. 설정이 반영된 Gemini Enterprise 홈 화면입니다. **Prompts, Shortcuts, For you, Notebooks** 퀵 메뉴가 나타나 있는지 확인합니다.
+
+   <img src="./img/04a.png" width="400" alt="Gemini Enterprise 홈 화면 반영 결과">
+
+3. 메인 대화창 옆에 업무 효율을 올려 줄 퀵 메뉴가 정상적으로 나타났는지 확인합니다.
 
    <img src="./img/05.png" width="400" alt="메뉴 활성화 완료 화면">
 

@@ -40,33 +40,26 @@
 
 권한 승인 절차는 다음과 같습니다.
 
-1. 좌측 하단 **Settings & help** > **Personalization**을 클릭합니다.
+1. 대화창 오른쪽의 **커넥터 아이콘**을 클릭해 커넥터 목록을 열고, **Drive** 항목의 **Enable actions** 버튼을 클릭합니다.
 
-   <img src="./img/01.png" width="400" alt="Settings & help > Personalization 메뉴">
+   <img src="./img/auth_01.png" width="400" alt="커넥터 목록 — Drive Enable actions">
 
-2. Personalization 탭에서 이름, 직책, 업종을 입력합니다. 이 정보를 바탕으로 Gemini Enterprise가 답변을 조정합니다.
+2. 구글 계정 선택 팝업이 뜨면 실습에 제공된 계정을 선택합니다.
 
-   <img src="./img/02.png" width="600" alt="Profile 설정 화면">
+   <img src="./img/auth_02.png" width="400" alt="구글 계정 선택 팝업">
 
-3. 같은 탭을 아래로 내리면 Memory 섹션이 나옵니다. Drive 항목 옆 **Authorize** 버튼을 클릭해 Google Drive 연동 권한을 승인합니다. 토글이 회색이면 아직 연동 전입니다.
+3. 권한 요청 화면에서 Drive 파일 접근을 포함한 권한 목록을 확인하고 **Allow**를 클릭합니다.
 
-   <img src="./img/03.png" width="600" alt="Memory 섹션 Drive Authorize 버튼">
+   <img src="./img/auth_03.png" width="400" alt="OAuth 권한 동의 화면">
+
+4. Drive 항목이 **Disable actions** 버튼으로 바뀌면 Google Drive 연동이 완료된 것입니다.
+
+   <img src="./img/auth_04.png" width="400" alt="Drive 연동 완료 — Disable actions">
 
 > [!TIP]
 > **💡 OAuth 팝업 차단 트러블슈팅**
 >
-> - 구글 드라이브나 Workspace 연동 과정에서 최초 1회 권한 승인 팝업이 나타나지 않고 무한 로딩이 걸리는 경우, 브라우저 주소창 우측 끝의 <b>팝업 차단 아이콘</b>을 클릭하고 <b>'항상 허용'</b>으로 변경한 뒤 페이지를 새로고침합니다. 특히 크롬 브라우저에서 최초 동의 시 자주 발생하는 현상입니다.
-
-> [!TIP]
-> **💡 홈 화면 구성 설정**
->
-> Appearance 탭의 Homepage elements에서 홈 화면에 표시할 항목(Prompts, Shortcuts, Notebooks 등)을 체크박스로 고를 수 있습니다.
->
-> <img src="./img/04.png" width="600" alt="Homepage elements 설정 화면">
->
-> 설정이 반영된 Gemini Enterprise 홈 화면입니다.
->
-> <img src="./img/04a.png" width="600" alt="Gemini Enterprise 홈 화면 반영 결과">
+> 구글 드라이브나 Workspace 연동 중 계정 선택 팝업이 나타나지 않고 무한 로딩이 걸릴 때는, 브라우저 주소창 오른쪽 끝의 **팝업 차단 아이콘**을 클릭해 **'항상 허용'**으로 바꾼 뒤 페이지를 새로고침합니다. 크롬에서 최초 연동 시 자주 발생하는 현상입니다.
 
 ---
 
