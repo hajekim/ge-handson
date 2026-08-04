@@ -38,8 +38,33 @@
 구글 드라이브, 캘린더, Gmail 등을 연동해 사내 문서 검색이나 요약, 일정 관리를 자동화하려면 먼저 권한 승인이 필요합니다. 실습 과정 중 연동 권한을 요구하는 팝업(넛지)이 나타나면, 제공받은 구글 계정으로 로그인하여 권한 승인을 완료해 줍니다. 
 *(참고: 각 고객사의 Gemini Enterprise 어드민 설정 및 권한 제어 범위에 따라 Workspace 연동 활성화 여부가 상이할 수 있습니다. 활성화된 상태라면 개인 또는 사내 계정으로 최초 1회 동의를 마치면 즉시 사내 데이터 RAG를 사용하실 수 있습니다.)*
 
-> [!TIP|label: 💡 OAuth 팝업 차단 트러블슈팅]
+권한 승인 절차는 다음과 같습니다.
+
+1. 좌측 하단 **Settings & help** > **Personalization**을 클릭합니다.
+
+   <img src="./img/01.png" width="400" alt="Settings & help > Personalization 메뉴">
+
+2. Personalization 탭에서 이름, 직책, 업종을 입력합니다. 이 정보를 바탕으로 Gemini Enterprise가 답변을 조정합니다.
+
+   <img src="./img/02.png" width="600" alt="Profile 설정 화면">
+
+3. 같은 탭을 아래로 내리면 Memory 섹션이 나옵니다. Drive 항목 옆 **Authorize** 버튼을 클릭해 Google Drive 연동 권한을 승인합니다. 토글이 회색이면 아직 연동 전입니다.
+
+   <img src="./img/03.png" width="600" alt="Memory 섹션 Drive Authorize 버튼">
+
+> [!TIP]
+> **💡 OAuth 팝업 차단 트러블슈팅**
 > - 구글 드라이브나 Workspace 연동 과정에서 최초 1회 권한 승인 팝업이 나타나지 않고 무한 로딩이 걸리는 경우, 브라우저 주소창 우측 끝의 <b>팝업 차단 아이콘</b>을 클릭하고 <b>'항상 허용'</b>으로 변경한 뒤 페이지를 새로고침합니다. 특히 크롬 브라우저에서 최초 동의 시 자주 발생하는 현상입니다.
+
+> [!TIP]
+> **💡 홈 화면 구성 설정**
+> Appearance 탭의 Homepage elements에서 홈 화면에 표시할 항목(Prompts, Shortcuts, Notebooks 등)을 체크박스로 고를 수 있습니다.
+>
+> <img src="./img/04.png" width="600" alt="Homepage elements 설정 화면">
+>
+> 설정이 반영된 Gemini Enterprise 홈 화면입니다.
+>
+> <img src="./img/04a.png" width="600" alt="Gemini Enterprise 홈 화면 반영 결과">
 
 ---
 
