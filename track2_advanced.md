@@ -33,6 +33,10 @@ Gemini Notebook 팀 도서관 구축, Deep Research 자율 보고서, 에이전�
 
 업로드한 문서(PDF, 텍스트, 이미지) 범위 내에서 질의응답을 진행하고, Gemini Notebook으로 슬라이드, 인포그래픽, 튜토리얼 동영상을 자동 생성하는 실습입니다. 다음 5가지 과제를 순서대로 진행합니다.
 
+Gemini Enterprise App 좌측 메뉴 Agents 아래에 Gemini Notebook이 있습니다. 처음 접속한다면 아래 화면을 참고해 진입하세요.
+
+<img src="./img/notebooklm_000.png" width="280" alt="Gemini Enterprise App 좌측 메뉴 — Agents > Gemini Notebook">
+
 | 실습 | Gemini Notebook 기능 | 내용 |
 |------|------|------|
 | **실습 1** | **Infographic** | AI 인포그래픽 3종 스타일 변환 |
