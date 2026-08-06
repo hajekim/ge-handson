@@ -42,6 +42,17 @@
     <a href="#/track2_advanced" class="btn-start" style="color: var(--google-blue); white-space: nowrap;">👉 교육 시작 →</a>
   </div>
 
+  <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1.2rem 1.8rem; background: #f8f9fa; border-radius: 16px; border-left: 6px solid var(--google-blue);">
+    <div style="min-width: 210px;">
+      <div style="font-size: 1.05rem; font-weight: 700; color: var(--google-blue);">🔵+ Track 2 Plus. Connector & Custom Agent</div>
+      <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">Drive/GWS 커넥터 연동 완료 · 커스텀 에이전트 환경 구성 완료</div>
+    </div>
+    <div style="flex: 1; font-size: 13.5px; color: #3c4043;">
+      Drive 권한 승인 · Drive/GCS RAG · ADK/CAA 커스텀 에이전트 개발 및 GE 등록
+    </div>
+    <span style="font-size: 12px; color: #9aa0a6; padding: 6px 14px; border: 1px solid #dadce0; border-radius: 8px;">준비 중</span>
+  </div>
+
   <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1.2rem 1.8rem; background: #f8f9fa; border-radius: 16px; border-left: 6px solid var(--google-red);">
     <div style="min-width: 210px;">
       <div style="font-size: 1.05rem; font-weight: 700; color: var(--google-red);">🔴 Track 3. Admin Guide</div>

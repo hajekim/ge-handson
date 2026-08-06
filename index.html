@@ -838,15 +838,21 @@
   <button id="back-to-top" title="맨 위로 가기">↑</button>
   <div id="app">로딩 중...</div>
   <!-- Track 3 재활성화: 아래 script 블록 전체 제거 -->
+  <!-- Track 2 Plus 재활성화: 아래 script 블록 전체 제거 -->
   <script>
     (function() {
-      function blockAdminGuide() {
-        if (location.hash === '#/admin_guide' || location.hash.startsWith('#/admin_guide?') || location.hash.startsWith('#/admin_guide/')) {
-          location.replace(location.pathname + '#/');
+      function blockDisabledPages() {
+        var h = location.hash;
+        var blocked = ['#/admin_guide', '#/track2plus'];
+        for (var i = 0; i < blocked.length; i++) {
+          if (h === blocked[i] || h.startsWith(blocked[i] + '?') || h.startsWith(blocked[i] + '/')) {
+            location.replace(location.pathname + '#/');
+            return;
+          }
         }
       }
-      blockAdminGuide();
-      window.addEventListener('hashchange', blockAdminGuide);
+      blockDisabledPages();
+      window.addEventListener('hashchange', blockDisabledPages);
     })();
   </script>
   <script>
