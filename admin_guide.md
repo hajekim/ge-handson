@@ -7,6 +7,11 @@
 
 IT 관리자와 CISO를 위한 기술 실습 가이드입니다. GCP 설정, 권한 관리, 보안 관제, 감사 로그 추적, ROI 시뮬레이션을 단계별로 다룹니다.
 
+> [!NOTE]
+> **🔐 대상 안내**
+>
+> 이 트랙의 모든 내용은 **Gemini Enterprise를 관리하는 조직**(IT 인프라팀·CISO·클라우드 운영팀)이 수행합니다. 일반 임직원은 직접 실행하지 않으며, 관리 부서의 환경 구성 결과를 바탕으로 Track 1·2 실습이 진행됩니다.
+
 <div class="download-card">
   <div class="download-card-left">
     <div class="download-icon-box" style="background: #fce8e6; color: #ea4335;">🔐</div>

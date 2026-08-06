@@ -29,7 +29,7 @@ Gemini Notebook 팀 도서관 구축, Deep Research 자율 보고서, 에이전�
 
 ---
 
-## 2.1. 엔터프라이즈 Gemini Notebook 협업 실습
+## 2.1. Gemini Notebook
 
 업로드한 문서(PDF, 텍스트, 이미지) 범위 내에서 질의응답을 진행하고, Gemini Notebook으로 슬라이드, 인포그래픽, 튜토리얼 동영상을 자동 생성하는 실습입니다. 다음 5가지 과제를 순서대로 진행합니다.
 

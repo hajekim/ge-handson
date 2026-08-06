@@ -2,6 +2,7 @@
 
 <div class="track-slide-bar" style="border-color: var(--google-blue);">
   <span class="track-slide-label">🔗 커넥터 & 커스텀 에이전트 심화 실습</span>
+  <a href="slide_track2plus.html" target="_blank" class="track-slide-btn" style="color: var(--google-blue);">📽️ 슬라이드로 강의 시작 →</a>
 </div>
 
 Google Drive / Workspace 커넥터 연동과 Python 기반 커스텀 에이전트 개발을 다루는 심화 과정입니다. 어드민이 사전에 커넥터 또는 커스텀 에이전트 환경을 구성한 경우에만 진행합니다.
@@ -14,6 +15,25 @@ Google Drive / Workspace 커넥터 연동과 Python 기반 커스텀 에이전�
 > - **Part B**: Cloud Run 기반 커스텀 에이전트 배포 및 GE 등록 완료
 >
 > 환경이 준비되지 않은 경우 강사에게 문의하세요.
+
+<div class="download-card">
+  <div class="download-card-left">
+    <div class="download-icon-box" style="background: #e8f0fe; color: #1a73e8;">📦</div>
+    <div class="download-text">
+      <h4>Track 2 Plus 실습 파일 다운로드</h4>
+      <p>Part A.2 RAG 실습에 사용할 샘플 문서 3종을 미리 다운로드합니다. Drive 또는 GCS에 업로드할 때 사용합니다.</p>
+    </div>
+  </div>
+  <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <a href="samples/%5B공통_내규%5D_넥스트_테크놀로지스_임직원_복리후생_가이드라인.pdf" download class="download-btn" style="background: #1a73e8; padding: 10px 16px; font-size: 0.9rem;">📕 복리후생 가이드라인.pdf</a>
+    <a href="samples/%5B마케팅_캠페인%5D_넥스트_테크놀로지스_사내_브랜드_앰버서더_프로그램_가이드라인.pdf" download class="download-btn" style="background: #e8710a; padding: 10px 16px; font-size: 0.9rem;">📕 앰버서더 프로그램 가이드라인.pdf</a>
+    <a href="samples/track2_rag_policy.md" download class="download-btn" style="background: #34a853; padding: 10px 16px; font-size: 0.9rem;">📄 AI 윤리 및 보안 규정.md</a>
+  </div>
+</div>
+<div class="verify-card" data-verify-id="track2plus-data">
+  <div class="verify-checkbox"></div>
+  <span>Part A.2 실습에 사용할 샘플 파일 3종을 다운로드하고 Google Drive 또는 GCS에 업로드하였습니다.</span>
+</div>
 
 ---
 
