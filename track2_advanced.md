@@ -35,7 +35,7 @@ Gemini Notebook 팀 도서관 구축, Deep Research 자율 보고서, 에이전�
 
 Gemini Enterprise App 좌측 메뉴 Agents 아래에 Gemini Notebook이 있습니다. 처음 접속한다면 아래 화면을 참고해 진입하세요.
 
-<img src="./img/notebooklm_000.png" width="280" alt="Gemini Enterprise App 좌측 메뉴 — Agents > Gemini Notebook">
+<img src="./img/notebooklm_000.webp" width="280" alt="Gemini Enterprise App 좌측 메뉴 — Agents > Gemini Notebook">
 
 | 실습 | Gemini Notebook 기능 | 내용 |
 |------|------|------|
@@ -54,11 +54,11 @@ Gemini Enterprise App 좌측 메뉴 Agents 아래에 Gemini Notebook이 있습�
 1. **새 노트북 생성**: Gemini Enterprise App 좌측 메뉴 **Agents → Gemini Notebook**에서 **새로만들기**를 클릭합니다.
 2. **소스 타입 선택**: 소스 추가 패널에서 **텍스트 붙여넣기**를 선택합니다.
 
-   <img src="./img/41.png" width="600" alt="텍스트 붙여넣기 소스 추가">
+   <img src="./img/41.webp" width="600" alt="텍스트 붙여넣기 소스 추가">
 
 3. 아래 3가지 Google 제품 소개 문서를 **각각 개별 소스로 붙여넣기**합니다.
 
-   <img src="./img/42.png" width="600" alt="소스 텍스트 붙여넣기 완료 상태">
+   <img src="./img/42.webp" width="600" alt="소스 텍스트 붙여넣기 완료 상태">
 
    **[소스 A] Google Gemini**
    ```
@@ -105,21 +105,21 @@ Gemini Enterprise App 좌측 메뉴 Agents 아래에 Gemini Notebook이 있습�
    Anthos와 Google Distributed Cloud로 온프레미스와 멀티 클라우드 환경을 단일 콘솔에서 관리합니다. 기존 인프라에 Google Cloud를 단계적으로 도입하는 하이브리드 전략을 지원합니다.
    ```
 
-   <img src="./img/notebooklm_003.png" width="600" alt="총 세 개의 텍스트 소스">
+   <img src="./img/notebooklm_003.webp" width="600" alt="총 세 개의 텍스트 소스">
 
    Gemini Notebook은 입력한 소스를 기반으로 질문하고 답변을 받을 수 있습니다.
-   <img src="./img/notebooklm_001.png" width="600" alt="기본 프롬프트">
+   <img src="./img/notebooklm_001.webp" width="600" alt="기본 프롬프트">
 
 1. **기본 인포그래픽**: 우측에 Infograpgic 버튼의 점 세 개 메뉴를 클릭합니다.
-   <img src="./img/notebooklm_004.png" width="600" alt="Infographic 버튼">
+   <img src="./img/notebooklm_004.webp" width="600" alt="Infographic 버튼">
 
     그 후 아래 프롬프트를 입력합니다.
    ```
    Google Workspace의 주요 앱과 각 앱에 통합된 Gemini AI 기능을 한눈에 정리한 인포그래픽을 만들어줘
    ```
 
-   <img src="./img/notebooklm_005.png" width="600" alt="인포그래픽 프롬프트 입력">
-   <img src="./img/46.png" width="600" alt="기본 인포그래픽 생성 결과">
+   <img src="./img/notebooklm_005.webp" width="600" alt="인포그래픽 프롬프트 입력">
+   <img src="./img/46.webp" width="600" alt="기본 인포그래픽 생성 결과">
 
    > [!TIP]
    > **화면 비율 안내**: 인포그래픽이 세로로 길게 보일 수 있습니다. **다운로드** 버튼으로 저장하면 16:9 가로 비율로 정상 출력됩니다.
@@ -128,16 +128,16 @@ Gemini Enterprise App 좌측 메뉴 Agents 아래에 Gemini Notebook이 있습�
    ```
    Google Gemini Enterprise의 핵심 기능과 실무 활용 시나리오를 스케치노트 스타일로 그려줘
    ```
-   <img src="./img/notebooklm_006.png" width="600" alt="인포그래픽 프롬프트 입력">
+   <img src="./img/notebooklm_006.webp" width="600" alt="인포그래픽 프롬프트 입력">
 
-   <img src="./img/47.png" width="600" alt="스케치노트 스타일 인포그래픽 결과">
+   <img src="./img/47.webp" width="600" alt="스케치노트 스타일 인포그래픽 결과">
 
 3. **신문 1면 스타일**: 동일 소스에서 퍼블리싱 톤의 결과물을 뽑아봅니다.
    ```
    Google Cloud Vertex AI와 BigQuery 기반 기업 AI 혁신 현황을 신문 1면 기사 스타일 인포그래픽으로 만들어줘
    ```
-   <img src="./img/notebooklm_007.png" width="600" alt="인포그래픽 프롬프트 입력">
-   <img src="./img/48.png" width="600" alt="신문 1면 스타일 인포그래픽 결과">
+   <img src="./img/notebooklm_007.webp" width="600" alt="인포그래픽 프롬프트 입력">
+   <img src="./img/48.webp" width="600" alt="신문 1면 스타일 인포그래픽 결과">
 
 ---
 
@@ -145,11 +145,11 @@ Gemini Enterprise App 좌측 메뉴 Agents 아래에 Gemini Notebook이 있습�
 
 Gemini Notebook의 킬러 기능 중 하나입니다. 동일 노트북 우측 **오디오 개요** 패널에서 **생성하기**를 클릭하면, AI 진행자 2인이 소스 문서 전체를 요약해 **5~8분 분량의 팟캐스트 오디오**를 자동 완성합니다.
 
-<img src="./img/notebooklm_008.png" width="600" alt="Audio Overview">
+<img src="./img/notebooklm_008.webp" width="600" alt="Audio Overview">
 
 오디오 생성은 소요시간이 꽤 걸리므로 다른 작업을 진행 후 이후에 확인해봅니다.
 
-<img src="./img/notebooklm_009.png" width="600" alt="Output: Audio Overview">
+<img src="./img/notebooklm_009.webp" width="600" alt="Output: Audio Overview">
 
 
 > [!TIP]
@@ -169,20 +169,20 @@ Gemini Notebook의 킬러 기능 중 하나입니다. 동일 노트북 우측 **
 
 다운로드 후 압축을 해제하면 `sofa.png`, `cushion.png`, `lighting.png`, `diffuser.png` 4장의 제품 이미지가 나옵니다.
 
-<img src="./img/notebooklm_010.png" width="600" alt="homestyle.zip">
+<img src="./img/notebooklm_010.webp" width="600" alt="homestyle.zip">
 
 #### 2단계: 새 노트북 생성 및 이미지 소스 추가
 
 1. Gemini Enterprise App 좌측 메뉴 **Agents → Gemini Notebook**에서 **새로만들기**를 클릭해 새 노트북을 엽니다.
 2. **소스 추가** → **파일 업로드**를 선택하고 압축 해제된 이미지 4장(`sofa.png`, `cushion.png`, `lighting.png`, `diffuser.png`)을 **한꺼번에** 선택해 업로드합니다.
 
-   <img src="./img/notebooklm_011.png" width="600" alt="Gemini Notebook 이미지 소스 4장 업로드 완료">
+   <img src="./img/notebooklm_011.webp" width="600" alt="Gemini Notebook 이미지 소스 4장 업로드 완료">
 
 #### 3단계: 브랜드 스토리 텍스트 추가
 
 **소스 추가** → **텍스트 붙여넣기**를 선택하고, 아래 텍스트를 복사해 붙여넣기한 뒤 소스 이름을 **story** 로 저장합니다.
 
-<img src="./img/notebooklm_012.png" width="600" alt="Gemini Notebook 텍스트 소스 입력">
+<img src="./img/notebooklm_012.webp" width="600" alt="Gemini Notebook 텍스트 소스 입력">
 
 ```markdown
 ### **스토리**
@@ -224,15 +224,15 @@ Gemini Notebook의 킬러 기능 중 하나입니다. 동일 노트북 우측 **
 * **스토리:** 잘 정돈된 아름다운 공간 속에서 오감으로 완성된 나만의 안식처를 보여주며 상쾌하게 마무리됩니다.
 ```
 
-<img src="./img/notebooklm_012.png" width="600" alt="Gemini Notebook 텍스트 소스 붙여넣기">
+<img src="./img/notebooklm_012.webp" width="600" alt="Gemini Notebook 텍스트 소스 붙여넣기">
 
-<img src="./img/notebooklm_013.png" width="600" alt="Gemini Notebook 소스는 총 다섯개">
+<img src="./img/notebooklm_013.webp" width="600" alt="Gemini Notebook 소스는 총 다섯개">
 
 #### 4단계: 시네마틱 슬라이드 생성
 
 소스가 모두 준비되면, 노트북 우측 **슬라이드 자료** 패널에서 customize 옵션을 선택합니다.
 
-<img src="./img/notebooklm_014.png" width="600" alt="슬라이드 자료">
+<img src="./img/notebooklm_014.webp" width="600" alt="슬라이드 자료">
 
 아래 프롬프트를 복사하여 붙여넣습니다.
 
@@ -240,23 +240,23 @@ Gemini Notebook의 킬러 기능 중 하나입니다. 동일 노트북 우측 **
 스토리에 맞는 시네마틱 슬라이드를 만들어줘, 타이틀, 텍스트, 자막, 설명 등은 포함하지 마
 ```
 
-<img src="./img/notebooklm_015.png" width="600" alt="슬라이드 생성 입력">
+<img src="./img/notebooklm_015.webp" width="600" alt="슬라이드 생성 입력">
 
 생성하는 데 시간이 걸립니다.
 
-<img src="./img/notebooklm_016.png" width="600" alt="슬라이드 생성을 하는 중">
+<img src="./img/notebooklm_016.webp" width="600" alt="슬라이드 생성을 하는 중">
 
 완성된 슬라이드를 볼 수 있습니다.
 
-<img src="./img/notebooklm_017.png" width="600" alt="슬라이드 생성 완료">
+<img src="./img/notebooklm_017.webp" width="600" alt="슬라이드 생성 완료">
 
 다운로드도 할 수 있습니다.
 
-<img src="./img/notebooklm_018.png" width="600" alt="슬라이드 받을까 말까">
+<img src="./img/notebooklm_018.webp" width="600" alt="슬라이드 받을까 말까">
 
 pptx 파일로 다운로드하였습니다.
 
-<img src="./img/notebooklm_019.png" width="600" alt="슬라이드 받을까 말까">
+<img src="./img/notebooklm_019.webp" width="600" alt="슬라이드 받을까 말까">
 
 결과물은 직접 보실 수 있습니다.
 
@@ -277,35 +277,35 @@ pptx 파일로 다운로드하였습니다.
 
 1. Gemini Enterprise App 좌측 메뉴 **Agents → Gemini Notebook**에서 **새로만들기**를 클릭합니다. **소스 추가** → **파일 업로드**를 선택한 뒤, 상단에서 다운로드한 `data_agent.zip`의 압축을 해제하고 이미지 10개를 소스에 추가합니다.
 
-   <img src="./img/notebooklm_020.png" width="600" alt="10개의 파일을 업로드 완료">
+   <img src="./img/notebooklm_020.webp" width="600" alt="10개의 파일을 업로드 완료">
 
 2. 우측 **Studio** 패널에서 **슬라이드** 의 Customize 버튼을 클릭합니다.
 
-   <img src="./img/notebooklm_014.png" width="600" alt="슬라이드 자료">
+   <img src="./img/notebooklm_014.webp" width="600" alt="슬라이드 자료">
 
 3. 그 후 아래 텍스트를 복사하여 붙여넣습니다.
    ```
    BigQuery Data Agent를 생성하는 과정을 초보자도 쉽게 따라할 수 있도록 가이드 문서를 작성해줘
    ```
 
-   <img src="./img/notebooklm_021.png" width="600" alt="슬라이드 Customize 프롬프트 입력">
+   <img src="./img/notebooklm_021.webp" width="600" alt="슬라이드 Customize 프롬프트 입력">
 
 4. 완성되면 아래처럼 출력됩니다.
 
-   <img src="./img/notebooklm_022-a.png" width="600" alt="결과물">
-   <img src="./img/notebooklm_022-b.png" width="600" alt="결과물">
+   <img src="./img/notebooklm_022-a.webp" width="600" alt="결과물">
+   <img src="./img/notebooklm_022-b.webp" width="600" alt="결과물">
 
 5. Studio 섹션에서 Reports 에서 Study guide, FAQ, Briefing doc을 차례대로 클릭해봅니다.
-   <img src="./img/notebooklm_029.png" width="600" alt="결과물">
+   <img src="./img/notebooklm_029.webp" width="600" alt="결과물">
 
 6. Study guide 결과입니다.
-<img src="./img/notebooklm_030.png" width="600" alt="결과물">
+<img src="./img/notebooklm_030.webp" width="600" alt="결과물">
 
 7. FAQ 결과입니다.
-<img src="./img/notebooklm_031.png" width="600" alt="결과물">
+<img src="./img/notebooklm_031.webp" width="600" alt="결과물">
 
 8. Briefing doc 결과입니다.
-<img src="./img/notebooklm_032.png" width="600" alt="결과물">
+<img src="./img/notebooklm_032.webp" width="600" alt="결과물">
 
 > [!TIP]
 > 스터디 가이드는 기술 개념 학습용으로, FAQ는 팀 온보딩 자료로, 브리핑 문서는 임원 보고서로 바로 활용할 수 있습니다.
@@ -332,25 +332,25 @@ pptx 파일로 다운로드하였습니다.
 2. **소스 추가** → **파일 업로드**에서 `canvas.pdf`를 추가합니다.
 3. `canvas.zip` 압축을 해제한 뒤, 이미지 파일 전체를 한꺼번에 소스로 업로드합니다.
 
-<img src="./img/notebooklm_023.png" width="600" alt="canvas.pdf + 스크린샷 이미지 소스 추가 완료">
+<img src="./img/notebooklm_023.webp" width="600" alt="canvas.pdf + 스크린샷 이미지 소스 추가 완료">
 
 #### 3단계: 동영상 생성 프롬프트 입력
 
 소스 업로드가 완료되면 Video Overview의 Customize 버튼을 클릭합니다.
 
-<img src="./img/notebooklm_024.png" width="600" alt="영상 커스터마이즈 생성">
+<img src="./img/notebooklm_024.webp" width="600" alt="영상 커스터마이즈 생성">
 
 ```markdown
 Gemini Enterprise에서 Canvas를 사용하는 방법을 초보자도 따라가기 쉽게 차근차근 설명하는 동영상을 만들어줘
 ```
 
-<img src="./img/notebooklm_025.png" width="600" alt="영상 생성을 위한 프롬프트 입력">
+<img src="./img/notebooklm_025.webp" width="600" alt="영상 생성을 위한 프롬프트 입력">
 
 잠시 후 Canvas 기능 소개 튜토리얼 영상이 자동 완성됩니다.
 
-<img src="./img/notebooklm_026.png" width="600" alt="Gemini Enterprise Canvas 튜토리얼 동영상 생성 결과 1">
-<img src="./img/notebooklm_027.png" width="600" alt="Gemini Enterprise Canvas 튜토리얼 동영상 생성 결과 2">
-<img src="./img/notebooklm_028.png" width="600" alt="Gemini Enterprise Canvas 튜토리얼 동영상 생성 결과 3">
+<img src="./img/notebooklm_026.webp" width="600" alt="Gemini Enterprise Canvas 튜토리얼 동영상 생성 결과 1">
+<img src="./img/notebooklm_027.webp" width="600" alt="Gemini Enterprise Canvas 튜토리얼 동영상 생성 결과 2">
+<img src="./img/notebooklm_028.webp" width="600" alt="Gemini Enterprise Canvas 튜토리얼 동영상 생성 결과 3">
 
 > [!NOTE]
 > 참고 영상: [YouTube — Gemini Enterprise Canvas 데모](https://www.youtube.com/watch?v=4-5qeh4IXVY)
@@ -373,7 +373,7 @@ Google이 직접 만들고 관리하는 **"Made by Google" 에이전트**입니�
 
 - **실습 진입**: 화면 좌측 또는 하단 메뉴에서 **Deep Research** 아이콘을 클릭합니다.
 
-  <img src="./img/34.png" width="600" alt="Deep Research 에이전트 진입">
+  <img src="./img/34.webp" width="600" alt="Deep Research 에이전트 진입">
 
 - **리서치 프롬프트 복사 및 실행**:
   대화창에 아래 프롬프트를 입력하여 실습을 진행합니다.
@@ -382,8 +382,8 @@ Google이 직접 만들고 관리하는 **"Made by Google" 에이전트**입니�
   ```
   에이전트가 시작되면 수집·심층 검색 단계가 비주얼 대시보드에 표시됩니다. 완료되면 목차(TOC)와 풍부한 인용 링크가 달린 마스터 보고서와 팟캐스트 형태의 오디오 요약본을 받을 수 있습니다. 보통 **3~8분** 걸립니다.
 
-  <img src="./img/32.png" width="600" alt="Deep Research 분석 보고서 생성 결과 1">
-  <img src="./img/33.png" width="600" alt="Deep Research 분석 보고서 생성 결과 2">
+  <img src="./img/32.webp" width="600" alt="Deep Research 분석 보고서 생성 결과 1">
+  <img src="./img/33.webp" width="600" alt="Deep Research 분석 보고서 생성 결과 2">
 
 ## 2.3. Agent Designer
 
@@ -411,7 +411,7 @@ Google이 직접 만들고 관리하는 **"Made by Google" 에이전트**입니�
 | **Single-step** | 특정 작업을 독립적으로 완수하는 에이전트 | 명확하게 정의된 단일 목적 작업 |
 | **Multi-step** | 메인 에이전트가 하나 이상의 서브에이전트를 조율해 복합 작업을 처리하는 에이전트 | 순차적 단계로 분해 가능한 복합 업무 |
 
-<img src="./img/image9.png" width="800" alt="Agent Designer 전체 UI 구조">
+<img src="./img/image9.webp" width="800" alt="Agent Designer 전체 UI 구조">
 
 - **Chat Pane**: 자연어로 에이전트를 생성하고 수정하는 노코드 대화 인터페이스. "이메일 알리미 만들어줘"라고 요청하면 역할·권한·규칙이 자동으로 구성됩니다.
 - **Designer Pane**:
@@ -432,11 +432,11 @@ Google이 직접 만들고 관리하는 **"Made by Google" 에이전트**입니�
 ### 3) 💻 실전 실습: CRAFT 프롬프트 에이전트 만들기
 1. 상단 **Agents** 메뉴를 클릭합니다.
 
-<img src="./img/agentdesigner-008.png" width="600" alt="Agents 메뉴 진입">
+<img src="./img/agentdesigner-008.webp" width="600" alt="Agents 메뉴 진입">
 
 2. **New Agent**를 클릭합니다.
 
-<img src="./img/agentdesigner-001.png" width="600" alt="New Agent 버튼 클릭">
+<img src="./img/agentdesigner-001.webp" width="600" alt="New Agent 버튼 클릭">
 
 3. Chat Pane(왼쪽 대화창)에 아래 설계 요구 명세를 입력합니다.
 
@@ -456,28 +456,28 @@ Google이 직접 만들고 관리하는 **"Made by Google" 에이전트**입니�
 **Tone / Target (타겟 및 어조):** 답변의 최종 소비자가 누구인지 정의하고 전문적, 친근함 등의 톤앤매너를 설정합니다.
 ```
 
-<img src="./img/agentdesigner-002.png" width="600" alt="Chat Pane에 설계 요구 명세 입력">
+<img src="./img/agentdesigner-002.webp" width="600" alt="Chat Pane에 설계 요구 명세 입력">
 
 4. 에이전트가 생성되면 편집 화면으로 자동 이동합니다. 왼쪽 **Chat Pane**에서 대화로 에이전트를 수정하고, 오른쪽 **Flow Builder**에서 캔버스 세부 설정을 조정합니다.
 
-<img src="./img/agentdesigner-003.png" width="600" alt="Chat Pane과 Flow Builder 편집 화면">
+<img src="./img/agentdesigner-003.webp" width="600" alt="Chat Pane과 Flow Builder 편집 화면">
 
 5. **Preview** 탭에서 생성된 에이전트를 직접 테스트합니다.
 
-<img src="./img/agentdesigner-004.png" width="600" alt="Preview 탭에서 에이전트 테스트">
+<img src="./img/agentdesigner-004.webp" width="600" alt="Preview 탭에서 에이전트 테스트">
 
 6. 테스트가 완료되면 **Create** 버튼을 눌러 에이전트를 배포합니다.
 
-<img src="./img/agentdesigner-005.png" width="600" alt="Create 버튼으로 에이전트 배포">
+<img src="./img/agentdesigner-005.webp" width="600" alt="Create 버튼으로 에이전트 배포">
 
 배포 후 에이전트를 계속 수정하거나 채팅으로 바로 사용할 수 있습니다.
 
-<img src="./img/agentdesigner-006.png" width="600" alt="배포 후 수정 또는 채팅 선택 화면">
-<img src="./img/agentdesigner-007.png" width="600" alt="배포된 에이전트 채팅 화면">
+<img src="./img/agentdesigner-006.webp" width="600" alt="배포 후 수정 또는 채팅 선택 화면">
+<img src="./img/agentdesigner-007.webp" width="600" alt="배포된 에이전트 채팅 화면">
 
 7. 좌측 **Agents** 목록 → **Your Agents**에서 생성된 에이전트를 확인합니다.
 
-<img src="./img/agentdesigner-009.png" width="600" alt="Your Agents 목록에서 생성된 에이전트 확인">
+<img src="./img/agentdesigner-009.webp" width="600" alt="Your Agents 목록에서 생성된 에이전트 확인">
 
 
 
@@ -488,23 +488,23 @@ Google이 직접 만들고 관리하는 **"Made by Google" 에이전트**입니�
    뉴스 링크를 입력 받아서 Social Media 포스팅할 게시물 문구를 생성하는 에이전트를 만들어줘 포스팅할 문구는 간략한 한줄 문장과 bullet point 5개를 생성하고 Hashtag도 추천
    ```
 
-   <img src="./img/image53.png" width="700" alt="에이전트 디자이너 프롬프트 입력">
+   <img src="./img/image53.webp" width="700" alt="에이전트 디자이너 프롬프트 입력">
 
 3. 시스템이 자동으로 뼈대를 잡으면, 우측 상세 Flow를 최종 검토한 뒤 상단의 **Create(생성)** 또는 **Publish** 버튼을 클릭하여 적용합니다.
 
-   <img src="./img/image78.png" width="800" alt="디자이너 Flow 및 상세 설정">
+   <img src="./img/image78.webp" width="800" alt="디자이너 Flow 및 상세 설정">
 
    4. 프리뷰 테스트 창에 아래 뉴스 기사 링크를 복사해 붙여넣어 에이전트가 요약 포스팅을 제대로 만들어내는지 테스트합니다.
       ```markdown
       이 뉴스 링크로 소셜 미디어 게시물을 만들어줘: https://news.next-tech.com/smart-office-iot-2026/
       ```
 
-   <img src="./img/image14.png" width="800" alt="에이전트 프리뷰 뉴스 테스트">
-   <img src="./img/image70.png" width="800" alt="테스트 성공 출력화면">
+   <img src="./img/image14.webp" width="800" alt="에이전트 프리뷰 뉴스 테스트">
+   <img src="./img/image70.webp" width="800" alt="테스트 성공 출력화면">
 
 5. 에이전트가 완성되었다면 사내 <b>Agent Gallery</b>에 발행하여 전사 공유합니다. 우측 상단의 `Share` 클릭 후, `Add People` 지정 대신 `Done`을 누르면 사내 공용 채널인 'Low Code Agents'에 갤러리 형태로 자동으로 등록됩니다.
 
-<img src="./img/image23.png" width="800" alt="에이전트 공유 시작">
+<img src="./img/image23.webp" width="800" alt="에이전트 공유 시작">
 
 ---
 
@@ -534,7 +534,7 @@ Google이 직접 만들고 관리하는 **"Made by Google" 에이전트**입니�
 
 좌측 **Agents**에서 **New Agent > Workflow Agent**를 클릭합니다.
 
-<img src="./img/workflowagent-010.png" width="600" alt="Workflow Agent 생성 메뉴">
+<img src="./img/workflowagent-010.webp" width="600" alt="Workflow Agent 생성 메뉴">
 
 Chat Pane에 아래 프롬프트를 입력합니다.
 ```
@@ -565,44 +565,44 @@ Step 4. 후속 질의 제안
  - 텍스트는 명확하고 가독성 높은 한국어 마크다운 포맷으로 전달하세요.
 ```
 
-<img src="./img/workflowagent-011.png" width="600" alt="Chat Pane에 시장 분석 에이전트 프롬프트 입력">
+<img src="./img/workflowagent-011.webp" width="600" alt="Chat Pane에 시장 분석 에이전트 프롬프트 입력">
 
 입력한 프롬프트를 기반으로 Workflow Agent가 자동 생성됩니다.
 
-<img src="./img/workflowagent-012.png" width="600" alt="Workflow Agent 자동 생성 완료">
+<img src="./img/workflowagent-012.webp" width="600" alt="Workflow Agent 자동 생성 완료">
 
 생성된 에이전트는 순차 실행되는 멀티 에이전트 구조로 구성됩니다. 각 Gemini 노드를 클릭하면 Instruction·Knowledge·Tools·Output·Model 등 세부 설정을 확인하고 수정할 수 있습니다.
 
-<img src="./img/workflowagent-013.png" width="600" alt="노드 클릭 시 세부 설정 확인">
+<img src="./img/workflowagent-013.webp" width="600" alt="노드 클릭 시 세부 설정 확인">
 
 **Preview** 탭에서 **Start manually**를 클릭해 실행합니다. 각 단계가 순서대로 실행되는 흐름을 실시간으로 확인하고 수정할 수 있습니다.
 
-<img src="./img/workflowagent-014.png" width="600" alt="Preview 탭 Start manually 버튼">
+<img src="./img/workflowagent-014.webp" width="600" alt="Preview 탭 Start manually 버튼">
 
-<img src="./img/workflowagent-015.png" width="600" alt="단계별 실행 흐름 실시간 확인">
+<img src="./img/workflowagent-015.webp" width="600" alt="단계별 실행 흐름 실시간 확인">
 
 첫 번째 노드는 스케줄러 트리거, 두 번째 노드는 **Human-in-the-loop** 승인 단계입니다. 분석할 산업군 또는 기업명을 입력합니다.
 
-<img src="./img/workflowagent-016.png" width="600" alt="Human-in-the-loop 단계에서 분석 대상 입력">
+<img src="./img/workflowagent-016.webp" width="600" alt="Human-in-the-loop 단계에서 분석 대상 입력">
 
 입력이 완료되면 다음 단계로 자동 진행됩니다.
 
-<img src="./img/workflowagent-017.png" width="600" alt="다음 단계로 자동 진행">
+<img src="./img/workflowagent-017.webp" width="600" alt="다음 단계로 자동 진행">
 
 세 번째·네 번째 노드가 순서대로 실행됩니다.
 
-<img src="./img/workflowagent-018.png" width="600" alt="세 번째·네 번째 노드 순차 실행 중">
+<img src="./img/workflowagent-018.webp" width="600" alt="세 번째·네 번째 노드 순차 실행 중">
 
 모든 단계가 성공적으로 완료됩니다.
 
-<img src="./img/workflowagent-019.png" width="600" alt="모든 단계 완료 상태">
+<img src="./img/workflowagent-019.webp" width="600" alt="모든 단계 완료 상태">
 
 실행 결과를 확인합니다.
 
-<img src="./img/workflowagent-020.png" width="600" alt="시장 분석 결과 - Executive Summary">
-<img src="./img/workflowagent-021.png" width="600" alt="시장 분석 결과 - 경쟁사 비교 분석표">
-<img src="./img/workflowagent-022.png" width="600" alt="시장 분석 결과 - SWOT 분석">
-<img src="./img/workflowagent-023.png" width="600" alt="시장 분석 결과 - 시사점 및 후속 질의 제안">  
+<img src="./img/workflowagent-020.webp" width="600" alt="시장 분석 결과 - Executive Summary">
+<img src="./img/workflowagent-021.webp" width="600" alt="시장 분석 결과 - 경쟁사 비교 분석표">
+<img src="./img/workflowagent-022.webp" width="600" alt="시장 분석 결과 - SWOT 분석">
+<img src="./img/workflowagent-023.webp" width="600" alt="시장 분석 결과 - 시사점 및 후속 질의 제안">  
 
 ### 3) 🏭 실무 활용 대표 예시: Price & Margin Optimization Agent
 경쟁사 가격 변동에 대응하여 자동으로 마진을 분석하고 가격 정책 및 후속 마케팅을 처리하는 워크플로우입니다.

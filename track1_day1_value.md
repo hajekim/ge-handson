@@ -36,18 +36,18 @@
 
 1. 화면 좌측 하단의 **Settings & help > Personalization** 메뉴를 클릭합니다.
 
-   <img src="./img/01.png" width="400" alt="Settings & help &gt; Personalization 메뉴">
+   <img src="./img/01.webp" width="400" alt="Settings & help &gt; Personalization 메뉴">
 
 2. 내 직무와 소속에 가장 알맞은 맞춤형 답변을 받을 수 있도록 아래 필수 정보를 입력합니다.
    - **선호하는 이름**: (예: `홍길동 마케터`)
    - **내 직무**: (예: `글로벌 브랜드 마케터`)
    - **우리 회사 산업군**: (예: `자동차 및 모빌리티 (Automotive & Mobility)`)
 
-   <img src="./img/02.png" width="400" alt="개인화 설정 입력 화면">
+   <img src="./img/02.webp" width="400" alt="개인화 설정 입력 화면">
 
 3. 이전 대화 맥락을 기억해 연속적인 고품질 답변을 얻을 수 있도록 <b>Conversation history</b>와 **Reference saved memories** 옵션을 모두 켜 줍니다.
 
-   <img src="./img/03.png" width="400" alt="Conversation history 및 Memory 활성화">
+   <img src="./img/03.webp" width="400" alt="Conversation history 및 Memory 활성화">
 
 > [!TIP]
 > **💡 개인화된 컨텍스트(pContext - Personalized Context)란?**
@@ -64,11 +64,11 @@
 
 1. 화면 좌측 하단의 **Settings & help > Appearance** 탭을 열고 **Homepage elements** 항목에서 홈 화면에 표시할 메뉴를 모두 체크합니다.
 
-   <img src="./img/04.png" width="400" alt="Homepage elements 설정 화면">
+   <img src="./img/04.webp" width="400" alt="Homepage elements 설정 화면">
 
 2. 설정이 반영된 Gemini Enterprise 홈 화면입니다. **Prompts, Shortcuts, For you, Notebooks** 퀵 메뉴가 나타나 있는지 확인합니다.
 
-   <img src="./img/04a.png" width="400" alt="Gemini Enterprise 홈 화면 반영 결과">
+   <img src="./img/04a.webp" width="400" alt="Gemini Enterprise 홈 화면 반영 결과">
 
 ## 1.2. AI 어시스턴트
 
@@ -82,11 +82,11 @@ Gemini로 실제 업무 결과물을 만들고, 팀원들과 바로 공유하는
    너는 10년차 글로벌 마케팅 전문가야. 최근 북미 및 유럽 시장의 '프리미엄 세단’ 트렌드를 검색해서 요약해줘. 특히 주요 경쟁사들의 최근 마케팅 소구점(Selling Point)를 도출하고, 한국 자동차에 적용할 만한 인사이트를 제시해줘
    ```
 
-   <img src="./img/06.png" width="700" alt="프리미엄 세단 트렌드 쿼리 결과">
+   <img src="./img/06.webp" width="700" alt="프리미엄 세단 트렌드 쿼리 결과">
 
 2. 생성된 결과의 하단에 노출되는 **Source(출처)** 링크를 클릭해 봅니다. Gemini가 답변의 근거로 삼은 공신력 있는 글로벌 시장 분석 리포트 및 뉴스 기사들의 실제 경로를 투명하게 검증할 수 있습니다.
 
-   <img src="./img/07.png" width="700" alt="Source 출처 검증 화면">
+   <img src="./img/07.webp" width="700" alt="Source 출처 검증 화면">
 
 3. **인용 및 후속 꼬리 질문(Follow-up)**: 생성된 답변 본문 중에서 마음에 드는 단락이나 수치를 마우스로 드래그하여 선택합니다. 선택 영역에 활성화되는 대화창 넛지 기능을 활용하여 해당 맥락을 담은 후속 꼬리 질문을 끊김 없이 이어나갑니다.
 4. **@멘션 기능 및 실시간 다국어 번역/이메일 연동**:
@@ -102,15 +102,15 @@ Gemini로 실제 업무 결과물을 만들고, 팀원들과 바로 공유하는
 
 1. 대화 세션 우측 상단의 **Share** 아이콘을 클릭합니다.
 
-   <img src="./img/09.png" width="700" alt="대화 세션 공유 인터페이스">
+   <img src="./img/09.webp" width="700" alt="대화 세션 공유 인터페이스">
 
 2. **Create public link** 링크 생성 창이 실행되면 단축 주소를 복사하여 협업 메신저, 슬랙, 이메일 등을 통해 팀 동료에게 전달해 봅니다.
 
-   <img src="./img/10.png" width="700" alt="공유 링크 복사">
+   <img src="./img/10.webp" width="700" alt="공유 링크 복사">
 
 3. **공유 세션 검증**: 전달받은 대화 링크를 브라우저에 열어 이전 맥락이 그대로 유지되는지 확인하고, 추가 질문을 이어 나갑니다.
 
-   <img src="./img/11.png" width="700" alt="공유 세션 기반 추가 꼬리질문 테스트">
+   <img src="./img/11.webp" width="700" alt="공유 세션 기반 추가 꼬리질문 테스트">
 
 4. 내가 공유한 대화는 좌측 하단 **Settings & help > Shared chats** 메뉴에서 언제든 한눈에 확인하고, 공유를 취소(삭제)할 수 있습니다.
 
@@ -156,11 +156,11 @@ Google 검색과 연결된 실시간 그라운딩으로, 최신 뉴스와 정책
 - **실습 가이드 및 메뉴 진입**:
   1. 화면 상단의 **Tools** 또는 기능 선택 패널에서 **Create images (이미지 생성)** 툴을 실행합니다.
 
-     <img src="./img/19.png" width="600" alt="이미지 생성 메뉴 진입">
+     <img src="./img/19.webp" width="600" alt="이미지 생성 메뉴 진입">
 
   2. 이미지 생성 전용 도구 모드가 가동되면 가로세로 비율 조정, 스타일 템플릿(사진, 일러스트 등)을 제어할 수 있는 입력 대기 상태로 전환됩니다.
 
-     <img src="./img/20.png" width="600" alt="이미지 생성 전용 인터페이스 구조">
+     <img src="./img/20.webp" width="600" alt="이미지 생성 전용 인터페이스 구조">
 
 - **시나리오 A: 엔터프라이즈 기능 홍보 포스터 (세로형 9:16 디자인)**:
   비즈니스 임직원들이 Gemini Enterprise를 활용할 수 있는 가이드 포스터를 아래 프롬프트로 출력해 봅니다.
@@ -176,7 +176,7 @@ Google 검색과 연결된 실시간 그라운딩으로, 최신 뉴스와 정책
   ```
   *(참고: Nano Banana가 텍스트 내용을 바탕으로 포스터 이미지를 생성합니다.)*
 
-  <img src="./img/21.png" width="400" alt="생성된 광고 이미지 예시 1"> <img src="./img/22.png" width="400" alt="생성된 광고 이미지 예시 2">
+  <img src="./img/21.webp" width="400" alt="생성된 광고 이미지 예시 1"> <img src="./img/22.webp" width="400" alt="생성된 광고 이미지 예시 2">
 
 - **시나리오 B: 손그림 스케치를 클라우드 정밀 아키텍처 다이어그램으로 변환 (Image-to-Image)**:
   손으로 그린 임시 구상도를 올리면 전문적인 기업용 아키텍처 다이어그램으로 일관성 있게 재구성해 줍니다.
@@ -186,7 +186,7 @@ Google 검색과 연결된 실시간 그라운딩으로, 최신 뉴스와 정책
      첨부한 아키텍처를 Google Cloud Architecture 스타일로 전문적이고 세련되게 다시 그려줘.
      ```
 
-     <img src="./img/23.png" width="600" alt="구글 클라우드 아키텍처 변환 결과">
+     <img src="./img/23.webp" width="600" alt="구글 클라우드 아키텍처 변환 결과">
 
 - **시나리오 C: 개인 인물 사진을 LEGO 미니피규어 패키지로 변환 (Creative Transformation)**:
   인물 이미지를 레고 패키지 상품 디자인으로 변환하고 주변 환경을 아이소메트릭 스타일로 구성해 봅니다.
@@ -206,7 +206,7 @@ Google 검색과 연결된 실시간 그라운딩으로, 최신 뉴스와 정책
   향수병을 소개하는 고급스러운 홍보 영상을 만드세요. 호박색 액체로 채워진 투명한 유리 향수병의 각진 마개에 초점을 맞춰 밀착한 클로즈업 돌리 레프트 샷으로 동영상을 시작합니다. 유리병에 물방울이 은은하게 맺혀 있습니다. 병은 욕실의 깔끔한 흰색 대리석 위에 놓여 있습니다. 배경의 창문에서 부드러운 자연광이 흘러들어와 장면을 비춥니다. 유칼립투스 잎과 천연 나무 향의 디퓨저 스틱이 병 주위로 튀지 않게 배치되어 있습니다. 전체적으로 우아하고 신선하며 세련된 분위기입니다.
   ```
 
-  <img src="./img/24.png" width="600" alt="향수병 비디오 정적 스크린샷">
+  <img src="./img/24.webp" width="600" alt="향수병 비디오 정적 스크린샷">
 
 - **시나리오 B: 푸드 카테고리 광고 연출 (매크로 슬로우 모션 기법)**:
   ```markdown
@@ -216,7 +216,7 @@ Google 검색과 연결된 실시간 그라운딩으로, 최신 뉴스와 정책
   - 오디오: 지글거리는 소리, 경쾌하고 활기찬 음악
   ```
 
-  <img src="./img/26.png" width="600" alt="치즈버거 비디오 정적 스크린샷">
+  <img src="./img/26.webp" width="600" alt="치즈버거 비디오 정적 스크린샷">
 
 - **시나리오 C: 고해상도 다큐멘터리 연출 (FPV 역동 드론 샷)**:
   ```markdown
@@ -226,7 +226,7 @@ Google 검색과 연결된 실시간 그라운딩으로, 최신 뉴스와 정책
   - 오디오: 세차게 흐르는 물소리, 바람 소리
   ```
 
-  <img src="./img/28.png" width="600" alt="폭포 드론 비디오 정적 스크린샷">
+  <img src="./img/28.webp" width="600" alt="폭포 드론 비디오 정적 스크린샷">
 
 - **시나리오 D: 레트로 스트리트 감성 캠페인 광고 (90년대 아날로그 VHS 미학)**:
   ```markdown
@@ -236,7 +236,7 @@ Google 검색과 연결된 실시간 그라운딩으로, 최신 뉴스와 정책
   - 분위기: 즐겁고 향수를 불러일으키는 에너지.
   ```
 
-  <img src="./img/30.png" width="600" alt="스케이트보더 비디오 정적 스크린샷">
+  <img src="./img/30.webp" width="600" alt="스케이트보더 비디오 정적 스크린샷">
 
 ---
 
@@ -267,35 +267,35 @@ Google 검색과 연결된 실시간 그라운딩으로, 최신 뉴스와 정책
    이 문서로 어떤 분석을 할 수 있는지 알려줘
    ```
 
-   <img src="./img/12.png" width="600" alt="매출 분석 파일 및 컬럼 요약 완료">
+   <img src="./img/12.webp" width="600" alt="매출 분석 파일 및 컬럼 요약 완료">
 
 2. **트렌드 시계열 분석**:
    ```markdown
    (주문 완료일)을 기준으로 일별, 주별, 월별 매출(Orders Total Sales)의 변화를 분석하여 매출이 높은 시기와 낮은 시기를 파악해줘
    ```
 
-   <img src="./img/13.png" width="600" alt="주문완료일 기준 시계열 차트 및 분석 결과">
+   <img src="./img/13.webp" width="600" alt="주문완료일 기준 시계열 차트 및 분석 결과">
 
 3. **주문유형 카테고리 기여도 비교**:
    ```markdown
    (주문 유형: Dine-in, Takeaway)에 따라 매출이 어떻게 다른지 분석하여 매장 내 식사와 포장 판매의 비중을 파악해줘
    ```
 
-   <img src="./img/14.png" width="600" alt="식사 유형에 따른 비교 차트">
+   <img src="./img/14.webp" width="600" alt="식사 유형에 따른 비교 차트">
 
 4. **통계적 유의성 검증**:
    ```markdown
    매장 내 식사와 포장 판매의 주문당 평균 매출 차이가 의미 있는지 통계적으로 분석해줘
    ```
 
-   <img src="./img/15.png" width="600" alt="평균 매출 차이의 t-test 통계 분석">
+   <img src="./img/15.webp" width="600" alt="평균 매출 차이의 t-test 통계 분석">
 
 5. **상품 점유율 파이 차트 생성**:
    ```markdown
    상품별 파이차트를 보여줘
    ```
 
-   <img src="./img/image90.png" width="450" alt="동적 생성된 상품별 비중 파이차트">
+   <img src="./img/image90.webp" width="450" alt="동적 생성된 상품별 비중 파이차트">
 
 #### 🔍 실습 자가 검증 포인트
 - [ ] 엑셀 파일이 업로드된 상태에서 질문을 실행했는가?
@@ -324,7 +324,7 @@ PPTX 파일을 대화창에 끌어다 놓으면, 수십 장 슬라이드를 순�
 BigQuery New Feature 들에 대해서 각 기능별로 기능 요약을 해주고, 기능별로 GA, Preview 여부를 표로 작성해서 보여줘
 ```
 
-<img src="./img/16.png" width="600" alt="PowerPoint 신규 기능 GA/Preview 분류 표 결과">
+<img src="./img/16.webp" width="600" alt="PowerPoint 신규 기능 GA/Preview 분류 표 결과">
 
 > [!TIP]
 > **후속 질문 수행 팁**
@@ -342,7 +342,7 @@ BigQuery New Feature 들에 대해서 각 기능별로 기능 요약을 해주�
 
 Gemini Enterprise Canvas를 사용하면 대화창에서 입력한 요구사항을 바탕으로 구글 슬라이드 프레젠테이션을 자동 생성하고 원하는 디자인 스타일을 적용할 수 있습니다.
 
-<img src="./img/canvas_slide_01.png" width="460" alt="Gemini Enterprise Canvas 구글 슬라이드 메뉴 선택">
+<img src="./img/canvas_slide_01.webp" width="460" alt="Gemini Enterprise Canvas 구글 슬라이드 메뉴 선택">
 
 > [!NOTE]
 > - 슬라이드 직접 편집 기능은 현재 Private Preview로 제공됩니다.
@@ -358,11 +358,11 @@ Gemini Enterprise Canvas를 사용하면 대화창에서 입력한 요구사항�
 그리고 구글 슬라이드로 요약해줘
 ```
 
-<img src="./img/canvas_slide_02.png" width="600" alt="Canvas 구글 슬라이드 요약 생성 결과">
+<img src="./img/canvas_slide_02.webp" width="600" alt="Canvas 구글 슬라이드 요약 생성 결과">
 
 생성된 슬라이드는 오른쪽 상단/하단 메뉴를 통해 PowerPoint(.pptx) 파일로 export할 수 있습니다.
 
-<img src="./img/canvas_slide_03.png" width="600" alt="PPTX 내보내기 메뉴">
+<img src="./img/canvas_slide_03.webp" width="600" alt="PPTX 내보내기 메뉴">
 
 ### 2) 💻 실전 실습 2: 기술 문서 스타일 지정 슬라이드 제작
 
@@ -376,13 +376,13 @@ Gemini Enterprise Canvas를 사용하면 대화창에서 입력한 요구사항�
 슬라이드는 하얀색 바탕의 깔끔하고 모던한 IT 기술 문서 스타일로 작성해줘.
 ```
 
-<img src="./img/canvas_slide_04.png" width="600" alt="IT 기술 문서 스타일 슬라이드 생성 결과 1">
-<img src="./img/canvas_slide_05.png" width="600" alt="IT 기술 문서 스타일 슬라이드 생성 결과 2">
+<img src="./img/canvas_slide_04.webp" width="600" alt="IT 기술 문서 스타일 슬라이드 생성 결과 1">
+<img src="./img/canvas_slide_05.webp" width="600" alt="IT 기술 문서 스타일 슬라이드 생성 결과 2">
 
 Export 메뉴에서 **Google Slide로 내보내기**를 선택하여 생성된 전체 슬라이드를 직접 확인하고 PowerPoint로 다운로드해 봅니다.
 
-<img src="./img/canvas_slide_06.png" width="600" alt="Google Slides 내보내기 전체 화면">
-<img src="./img/canvas_slide_07.png" width="600" alt="PowerPoint(.pptx) 파일 다운로드 결과">
+<img src="./img/canvas_slide_06.webp" width="600" alt="Google Slides 내보내기 전체 화면">
+<img src="./img/canvas_slide_07.webp" width="600" alt="PowerPoint(.pptx) 파일 다운로드 결과">
 
 ### 3) 💻 실전 실습 3: 기업 맞춤형 브랜드 슬라이드 템플릿 제작
 
@@ -392,8 +392,8 @@ Export 메뉴에서 **Google Slide로 내보내기**를 선택하여 생성된 �
 우리 회사 사이트(google.com)를 분석해서 전문 디자이너가 작업한 것 같은 깔끔한 15장 슬라이드 템플릿을 만들어줘. 재활용하는 템플릿을 만드는 것이 목적이라서, 도표, 차트, 그래프, 간지 등 다양한 템플릿이 있어야 돼.
 ```
 
-<img src="./img/canvas_slide_08.png" width="600" alt="LG 브랜드 15장 슬라이드 템플릿 생성 결과 1">
-<img src="./img/canvas_slide_09.png" width="600" alt="LG 브랜드 15장 슬라이드 템플릿 생성 결과 2">
+<img src="./img/canvas_slide_08.webp" width="600" alt="LG 브랜드 15장 슬라이드 템플릿 생성 결과 1">
+<img src="./img/canvas_slide_09.webp" width="600" alt="LG 브랜드 15장 슬라이드 템플릿 생성 결과 2">
 
 #### 🔍 실습 자가 검증 포인트
 - [ ] 구글 슬라이드 요약 프롬프트 입력 시 Canvas 창을 통해 다면 프레젠테이션 장표 구조가 자동 생성되는가?

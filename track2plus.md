@@ -54,19 +54,19 @@ Google Drive / Workspace 커넥터 연동과 Python 기반 커스텀 에이전�
 
 1. 대화창 오른쪽의 **커넥터 아이콘**을 클릭해 커넥터 목록을 열고, **Drive** 항목의 **Enable actions** 버튼을 클릭합니다.
 
-   <img src="./img/auth_01.png" width="400" alt="커넥터 목록 — Drive Enable actions">
+   <img src="./img/auth_01.webp" width="400" alt="커넥터 목록 — Drive Enable actions">
 
 2. 구글 계정 선택 팝업이 뜨면 실습에 제공된 계정을 선택합니다.
 
-   <img src="./img/auth_02.png" width="400" alt="구글 계정 선택 팝업">
+   <img src="./img/auth_02.webp" width="400" alt="구글 계정 선택 팝업">
 
 3. 권한 요청 화면에서 Drive 파일 접근을 포함한 권한 목록을 확인하고 **Allow**를 클릭합니다.
 
-   <img src="./img/auth_03.png" width="400" alt="OAuth 권한 동의 화면">
+   <img src="./img/auth_03.webp" width="400" alt="OAuth 권한 동의 화면">
 
 4. Drive 항목이 **Disable actions** 버튼으로 바뀌면 Google Drive 연동이 완료된 것입니다.
 
-   <img src="./img/auth_04.png" width="400" alt="Drive 연동 완료 — Disable actions">
+   <img src="./img/auth_04.webp" width="400" alt="Drive 연동 완료 — Disable actions">
 
 > [!TIP]
 > **💡 OAuth 팝업 차단 트러블슈팅**
@@ -107,15 +107,15 @@ Google Drive / Workspace 커넥터 연동과 Python 기반 커스텀 에이전�
 
   채팅창 왼쪽 아래 커넥터 아이콘을 클릭합니다. Google Search는 OFF로 끄고, Drive만 켜둡니다(Disable actions 상태). Google Search가 켜져 있으면 드라이브 대신 인터넷을 검색합니다.
 
-  <img src="./img/image2.png" width="600" alt="Drive 커넥터 활성화 후 질문 입력">
+  <img src="./img/image2.webp" width="600" alt="Drive 커넥터 활성화 후 질문 입력">
 
   *(Drive를 처음 연동하는 경우 OAuth 팝업이 나타납니다. 아래 화면을 따라 승인합니다.)*
 
-  <img src="./img/connect01.png" width="600" alt="커넥터 승인 넛지">
-  <img src="./img/connect02.png" width="350" alt="계정 승인 선택">
+  <img src="./img/connect01.webp" width="600" alt="커넥터 승인 넛지">
+  <img src="./img/connect02.webp" width="350" alt="계정 승인 선택">
 
-  <img src="./img/image20.png" width="350" alt="검색된 복지 정책 문서 결과">
-  <img src="./img/image24.png" width="800" alt="소스를 클릭하여 원본 마크다운 및 복지 파일 확인">
+  <img src="./img/image20.webp" width="350" alt="검색된 복지 정책 문서 결과">
+  <img src="./img/image24.webp" width="800" alt="소스를 클릭하여 원본 마크다운 및 복지 파일 확인">
 
 - **실습 예시 2 (GCS 사설 데이터베이스 RAG 검색)**:
   구글 클라우드 스토리지(GCS) 버킷에 사내 특수 마케팅 캠페인 및 일정 데이터를 보관해 둔 상황을 전제하여 쿼리해 봅니다.
@@ -136,14 +136,14 @@ Google Drive / Workspace 커넥터 연동과 Python 기반 커스텀 에이전�
   넥스트 테크놀로지스의 사내 브랜드 앰버서더 참여 요건과 전용 VIP 혜택이 무엇인지 요약해줘
   ```
 
-  <img src="./img/image1.png" width="800" alt="GCS 정보 실시간 질문 결과">
-  <img src="./img/image77.png" width="800" alt="답변 출처 목록 확인">
+  <img src="./img/image1.webp" width="800" alt="GCS 정보 실시간 질문 결과">
+  <img src="./img/image77.webp" width="800" alt="답변 출처 목록 확인">
 
   ```markdown
   넥스트월드 토크콘서트 개최 일정, 시간, 대강당 위치, 그리고 초청 강사를 정확히 가이드해줘
   ```
 
-  <img src="./img/image21.png" width="800" alt="일정 쿼리 결과 화면">
+  <img src="./img/image21.webp" width="800" alt="일정 쿼리 결과 화면">
 
 > [!TIP]
 > **💡 RAG-Ready: 검색 정확도를 높이는 문서 작성 가이드**
@@ -239,23 +239,23 @@ adk deploy cloud_run \
 
 Gemini Enterprise의 관리자는 Google Cloud 콘솔에서 Agents > Add agent를 클릭합니다.
 
-<img src="./img/customagent-001.png" width="600" alt="Agents 목록 페이지에서 Add agent 버튼 클릭 화면">
+<img src="./img/customagent-001.webp" width="600" alt="Agents 목록 페이지에서 Add agent 버튼 클릭 화면">
 
 이번 예시에서는 A2A Agent Card를 이용하여 등록하겠습니다.
 `Custom agent via A2A`를 클릭합니다.
 
-<img src="./img/customagent-002.png" width="600" alt="Custom agent via A2A 선택 화면">
+<img src="./img/customagent-002.webp" width="600" alt="Custom agent via A2A 선택 화면">
 
 등록할 에이전트의 카드 정보를 기입하고 Preview Agent Details를 클릭합니다.
 
-<img src="./img/customagent-003.png" width="600" alt="에이전트 카드 JSON 입력 및 Preview Agent Details 클릭">
+<img src="./img/customagent-003.webp" width="600" alt="에이전트 카드 JSON 입력 및 Preview Agent Details 클릭">
 
 
 Custom Image Agent가 등록되었습니다. 프롬프트를 입력하여 이미지를 실행해봅니다.
 
-<img src="./img/customagent-004.png" width="600" alt="Custom Image Agent 등록 완료 및 채팅 인터페이스 화면">
+<img src="./img/customagent-004.webp" width="600" alt="Custom Image Agent 등록 완료 및 채팅 인터페이스 화면">
 
 실행 결과를 볼 수 있습니다.
 
-<img src="./img/customagent-005.png" width="600" alt="Custom Image Agent 이미지 생성 결과 화면">
-<img src="./img/customagent-006.png" width="600" alt="Custom Image Agent가 생성한 바나나 비행기 이미지">
+<img src="./img/customagent-005.webp" width="600" alt="Custom Image Agent 이미지 생성 결과 화면">
+<img src="./img/customagent-006.webp" width="600" alt="Custom Image Agent가 생성한 바나나 비행기 이미지">
