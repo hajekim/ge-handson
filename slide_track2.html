@@ -88,14 +88,12 @@
     <button class="nav-dot" onclick="scrollToSlide(9)" title="10. Reports 실습"></button>
     <button class="nav-dot" onclick="scrollToSlide(10)" title="11. Audio Overview"></button>
     <button class="nav-dot" onclick="scrollToSlide(11)" title="12. Deep Research 원리"></button>
-    <button class="nav-dot" onclick="scrollToSlide(12)" title="13. Idea Generation Agent"></button>
-    <button class="nav-dot" onclick="scrollToSlide(13)" title="14. 아이디어 연쇄 확장"></button>
-    <button class="nav-dot" onclick="scrollToSlide(14)" title="15. 에이전트 아키타입"></button>
-    <button class="nav-dot" onclick="scrollToSlide(15)" title="16. Agent Designer"></button>
-    <button class="nav-dot" onclick="scrollToSlide(16)" title="17. CRAFT 에이전트 실습"></button>
-    <button class="nav-dot" onclick="scrollToSlide(17)" title="18. Workflow Agent"></button>
-    <button class="nav-dot" onclick="scrollToSlide(18)" title="19. 시장 분석 에이전트 실습"></button>
-    <button class="nav-dot" onclick="scrollToSlide(19)" title="20. 실습 시작 CTA"></button>
+    <button class="nav-dot" onclick="scrollToSlide(12)" title="13. 에이전트 아키타입"></button>
+    <button class="nav-dot" onclick="scrollToSlide(13)" title="14. Agent Designer"></button>
+    <button class="nav-dot" onclick="scrollToSlide(14)" title="15. CRAFT 에이전트 실습"></button>
+    <button class="nav-dot" onclick="scrollToSlide(15)" title="16. Workflow Agent"></button>
+    <button class="nav-dot" onclick="scrollToSlide(16)" title="17. 시장 분석 에이전트 실습"></button>
+    <button class="nav-dot" onclick="scrollToSlide(17)" title="18. 실습 시작 CTA"></button>
   </div>
 
   <div class="slide-container" id="container">
@@ -413,67 +411,7 @@
       </div>
     </section>
 
-    <!-- 16 -->
-    <section class="slide">
-      <h2>💡 Idea Generation Agent</h2>
-      <p class="subtitle">비즈니스 난제를 해결하고 창의적인 아이디어를 설계하는 <b>토너먼트형 브레인스토밍 에이전트</b>입니다. 다수의 후보 아이디어를 자율 생성한 뒤 경쟁 평가로 최적 아이디어를 가려냅니다.</p>
-
-      <!-- Tournament pipeline -->
-      <div style="display:flex; gap:0.6rem; align-items:stretch; justify-content:center; max-width:1100px; margin:0.6rem auto 1.2rem;">
-        <div style="flex:1; background:#1a2a3a; border-radius:8px; padding:1rem 0.8rem; text-align:center;">
-          <div style="font-size:1.5rem;">💬</div>
-          <div style="font-size:0.85rem; font-weight:700; color:#93c5fd; margin:0.3rem 0;">① 주제 입력</div>
-          <div style="font-size:0.75rem; color:#cbd5e1; line-height:1.5;">비즈니스 문제·도메인<br>자연어로 프롬프트 입력</div>
-        </div>
-        <div style="font-size:1.3rem; color:#60a5fa; align-self:center; flex-shrink:0;">→</div>
-        <div style="flex:1; background:#2a1a3a; border-radius:8px; padding:1rem 0.8rem; text-align:center;">
-          <div style="font-size:1.5rem;">🧠</div>
-          <div style="font-size:0.85rem; font-weight:700; color:#c4b5fd; margin:0.3rem 0;">② 후보 생성</div>
-          <div style="font-size:0.75rem; color:#cbd5e1; line-height:1.5;">다수의 창의적<br>아이디어 자율 생성</div>
-        </div>
-        <div style="font-size:1.3rem; color:#a78bfa; align-self:center; flex-shrink:0;">→</div>
-        <div style="flex:1; background:#1a3a1a; border-radius:8px; padding:1rem 0.8rem; text-align:center;">
-          <div style="font-size:1.5rem;">⚖️</div>
-          <div style="font-size:0.85rem; font-weight:700; color:#86efac; margin:0.3rem 0;">③ 토너먼트 평가</div>
-          <div style="font-size:0.75rem; color:#cbd5e1; line-height:1.5;">과학적 방법론 기반<br>후보 간 비교·검증</div>
-        </div>
-        <div style="font-size:1.3rem; color:#4ade80; align-self:center; flex-shrink:0;">→</div>
-        <div style="flex:1; background:#2a2a0a; border-radius:8px; padding:1rem 0.8rem; text-align:center;">
-          <div style="font-size:1.5rem;">🏆</div>
-          <div style="font-size:0.85rem; font-weight:700; color:#fde68a; margin:0.3rem 0;">④ 최적 선별</div>
-          <div style="font-size:0.75rem; color:#cbd5e1; line-height:1.5;">평가를 통과한<br>최적 아이디어 도출</div>
-        </div>
-        <div style="font-size:1.3rem; color:#facc15; align-self:center; flex-shrink:0;">→</div>
-        <div style="flex:1; background:#2a1a0a; border-radius:8px; padding:1rem 0.8rem; text-align:center;">
-          <div style="font-size:1.5rem;">📤</div>
-          <div style="font-size:0.85rem; font-weight:700; color:#fdba74; margin:0.3rem 0;">⑤ Gemini Notebook 저장</div>
-          <div style="font-size:0.75rem; color:#cbd5e1; line-height:1.5;">결과를 Gemini Notebook<br>Enterprise로 내보내기</div>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h3>🎯 활용 도메인</h3>
-          <p>마케팅·제품 개발·엔지니어링 등 다양한 도메인에서 활용 가능합니다. 단순 브레인스토밍을 넘어 <b>다단계 분석과 사내외 소스 검색</b>까지 알아서 해내며 완료까지 <b>5~10분</b>이 소요됩니다.</p>
-        </div>
-        <div class="card green">
-          <h3>📌 활용 팁</h3>
-          <p>세션 창을 유지한 채 다음 실습을 먼저 진행하고 돌아와 결과를 확인하면 효율적입니다. 도출된 아이디어는 <b>Gemini Notebook Enterprise로 내보내기</b>하여 60일 이후에도 보존할 수 있습니다.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 17 -->
-    <section class="slide">
-      <h2>실습: 리서치 기반 아이디어 확장</h2>
-      <p class="subtitle">기술 트렌드를 바탕으로 <b>신규 서비스를 구상하기 위한 연속 질문</b>을 이어갑니다.</p>
-      <div class="card" style="max-width: 1100px; width: 100%;">
-        <h3>📋 후속 과제 도출 프롬프트</h3>
-        <div class="code-box">작성된 Deep Research 보고서의 경쟁사 기술 동향을 바탕으로, 우리 회사가 내년에 새롭게 출시할 수 있는 'AI 기반 스마트 홈 케어 구독 서비스'의 차별화 비즈니스 모델 아이디어 3가지를 구상해 줘. 각 아이디어별 예상 타겟 고객군과 초기 진입 전략도 함께 제시해 줘.</div>
-      </div>
-    </section>
-
-    <!-- 17 -->
+    <!-- 13 -->
     <section class="slide">
       <h2>에이전트 실무 아키타입</h2>
       <p class="subtitle">특정한 비즈니스 도메인 및 데이터 처리 목적에 따라 분류되는 <b>차세대 업무 에이전트의 5대 아키타입</b>입니다.</p>
@@ -493,7 +431,7 @@
       </div>
     </section>
 
-    <!-- 18 -->
+    <!-- 14 -->
     <section class="slide">
       <h2>🤖 Agent Designer</h2>
       <p class="subtitle">코드 없이 자연어로 에이전트를 만들고 조직에 배포하는 <b>노코드/로우코드 에이전트 빌더</b>입니다.</p>
@@ -517,7 +455,7 @@
       </div>
     </section>
 
-    <!-- 19 -->
+    <!-- 15 -->
     <section class="slide">
       <h2>🤖 실습: CRAFT 프롬프트 에이전트</h2>
       <p class="subtitle">CRAFT 프레임워크를 내장한 <b>프롬프트 최적화 에이전트</b>를 Agent Designer로 직접 만들어봅니다.</p>
@@ -546,7 +484,7 @@
       </div>
     </section>
 
-    <!-- 20 -->
+    <!-- 16 -->
     <section class="slide">
       <h2>⚙️ Workflow Agent</h2>
       <p class="subtitle">복잡한 업무를 <b>순차적 단계(Step)</b>로 분해하고, 각 단계를 전담 서브에이전트가 실행하는 <b>멀티 에이전트 오케스트레이션</b> 방식입니다.</p>
@@ -566,7 +504,7 @@
       </div>
     </section>
 
-    <!-- 21 -->
+    <!-- 17 -->
     <section class="slide">
       <h2>⚙️ 실습: 시장 조사·경쟁 분석 Workflow Agent</h2>
       <p class="subtitle">Web Grounding으로 최신 동향을 수집하고, 단계별 분석을 거쳐 <b>경영진 보고서를 자동 작성</b>하는 Workflow Agent를 구축합니다.</p>
@@ -604,7 +542,7 @@
       </div>
     </section>
 
-    <!-- 20 -->
+    <!-- 18 -->
     <section class="slide">
       <h2>Track 2 슬라이드 완료</h2>
       <p class="subtitle">Track 2 심화 안내를 마쳤습니다. 다음 단계인 Part 3 (Admin Guide) 슬라이드로 이동하여 인프라 거버넌스 및 보안 체계를 확인합니다.</p>

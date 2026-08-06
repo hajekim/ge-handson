@@ -355,9 +355,9 @@ Gemini Enterprise에서 Canvas를 사용하는 방법을 초보자도 따라가�
 > 참고 영상: [YouTube — Gemini Enterprise Canvas 데모](https://www.youtube.com/watch?v=4-5qeh4IXVY)
 > 동영상 생성 기능은 Gemini Notebook의 소스 내용을 기반으로 하므로, 소스 품질이 높을수록 더 정확한 튜토리얼 영상이 만들어집니다.
 
-## 2.2. Deep Research Agent & Idea Generation Agent
+## 2.2. Deep Research Agent
 
-Google이 직접 만들고 관리하는 **"Made by Google" 에이전트** 두 가지를 써봅니다. Deep Research Agent로 수백 개 소스를 자율 탐색해 종합 보고서를 만들고, Idea Generation Agent로 토너먼트 평가를 거쳐 최적 비즈니스 아이디어를 뽑아냅니다.
+Google이 직접 만들고 관리하는 **"Made by Google" 에이전트**입니다. Deep Research Agent로 수백 개 소스를 자율 탐색해 인용 출처가 명시된 종합 보고서를 만들어봅니다.
 
 ### 🔍 Deep Research Agent
 
@@ -383,36 +383,6 @@ Google이 직접 만들고 관리하는 **"Made by Google" 에이전트** 두 �
 
   <img src="./img/32.png" width="600" alt="Deep Research 분석 보고서 생성 결과 1">
   <img src="./img/33.png" width="600" alt="Deep Research 분석 보고서 생성 결과 2">
-
-### 💡 Idea Generation Agent 실습
-
-비즈니스 난제에 대한 창의적인 마케팅·운영·제품 아이디어를 설계하는 **토너먼트형 브레인스토밍 에이전트**입니다. 과학적 방법론에서 영감을 받은 **경쟁 평가 구조**로 후보 아이디어 여러 개를 자율 생성한 뒤 비교해 최적안을 선별합니다. 마케팅·제품 개발·엔지니어링 등 다양한 분야에 쓸 수 있고, 결과물은 **Gemini Notebook Enterprise로 내보내기**하면 60일 이후에도 보존됩니다.
-
-- **실습 진입**: 화면 좌측 에이전트 목록에서 **Idea Generation** 에이전트를 선택합니다.
-
-  <img src="./img/34.png" width="600" alt="에이전트 목록 UI">
-  <img src="./img/35.png" width="600" alt="Idea Generation 에이전트 활성화">
-
-- **첫 번째 아이디어 세션 생성**:
-  아래 프롬프트를 복사하여 입력하고, **Start Session** 버튼을 클릭하여 백그라운드 추론 세션을 실행합니다.
-  ```markdown
-  넥스트 테크놀로지스에서 일하는 20~30대 젊은 신입 사원 및 주니어 임직원들의 관점에서 스마트 오피스 환경에서 느끼는 일상적인 불편함 5가지를 발굴하고, 이를 해결하여 임직원 경험을 극대화할 수 있는 참신하고 파격적인 서비스/운영 아이디어를 제안해줘. 이들에게 줄 수 있는 가장 큰 감동은 무엇일까?
-  ```
-
-  <img src="./img/36.png" width="600" alt="Start Session 추론 실행">
-  <img src="./img/37.png" width="600" alt="추론 완료 및 아이디어 제안 확인">
-
-- **두 번째 아이디어 세션 생성 (업무 자동화 아이디어)**:
-  다른 실무 주제로도 창의적인 아이디어를 유도해 봅니다.
-  ```markdown
-  내가 매일 수행하는 [매출 데이터 정리, 사내 게시판 모니터링, 메일 회신] 업무를 Gemini Enterprise를 활용해 자동화하거나 효율화할 수 있는 아이디어를 제시해줘. 특히 Gemini Enterprise의 **데이터 연결 기능**을 어떻게 활용하면 정보 검색 시간을 절반으로 줄일 수 있을지, 구체적인 프롬프트 체인(연속 질문) 구조를 설계해줘.
-  ```
-
-  <img src="./img/38.png" width="600" alt="업무 자동화 프롬프트 체인 설계 결과">
-
-  > [!NOTE]
-  > **실습 안내 및 팁**
-  > 에이전트가 깊이 있는 다단계 분석과 사내외 소스 검색을 자율 수행하므로 완료까지 보통 **5~10분** 걸립니다. 세션 창을 열어둔 채로 다음 실습을 먼저 진행하고 나중에 결과를 확인해도 됩니다.
 
 ## 2.3. Agent Designer
 

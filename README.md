@@ -37,7 +37,7 @@
       <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">비즈니스 파워 유저 · IT 기획/혁신 리더 · 시민 개발자</div>
     </div>
     <div style="flex: 1; font-size: 13.5px; color: #3c4043;">
-      Drive/Workspace RAG · Gemini Notebook · Deep Research · Idea Generation · 에이전트 빌더 · Workflow Agent · ADK/CAA
+      Gemini Notebook · Deep Research · 에이전트 빌더 · Workflow Agent · ADK/CAA
     </div>
     <a href="#/track2_advanced" class="btn-start" style="color: var(--google-blue); white-space: nowrap;">👉 교육 시작 →</a>
   </div>
