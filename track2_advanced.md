@@ -47,7 +47,7 @@ Gemini Notebook 팀 도서관 구축, Deep Research 자율 보고서, 에이전�
 
 #### 노트북 준비
 
-1. **새 노트북 생성**: [Gemini Notebook 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭합니다.
+1. **새 노트북 생성**: Gemini Enterprise App 좌측 메뉴 **Agents → Gemini Notebook**에서 **새로만들기**를 클릭합니다.
 2. **소스 타입 선택**: 소스 추가 패널에서 **텍스트 붙여넣기**를 선택합니다.
 
    <img src="./img/41.png" width="600" alt="텍스트 붙여넣기 소스 추가">
@@ -172,7 +172,7 @@ Gemini Notebook의 킬러 기능 중 하나입니다. 동일 노트북 우측 **
 
 #### 2단계: 새 노트북 생성 및 이미지 소스 추가
 
-1. [Gemini Notebook 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭해 새 노트북을 엽니다.
+1. Gemini Enterprise App 좌측 메뉴 **Agents → Gemini Notebook**에서 **새로만들기**를 클릭해 새 노트북을 엽니다.
 2. **소스 추가** → **파일 업로드**를 선택하고 압축 해제된 이미지 4장(`sofa.png`, `cushion.png`, `lighting.png`, `diffuser.png`)을 **한꺼번에** 선택해 업로드합니다.
 
    <img src="./img/notebooklm_011.png" width="600" alt="Gemini Notebook 이미지 소스 4장 업로드 완료">
@@ -274,7 +274,7 @@ pptx 파일로 다운로드하였습니다.
 
 **생성 방법:**
 
-1. [Gemini Notebook 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭합니다. **소스 추가** → **파일 업로드**를 선택한 뒤, 상단에서 다운로드한 `data_agent.zip`의 압축을 해제하고 이미지 10개를 소스에 추가합니다.
+1. Gemini Enterprise App 좌측 메뉴 **Agents → Gemini Notebook**에서 **새로만들기**를 클릭합니다. **소스 추가** → **파일 업로드**를 선택한 뒤, 상단에서 다운로드한 `data_agent.zip`의 압축을 해제하고 이미지 10개를 소스에 추가합니다.
 
    <img src="./img/notebooklm_020.png" width="600" alt="10개의 파일을 업로드 완료">
 
@@ -327,7 +327,7 @@ pptx 파일로 다운로드하였습니다.
 
 #### 2단계: 새 노트북 생성 및 소스 추가
 
-1. [Gemini Notebook 홈](https://notebooklm.google/)에서 **새로만들기**를 클릭합니다.
+1. Gemini Enterprise App 좌측 메뉴 **Agents → Gemini Notebook**에서 **새로만들기**를 클릭합니다.
 2. **소스 추가** → **파일 업로드**에서 `canvas.pdf`를 추가합니다.
 3. `canvas.zip` 압축을 해제한 뒤, 이미지 파일 전체를 한꺼번에 소스로 업로드합니다.
 
