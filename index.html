@@ -843,7 +843,7 @@
     (function() {
       function blockDisabledPages() {
         var h = location.hash;
-        var blocked = ['#/admin_guide', '#/track2plus'];
+        var blocked = [];
         for (var i = 0; i < blocked.length; i++) {
           if (h === blocked[i] || h.startsWith(blocked[i] + '?') || h.startsWith(blocked[i] + '/')) {
             location.replace(location.pathname + '#/');
