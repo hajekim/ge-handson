@@ -99,15 +99,21 @@ Google Drive / Workspace 커넥터 연동과 Python 기반 커스텀 에이전�
 ---
 
 - **실습 예시 1 (내부 규정 검색 - Google Drive)**:
-  `Google Search`를 끈 상태에서 사내 드라이브에 업로드한 임직원 복리후생 가이드라인 문서를 RAG 검색합니다.
+  사내 드라이브에 업로드한 임직원 복리후생 가이드라인 문서를 RAG 검색합니다.
+
   ```markdown
   내 드라이브에 있는 "복리후생" 문서를 기반으로 자녀 학자금 지원 한도가 재직 기간에 따라 어떻게 다른지 알려줘
   ```
-  *(OAuth 최초 팝업 발생 시 승인 선택)*
+
+  채팅창 왼쪽 아래 커넥터 아이콘을 클릭합니다. Google Search는 OFF로 끄고, Drive만 켜둡니다(Disable actions 상태). Google Search가 켜져 있으면 드라이브 대신 인터넷을 검색합니다.
+
+  <img src="./img/image2.png" width="600" alt="Drive 커넥터 활성화 후 질문 입력">
+
+  *(Drive를 처음 연동하는 경우 OAuth 팝업이 나타납니다. 아래 화면을 따라 승인합니다.)*
 
   <img src="./img/connect01.png" width="600" alt="커넥터 승인 넛지">
   <img src="./img/connect02.png" width="350" alt="계정 승인 선택">
-  <img src="./img/searchdrive.png" width="450" alt="드라이브 스캔 진행">
+
   <img src="./img/image20.png" width="350" alt="검색된 복지 정책 문서 결과">
   <img src="./img/image24.png" width="800" alt="소스를 클릭하여 원본 마크다운 및 복지 파일 확인">
 
